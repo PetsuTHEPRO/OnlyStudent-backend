@@ -1,7 +1,5 @@
 package com.sloth.OnlyStudent.entities;
 
-import java.util.Set;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 import lombok.Getter;
@@ -15,14 +13,24 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 public class Educator extends User{
+	
+	private String especialidade;
 
 	public Educator() {
 		
 	}
 	
-	public Educator(Long id, String name, String login, String password, UserRole role) {
-		super(id, name, login, password, role);
-		// TODO Auto-generated constructor stub
+	public Educator(Long id, String name, String telephone, String login, String password, UserRole role, String especialidade) {
+		super(id, name, telephone, login, password, role);
+		this.especialidade = especialidade;
+	}
+
+	public String getEspecialidade() {
+		return especialidade;
+	}
+
+	public void setEspecialidade(String especialidade) {
+		this.especialidade = especialidade;
 	}
 
 }

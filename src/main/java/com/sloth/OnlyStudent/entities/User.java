@@ -10,11 +10,14 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Inheritance;
 import jakarta.persistence.InheritanceType;
 import jakarta.persistence.Table;
-import lombok.AllArgsConstructor;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 	
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
+@Setter
+@Getter
 @Table(name = "users")
 @NoArgsConstructor
 public class User{
@@ -22,7 +25,9 @@ public class User{
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String name;
-	private String login;
+	private String telephone;
+	@Column(unique = true, nullable = false)
+	private String email;
 	private String password;
 	@Enumerated(EnumType.STRING)
     @Column(nullable = false)
@@ -32,10 +37,11 @@ public class User{
 		
 	}
     
-	public User(Long id, String name, String login, String password, UserRole role) {
+	public User(Long id, String name, String telephone, String email, String password, UserRole role) {
 		this.id = id;
 		this.name = name;
-		this.login = login;
+		this.telephone = telephone;
+		this.email = email;
 		this.password = password;
 		this.role = role;
 	}
@@ -59,12 +65,20 @@ public class User{
 		this.name = name;
 	}
 
-	public String getLogin() {
-		return login;
+	public String getTelephone() {
+		return telephone;
+	}
+
+	public void setTelephone(String telephone) {
+		this.telephone = telephone;
+	}
+
+	public String getEmail() {
+		return email;
 	}
 	
-	public void setLogin(String login) {
-		this.login = login;
+	public void setEmail(String email) {
+		this.email = email;
 	}
 	
 	public String getPassword() {

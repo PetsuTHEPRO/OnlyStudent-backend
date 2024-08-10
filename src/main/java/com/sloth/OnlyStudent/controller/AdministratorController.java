@@ -45,7 +45,7 @@ public class AdministratorController {
     // Criar um novo administrador
     @PostMapping
     public Administrator create(@RequestBody RegisterDTO administrator) {
-        return repository.save(new Administrator(null, administrator.name(), administrator.login(), passwordEncoder.encode(administrator.password()), administrator.role()));
+        return repository.save(new Administrator(null, administrator.name(), administrator.telephone(), administrator.email(), passwordEncoder.encode(administrator.password()), administrator.role()));
     }
     
     // Atualizar um administrador existente
@@ -54,7 +54,7 @@ public class AdministratorController {
         return repository.findById(id)
                 .map(admin -> {
                     admin.setName(administratorDetails.name());
-                    admin.setLogin(administratorDetails.login());
+                    admin.setEmail(administratorDetails.email());
                     // Adicione outras atualizações de campo conforme necessário
                     Administrator updatedAdmin = repository.save(admin);
                     return ResponseEntity.ok().body(updatedAdmin);
