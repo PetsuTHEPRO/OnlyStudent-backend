@@ -24,14 +24,11 @@ import lombok.RequiredArgsConstructor;
 @CrossOrigin(origins = "http://localhost:5173/")
 public class SupportController {
 
-	private final JavaMailSender emailSender;
+	@Autowired
+	private JavaMailSender emailSender;
 
     @Value("${spring.mail.username}")
     private String remetente;
-    
-    SupportController(JavaMailSender emailSender) {
-        this.emailSender = emailSender;
-    }
 
     public void sendEmail(String to, String subject, String htmlContent) {
         try {
