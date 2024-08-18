@@ -38,6 +38,9 @@ public class SecurityConfigurations {
                         .requestMatchers(HttpMethod.GET, "/student/**").permitAll()
                         .requestMatchers(HttpMethod.POST, "/educator/**").permitAll()
                         .requestMatchers(HttpMethod.GET, "/educator/**").permitAll()
+                        .requestMatchers(HttpMethod.PUT, "/educator/**").permitAll()
+                        .requestMatchers(HttpMethod.POST, "/material/**").permitAll()
+                        .requestMatchers(HttpMethod.POST, "/support/**").permitAll()
                         .anyRequest().authenticated()
                 )
                 .addFilterBefore(securityFilter, UsernamePasswordAuthenticationFilter.class);

@@ -1,0 +1,1597 @@
+2024-08-10 14:34:01 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-08-10 14:34:01 INFO  c.s.O.OnlyStudentApplication - Starting OnlyStudentApplication using Java 20.0.2 with PID 6299 (/home/peterson/Documentos/Projetos/OnlyStudent/target/classes started by peterson in /home/peterson/Documentos/Projetos/OnlyStudent)
+2024-08-10 14:34:01 INFO  c.s.O.OnlyStudentApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-10 14:34:01 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-10 14:34:01 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-10 14:34:03 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-10 14:34:03 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 103 ms. Found 5 JPA repository interfaces.
+2024-08-10 14:34:04 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-08-10 14:34:04 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-10 14:34:04 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-10 14:34:04 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-08-10 14:34:04 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-10 14:34:04 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3080 ms
+2024-08-10 14:34:04 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-10 14:34:04 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-10 14:34:04 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-10 14:34:05 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-10 14:34:05 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-10 14:34:06 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@211d0e2c
+2024-08-10 14:34:06 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-10 14:34:06 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-10 14:34:08 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-10 14:34:08 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-10 14:34:09 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.ClassroomController.logger
+2024-08-10 14:34:09 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-10 14:34:09 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-08-10 14:34:10 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-08-10 14:34:10 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-08-10 14:34:10 INFO  c.s.O.OnlyStudentApplication - Started OnlyStudentApplication in 10.049 seconds (process running for 12.767)
+2024-08-10 14:37:12 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-10 14:37:12 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-10 14:37:12 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-08-10 14:37:12 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 14:38:07 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-10 14:38:07 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-08-10 14:38:07 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-10 14:38:07 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-08-10 14:38:07 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-08-10 14:38:07 INFO  c.s.O.OnlyStudentApplication - Starting OnlyStudentApplication using Java 20.0.2 with PID 6299 (/home/peterson/Documentos/Projetos/OnlyStudent/target/classes started by peterson in /home/peterson/Documentos/Projetos/OnlyStudent)
+2024-08-10 14:38:07 INFO  c.s.O.OnlyStudentApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-10 14:38:07 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-10 14:38:07 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 5 JPA repository interfaces.
+2024-08-10 14:38:08 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-08-10 14:38:08 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-10 14:38:08 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-10 14:38:08 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-08-10 14:38:08 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-10 14:38:08 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1018 ms
+2024-08-10 14:38:08 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-10 14:38:08 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-10 14:38:08 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-10 14:38:08 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2024-08-10 14:38:08 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@6213c7af
+2024-08-10 14:38:08 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2024-08-10 14:38:08 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-10 14:38:09 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-10 14:38:09 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-10 14:38:09 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.ClassroomController.logger
+2024-08-10 14:38:09 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-10 14:38:10 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-08-10 14:38:10 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-08-10 14:38:10 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-08-10 14:38:10 INFO  c.s.O.OnlyStudentApplication - Started OnlyStudentApplication in 2.83 seconds (process running for 252.927)
+2024-08-10 14:38:10 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-08-10 14:39:08 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-10 14:39:08 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-08-10 14:39:08 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-10 14:39:08 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2024-08-10 14:39:08 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2024-08-10 14:39:09 INFO  c.s.O.OnlyStudentApplication - Starting OnlyStudentApplication using Java 20.0.2 with PID 6299 (/home/peterson/Documentos/Projetos/OnlyStudent/target/classes started by peterson in /home/peterson/Documentos/Projetos/OnlyStudent)
+2024-08-10 14:39:09 INFO  c.s.O.OnlyStudentApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-10 14:39:09 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-10 14:39:09 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 66 ms. Found 5 JPA repository interfaces.
+2024-08-10 14:39:10 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-08-10 14:39:10 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-10 14:39:10 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-10 14:39:10 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-08-10 14:39:10 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-10 14:39:10 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 987 ms
+2024-08-10 14:39:10 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-10 14:39:10 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-10 14:39:10 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-10 14:39:10 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2024-08-10 14:39:10 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@5e0a29d4
+2024-08-10 14:39:10 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2024-08-10 14:39:10 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-10 14:39:10 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-10 14:39:11 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-10 14:39:11 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.ClassroomController.logger
+2024-08-10 14:39:11 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-10 14:39:11 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-08-10 14:39:11 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-08-10 14:39:11 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-08-10 14:39:11 INFO  c.s.O.OnlyStudentApplication - Started OnlyStudentApplication in 2.889 seconds (process running for 314.553)
+2024-08-10 14:39:11 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-08-10 14:39:13 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-10 14:39:13 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-08-10 14:39:13 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-10 14:39:13 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2024-08-10 14:39:13 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2024-08-10 14:39:13 INFO  c.s.O.OnlyStudentApplication - Starting OnlyStudentApplication using Java 20.0.2 with PID 6299 (/home/peterson/Documentos/Projetos/OnlyStudent/target/classes started by peterson in /home/peterson/Documentos/Projetos/OnlyStudent)
+2024-08-10 14:39:13 INFO  c.s.O.OnlyStudentApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-10 14:39:14 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-10 14:39:14 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 5 JPA repository interfaces.
+2024-08-10 14:39:14 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-08-10 14:39:14 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-10 14:39:14 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-10 14:39:14 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-08-10 14:39:14 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-10 14:39:14 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 763 ms
+2024-08-10 14:39:14 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-10 14:39:14 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-10 14:39:14 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-10 14:39:14 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2024-08-10 14:39:14 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@721189ae
+2024-08-10 14:39:14 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2024-08-10 14:39:14 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-10 14:39:15 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-10 14:39:15 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-10 14:39:15 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.ClassroomController.logger
+2024-08-10 14:39:15 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-10 14:39:15 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-08-10 14:39:15 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-08-10 14:39:15 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-08-10 14:39:15 INFO  c.s.O.OnlyStudentApplication - Started OnlyStudentApplication in 2.371 seconds (process running for 318.662)
+2024-08-10 14:39:15 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-08-10 14:39:22 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-10 14:39:22 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-10 14:39:22 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2024-08-10 14:39:22 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 14:39:38 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 14:39:53 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 14:40:47 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-10 14:40:47 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-08-10 14:40:47 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-10 14:40:47 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2024-08-10 14:40:47 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+2024-08-10 14:40:47 INFO  c.s.O.OnlyStudentApplication - Starting OnlyStudentApplication using Java 20.0.2 with PID 6299 (/home/peterson/Documentos/Projetos/OnlyStudent/target/classes started by peterson in /home/peterson/Documentos/Projetos/OnlyStudent)
+2024-08-10 14:40:47 INFO  c.s.O.OnlyStudentApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-10 14:40:48 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-10 14:40:48 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 5 JPA repository interfaces.
+2024-08-10 14:40:48 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-08-10 14:40:48 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-10 14:40:48 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-10 14:40:48 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-08-10 14:40:48 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-10 14:40:48 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 410 ms
+2024-08-10 14:40:48 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-10 14:40:48 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-10 14:40:48 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-10 14:40:48 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+2024-08-10 14:40:48 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection org.postgresql.jdbc.PgConnection@2dff69a6
+2024-08-10 14:40:48 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+2024-08-10 14:40:48 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-10 14:40:48 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-10 14:40:48 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-10 14:40:49 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.ClassroomController.logger
+2024-08-10 14:40:49 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-10 14:40:49 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-08-10 14:40:49 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-08-10 14:40:49 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-08-10 14:40:49 INFO  c.s.O.OnlyStudentApplication - Started OnlyStudentApplication in 1.712 seconds (process running for 412.257)
+2024-08-10 14:40:49 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-08-10 14:40:51 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-10 14:40:51 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-10 14:40:51 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-08-10 14:40:51 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 14:40:56 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 14:41:42 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-10 14:41:42 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-08-10 14:41:42 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-10 14:41:42 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+2024-08-10 14:41:42 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+2024-08-10 14:41:42 INFO  c.s.O.OnlyStudentApplication - Starting OnlyStudentApplication using Java 20.0.2 with PID 6299 (/home/peterson/Documentos/Projetos/OnlyStudent/target/classes started by peterson in /home/peterson/Documentos/Projetos/OnlyStudent)
+2024-08-10 14:41:42 INFO  c.s.O.OnlyStudentApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-10 14:41:42 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-10 14:41:42 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 5 JPA repository interfaces.
+2024-08-10 14:41:42 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-08-10 14:41:42 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-10 14:41:42 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-10 14:41:42 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-08-10 14:41:42 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-10 14:41:42 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 375 ms
+2024-08-10 14:41:42 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-10 14:41:42 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-10 14:41:42 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-10 14:41:42 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
+2024-08-10 14:41:42 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-6 - Added connection org.postgresql.jdbc.PgConnection@2d160c0e
+2024-08-10 14:41:42 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
+2024-08-10 14:41:42 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-10 14:41:43 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-10 14:41:43 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-10 14:41:43 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.ClassroomController.logger
+2024-08-10 14:41:43 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-10 14:41:44 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-08-10 14:41:44 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-08-10 14:41:44 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-08-10 14:41:44 INFO  c.s.O.OnlyStudentApplication - Started OnlyStudentApplication in 2.06 seconds (process running for 467.004)
+2024-08-10 14:41:44 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-08-10 14:41:47 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-10 14:41:47 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-10 14:41:47 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2024-08-10 14:41:47 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 14:41:47 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type Long is not present]
+2024-08-10 14:42:05 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-10 14:42:05 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-08-10 14:42:05 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-10 14:42:05 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown initiated...
+2024-08-10 14:42:05 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown completed.
+2024-08-10 14:42:05 INFO  c.s.O.OnlyStudentApplication - Starting OnlyStudentApplication using Java 20.0.2 with PID 6299 (/home/peterson/Documentos/Projetos/OnlyStudent/target/classes started by peterson in /home/peterson/Documentos/Projetos/OnlyStudent)
+2024-08-10 14:42:05 INFO  c.s.O.OnlyStudentApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-10 14:42:06 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-10 14:42:06 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 5 JPA repository interfaces.
+2024-08-10 14:42:06 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-08-10 14:42:06 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-10 14:42:06 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-10 14:42:06 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-08-10 14:42:06 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-10 14:42:06 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 519 ms
+2024-08-10 14:42:06 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-10 14:42:06 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-10 14:42:06 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-10 14:42:06 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Starting...
+2024-08-10 14:42:06 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-7 - Added connection org.postgresql.jdbc.PgConnection@2a88b7fa
+2024-08-10 14:42:06 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Start completed.
+2024-08-10 14:42:06 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-10 14:42:06 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-10 14:42:07 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-10 14:42:07 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.ClassroomController.logger
+2024-08-10 14:42:07 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-10 14:42:07 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-08-10 14:42:07 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-08-10 14:42:07 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-08-10 14:42:07 INFO  c.s.O.OnlyStudentApplication - Started OnlyStudentApplication in 1.808 seconds (process running for 490.367)
+2024-08-10 14:42:07 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-08-10 14:42:13 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-10 14:42:13 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-08-10 14:42:13 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-10 14:42:13 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown initiated...
+2024-08-10 14:42:13 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown completed.
+2024-08-10 14:42:13 INFO  c.s.O.OnlyStudentApplication - Starting OnlyStudentApplication using Java 20.0.2 with PID 6299 (/home/peterson/Documentos/Projetos/OnlyStudent/target/classes started by peterson in /home/peterson/Documentos/Projetos/OnlyStudent)
+2024-08-10 14:42:13 INFO  c.s.O.OnlyStudentApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-10 14:42:13 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-10 14:42:13 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 5 JPA repository interfaces.
+2024-08-10 14:42:13 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-08-10 14:42:13 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-10 14:42:13 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-10 14:42:13 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-08-10 14:42:13 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-10 14:42:13 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 476 ms
+2024-08-10 14:42:13 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-10 14:42:13 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-10 14:42:13 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-10 14:42:13 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Starting...
+2024-08-10 14:42:13 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-8 - Added connection org.postgresql.jdbc.PgConnection@4e3df5f6
+2024-08-10 14:42:13 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Start completed.
+2024-08-10 14:42:13 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-10 14:42:14 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-10 14:42:14 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-10 14:42:14 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.ClassroomController.logger
+2024-08-10 14:42:14 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-10 14:42:14 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-08-10 14:42:14 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-08-10 14:42:14 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-08-10 14:42:14 INFO  c.s.O.OnlyStudentApplication - Started OnlyStudentApplication in 1.492 seconds (process running for 497.52)
+2024-08-10 14:42:14 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-08-10 14:42:15 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-10 14:42:15 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-10 14:42:15 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-08-10 14:42:15 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 14:42:15 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed: java.lang.Error: Unresolved compilation problem: 
+	id cannot be resolved to a variable
+] with root cause
+java.lang.Error: Unresolved compilation problem: 
+	id cannot be resolved to a variable
+
+	at com.sloth.OnlyStudent.controller.ClassroomController.getClassrooms(ClassroomController.java:57)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.sloth.OnlyStudent.infra.security.SecurityFilter.doFilterInternal(SecurityFilter.java:44)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2024-08-10 14:42:27 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-10 14:42:27 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-08-10 14:42:27 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-10 14:42:27 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown initiated...
+2024-08-10 14:42:27 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown completed.
+2024-08-10 14:42:27 INFO  c.s.O.OnlyStudentApplication - Starting OnlyStudentApplication using Java 20.0.2 with PID 6299 (/home/peterson/Documentos/Projetos/OnlyStudent/target/classes started by peterson in /home/peterson/Documentos/Projetos/OnlyStudent)
+2024-08-10 14:42:27 INFO  c.s.O.OnlyStudentApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-10 14:42:27 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-10 14:42:27 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 5 JPA repository interfaces.
+2024-08-10 14:42:27 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-08-10 14:42:27 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-10 14:42:27 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-10 14:42:27 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-08-10 14:42:27 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-10 14:42:27 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 439 ms
+2024-08-10 14:42:27 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-10 14:42:27 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-10 14:42:27 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-10 14:42:27 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Starting...
+2024-08-10 14:42:27 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-9 - Added connection org.postgresql.jdbc.PgConnection@277f6eeb
+2024-08-10 14:42:27 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Start completed.
+2024-08-10 14:42:28 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-10 14:42:28 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-10 14:42:28 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-10 14:42:28 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.ClassroomController.logger
+2024-08-10 14:42:28 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-10 14:42:28 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-08-10 14:42:28 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-08-10 14:42:28 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-08-10 14:42:28 INFO  c.s.O.OnlyStudentApplication - Started OnlyStudentApplication in 1.484 seconds (process running for 511.556)
+2024-08-10 14:42:28 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-08-10 14:42:31 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-10 14:42:31 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-10 14:42:31 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2024-08-10 14:42:31 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 14:42:31 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 14:42:31 WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$PlainPageSerializationWarning - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2024-08-10 14:53:03 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 14:53:03 INFO  c.s.O.controller.ClassroomController - 5 = 0 = 12
+2024-08-10 14:54:17 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 14:54:17 INFO  c.s.O.controller.ClassroomController - 5 = 0 = 12
+2024-08-10 14:54:42 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmk0QGdtYWlsLmNvbSIsImV4cCI6MTcyMzI0NzE3OH0.iVvFx1qI5pOrAo70Ks4iYK2h4TM60MIor1UrNro0a90
+2024-08-10 14:54:42 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: Cannot invoke "com.sloth.OnlyStudent.entities.User.getRoles()" because "user" is null
+	at com.sloth.OnlyStudent.infra.security.SecurityFilter.doFilterInternal(SecurityFilter.java:39)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2024-08-10 14:54:43 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 14:55:20 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 14:55:20 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzMxOTcyMH0.mzgSelYoS-zJuW5zmotU7JKpfb_bWX64bFF-sLAhy2c
+2024-08-10 14:55:20 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 14:55:20 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 14:55:22 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 14:55:22 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 14:55:35 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzMxOTcyMH0.mzgSelYoS-zJuW5zmotU7JKpfb_bWX64bFF-sLAhy2c
+2024-08-10 14:55:35 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 14:55:35 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 14:55:36 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 14:58:07 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 14:58:07 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 14:59:19 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzMxOTcyMH0.mzgSelYoS-zJuW5zmotU7JKpfb_bWX64bFF-sLAhy2c
+2024-08-10 14:59:19 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 14:59:19 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 14:59:20 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 15:01:15 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 15:04:00 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-10 15:04:00 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-08-10 15:04:00 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-10 15:04:00 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Shutdown initiated...
+2024-08-10 15:04:00 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Shutdown completed.
+2024-08-10 15:04:00 INFO  c.s.O.OnlyStudentApplication - Starting OnlyStudentApplication using Java 20.0.2 with PID 6299 (/home/peterson/Documentos/Projetos/OnlyStudent/target/classes started by peterson in /home/peterson/Documentos/Projetos/OnlyStudent)
+2024-08-10 15:04:00 INFO  c.s.O.OnlyStudentApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-10 15:04:00 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-10 15:04:00 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 5 JPA repository interfaces.
+2024-08-10 15:04:01 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-08-10 15:04:01 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-10 15:04:01 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-10 15:04:01 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-08-10 15:04:01 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-10 15:04:01 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 573 ms
+2024-08-10 15:04:01 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-10 15:04:01 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-10 15:04:01 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-10 15:04:01 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Starting...
+2024-08-10 15:04:01 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-10 - Added connection org.postgresql.jdbc.PgConnection@62edef98
+2024-08-10 15:04:01 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Start completed.
+2024-08-10 15:04:01 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-10 15:04:01 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-10 15:04:01 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-10 15:04:01 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.ClassroomController.logger
+2024-08-10 15:04:02 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-10 15:04:02 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-08-10 15:04:02 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-08-10 15:04:02 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-08-10 15:04:02 INFO  c.s.O.OnlyStudentApplication - Started OnlyStudentApplication in 1.971 seconds (process running for 1805.287)
+2024-08-10 15:04:02 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-08-10 15:04:16 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-10 15:04:16 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-10 15:04:16 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+2024-08-10 15:04:16 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 15:04:32 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 15:05:03 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 15:05:05 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzMxOTcyMH0.mzgSelYoS-zJuW5zmotU7JKpfb_bWX64bFF-sLAhy2c
+2024-08-10 15:05:05 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 15:05:05 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 15:05:11 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 15:05:11 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 15:05:11 WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$PlainPageSerializationWarning - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2024-08-10 15:05:13 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzMxOTcyMH0.mzgSelYoS-zJuW5zmotU7JKpfb_bWX64bFF-sLAhy2c
+2024-08-10 15:05:13 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 15:05:13 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 15:05:15 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 15:08:09 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 15:08:09 INFO  c.s.O.controller.ClassroomController - Classroom exists: false
+2024-08-10 15:08:09 INFO  c.s.O.controller.ClassroomController - Educator: 3
+2024-08-10 15:08:09 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzMxOTcyMH0.mzgSelYoS-zJuW5zmotU7JKpfb_bWX64bFF-sLAhy2c
+2024-08-10 15:08:09 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 15:08:09 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 15:09:09 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 15:09:09 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 15:09:15 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzMxOTcyMH0.mzgSelYoS-zJuW5zmotU7JKpfb_bWX64bFF-sLAhy2c
+2024-08-10 15:09:15 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 15:09:15 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 15:09:16 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 15:09:23 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 15:09:23 INFO  c.s.O.controller.ClassroomController - Classroom exists: false
+2024-08-10 15:09:23 INFO  c.s.O.controller.ClassroomController - Educator: 3
+2024-08-10 15:09:23 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzMxOTcyMH0.mzgSelYoS-zJuW5zmotU7JKpfb_bWX64bFF-sLAhy2c
+2024-08-10 15:09:23 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 15:09:23 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 15:09:26 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 15:09:34 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 15:09:34 INFO  c.s.O.controller.ClassroomController - Classroom exists: false
+2024-08-10 15:09:34 INFO  c.s.O.controller.ClassroomController - Educator: 3
+2024-08-10 15:09:34 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzMxOTcyMH0.mzgSelYoS-zJuW5zmotU7JKpfb_bWX64bFF-sLAhy2c
+2024-08-10 15:09:34 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 15:09:34 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 15:09:36 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 15:09:45 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 15:09:45 INFO  c.s.O.controller.ClassroomController - Classroom exists: false
+2024-08-10 15:09:45 INFO  c.s.O.controller.ClassroomController - Educator: 3
+2024-08-10 15:09:45 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzMxOTcyMH0.mzgSelYoS-zJuW5zmotU7JKpfb_bWX64bFF-sLAhy2c
+2024-08-10 15:09:45 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 15:09:45 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 15:09:46 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 15:09:57 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 15:09:57 INFO  c.s.O.controller.ClassroomController - Classroom exists: false
+2024-08-10 15:09:57 INFO  c.s.O.controller.ClassroomController - Educator: 3
+2024-08-10 15:09:57 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzMxOTcyMH0.mzgSelYoS-zJuW5zmotU7JKpfb_bWX64bFF-sLAhy2c
+2024-08-10 15:09:57 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 15:09:57 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 15:10:01 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 15:10:11 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 15:10:11 INFO  c.s.O.controller.ClassroomController - Classroom exists: false
+2024-08-10 15:10:11 INFO  c.s.O.controller.ClassroomController - Educator: 3
+2024-08-10 15:10:11 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzMxOTcyMH0.mzgSelYoS-zJuW5zmotU7JKpfb_bWX64bFF-sLAhy2c
+2024-08-10 15:10:11 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 15:10:11 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 15:10:13 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 15:10:13 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 15:10:28 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzMxOTcyMH0.mzgSelYoS-zJuW5zmotU7JKpfb_bWX64bFF-sLAhy2c
+2024-08-10 15:10:28 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 15:10:28 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 15:10:30 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 15:10:40 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 15:10:40 INFO  c.s.O.controller.ClassroomController - Classroom exists: false
+2024-08-10 15:10:40 INFO  c.s.O.controller.ClassroomController - Educator: 3
+2024-08-10 15:10:40 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzMxOTcyMH0.mzgSelYoS-zJuW5zmotU7JKpfb_bWX64bFF-sLAhy2c
+2024-08-10 15:10:40 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 15:10:40 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 15:10:42 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 15:10:54 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 15:10:54 INFO  c.s.O.controller.ClassroomController - Classroom exists: false
+2024-08-10 15:10:54 INFO  c.s.O.controller.ClassroomController - Educator: 3
+2024-08-10 15:10:54 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzMxOTcyMH0.mzgSelYoS-zJuW5zmotU7JKpfb_bWX64bFF-sLAhy2c
+2024-08-10 15:10:54 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 15:10:54 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 15:10:57 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 15:10:57 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 15:45:02 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzMxOTcyMH0.mzgSelYoS-zJuW5zmotU7JKpfb_bWX64bFF-sLAhy2c
+2024-08-10 15:45:02 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 15:45:02 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 15:45:05 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzMxOTcyMH0.mzgSelYoS-zJuW5zmotU7JKpfb_bWX64bFF-sLAhy2c
+2024-08-10 15:45:05 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 15:45:05 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 15:47:05 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzMxOTcyMH0.mzgSelYoS-zJuW5zmotU7JKpfb_bWX64bFF-sLAhy2c
+2024-08-10 15:47:05 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 15:47:05 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 15:47:25 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzMxOTcyMH0.mzgSelYoS-zJuW5zmotU7JKpfb_bWX64bFF-sLAhy2c
+2024-08-10 15:47:25 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 15:47:25 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 15:47:28 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzMxOTcyMH0.mzgSelYoS-zJuW5zmotU7JKpfb_bWX64bFF-sLAhy2c
+2024-08-10 15:47:28 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 15:47:28 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 15:52:55 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzMxOTcyMH0.mzgSelYoS-zJuW5zmotU7JKpfb_bWX64bFF-sLAhy2c
+2024-08-10 15:52:55 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 15:52:55 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 15:53:21 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzMxOTcyMH0.mzgSelYoS-zJuW5zmotU7JKpfb_bWX64bFF-sLAhy2c
+2024-08-10 15:53:21 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 15:53:21 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 15:53:30 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzMxOTcyMH0.mzgSelYoS-zJuW5zmotU7JKpfb_bWX64bFF-sLAhy2c
+2024-08-10 15:53:30 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 15:53:30 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 15:54:38 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzMxOTcyMH0.mzgSelYoS-zJuW5zmotU7JKpfb_bWX64bFF-sLAhy2c
+2024-08-10 15:54:38 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 15:54:38 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 15:55:18 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzMxOTcyMH0.mzgSelYoS-zJuW5zmotU7JKpfb_bWX64bFF-sLAhy2c
+2024-08-10 15:55:18 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 15:55:18 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 15:56:59 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzMxOTcyMH0.mzgSelYoS-zJuW5zmotU7JKpfb_bWX64bFF-sLAhy2c
+2024-08-10 15:56:59 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 15:56:59 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 15:57:14 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzMxOTcyMH0.mzgSelYoS-zJuW5zmotU7JKpfb_bWX64bFF-sLAhy2c
+2024-08-10 15:57:14 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 15:57:14 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 16:21:21 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzMxOTcyMH0.mzgSelYoS-zJuW5zmotU7JKpfb_bWX64bFF-sLAhy2c
+2024-08-10 16:21:21 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 16:21:21 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 16:24:50 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzMxOTcyMH0.mzgSelYoS-zJuW5zmotU7JKpfb_bWX64bFF-sLAhy2c
+2024-08-10 16:24:50 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 16:24:50 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 16:26:29 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:26:29 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 16:28:39 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:28:39 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 16:33:50 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:33:50 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 16:33:58 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:33:58 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 16:34:01 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:34:01 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 16:34:29 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:34:29 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 16:34:37 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:34:37 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 16:34:54 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:34:54 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 16:35:14 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:35:14 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 16:35:15 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:35:15 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 16:35:17 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:35:17 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 16:35:24 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:35:24 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 16:35:30 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:35:30 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 16:35:38 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:35:38 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 16:36:58 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:36:58 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 16:37:03 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:37:03 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 16:37:11 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:37:11 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 16:37:13 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:37:13 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 16:37:21 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:37:21 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 16:37:23 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:37:23 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 16:37:24 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:37:24 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 16:37:24 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:37:24 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 16:37:24 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:37:24 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 16:37:24 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:37:24 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 16:37:24 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:37:24 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 16:37:37 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:37:37 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 16:37:41 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:37:41 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 16:37:49 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:37:49 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 16:37:53 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:37:53 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 16:37:55 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:37:55 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 16:38:19 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:38:19 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 16:38:24 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:38:24 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 16:38:29 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:38:29 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 16:38:35 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:38:35 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 16:38:37 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:38:37 INFO  c.s.O.controller.ClassroomController - 3 = 1 = 12
+2024-08-10 16:38:40 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:38:40 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 16:38:42 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:38:42 INFO  c.s.O.controller.ClassroomController - 3 = 1 = 12
+2024-08-10 16:38:49 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:38:49 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 16:38:52 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:38:52 INFO  c.s.O.controller.ClassroomController - 3 = 1 = 12
+2024-08-10 16:38:53 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:38:53 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 16:38:58 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzMxOTcyMH0.mzgSelYoS-zJuW5zmotU7JKpfb_bWX64bFF-sLAhy2c
+2024-08-10 16:38:58 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 16:38:58 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 16:41:08 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:41:08 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 16:41:16 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:41:16 INFO  c.s.O.controller.ClassroomController - 3 = 1 = 12
+2024-08-10 16:41:17 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:41:17 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 16:41:25 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzMxOTcyMH0.mzgSelYoS-zJuW5zmotU7JKpfb_bWX64bFF-sLAhy2c
+2024-08-10 16:41:25 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 16:41:25 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 16:41:26 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:41:26 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 16:42:37 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:42:37 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 16:43:44 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzMxOTcyMH0.mzgSelYoS-zJuW5zmotU7JKpfb_bWX64bFF-sLAhy2c
+2024-08-10 16:43:44 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 16:43:44 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 16:44:02 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:44:09 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:44:09 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 16:44:13 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:44:13 INFO  c.s.O.controller.ClassroomController - 3 = 1 = 12
+2024-08-10 16:44:15 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:44:15 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 16:44:22 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:44:22 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 16:55:04 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:55:04 INFO  c.s.O.controller.ClassroomController - 3 = 1 = 12
+2024-08-10 16:55:05 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 16:55:05 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 16:58:25 INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2024-08-10 16:58:25 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-08-10 16:58:25 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-10 16:58:25 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Shutdown initiated...
+2024-08-10 16:58:25 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Shutdown completed.
+2024-08-10 21:47:27 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-08-10 21:47:27 INFO  c.s.O.OnlyStudentApplication - Starting OnlyStudentApplication using Java 20.0.2 with PID 31159 (/home/peterson/Documentos/Projetos/OnlyStudent/target/classes started by peterson in /home/peterson/Documentos/Projetos/OnlyStudent)
+2024-08-10 21:47:27 INFO  c.s.O.OnlyStudentApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-10 21:47:27 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-10 21:47:27 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-10 21:47:29 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-10 21:47:29 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 119 ms. Found 5 JPA repository interfaces.
+2024-08-10 21:47:30 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-08-10 21:47:30 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-10 21:47:30 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-10 21:47:30 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-08-10 21:47:30 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-10 21:47:30 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3303 ms
+2024-08-10 21:47:31 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-10 21:47:31 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-10 21:47:31 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-10 21:47:32 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-10 21:47:32 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-10 21:47:34 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4306dd16
+2024-08-10 21:47:34 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-10 21:47:34 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-10 21:47:43 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-10 21:47:43 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-10 21:47:44 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.ClassroomController.logger
+2024-08-10 21:47:44 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-10 21:47:45 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-08-10 21:47:45 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-08-10 21:47:45 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-08-10 21:47:45 INFO  c.s.O.OnlyStudentApplication - Started OnlyStudentApplication in 19.699 seconds (process running for 22.639)
+2024-08-10 21:48:49 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-10 21:48:49 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-10 21:48:49 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2024-08-10 21:48:49 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 21:48:49 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 21:48:49 WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$PlainPageSerializationWarning - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2024-08-10 21:48:53 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 21:48:53 INFO  c.s.O.controller.ClassroomController - 3 = 1 = 12
+2024-08-10 21:48:54 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 21:48:54 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 21:48:57 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzMxOTcyMH0.mzgSelYoS-zJuW5zmotU7JKpfb_bWX64bFF-sLAhy2c
+2024-08-10 21:48:57 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: Cannot invoke "com.sloth.OnlyStudent.entities.User.getRoles()" because "user" is null
+	at com.sloth.OnlyStudent.infra.security.SecurityFilter.doFilterInternal(SecurityFilter.java:39)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2024-08-10 21:49:00 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzMxOTcyMH0.mzgSelYoS-zJuW5zmotU7JKpfb_bWX64bFF-sLAhy2c
+2024-08-10 21:49:00 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: Cannot invoke "com.sloth.OnlyStudent.entities.User.getRoles()" because "user" is null
+	at com.sloth.OnlyStudent.infra.security.SecurityFilter.doFilterInternal(SecurityFilter.java:39)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2024-08-10 21:49:02 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 21:49:07 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 21:49:07 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 21:49:12 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 21:49:14 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzMxOTcyMH0.mzgSelYoS-zJuW5zmotU7JKpfb_bWX64bFF-sLAhy2c
+2024-08-10 21:49:14 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: Cannot invoke "com.sloth.OnlyStudent.entities.User.getRoles()" because "user" is null
+	at com.sloth.OnlyStudent.infra.security.SecurityFilter.doFilterInternal(SecurityFilter.java:39)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2024-08-10 21:49:38 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 21:49:38 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 21:49:38 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 21:49:38 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 21:49:45 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 21:49:46 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 21:49:46 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 21:49:47 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 21:49:48 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 21:49:48 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 21:52:22 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 21:52:23 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 21:52:23 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 21:52:26 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 21:52:26 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 21:52:27 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 21:52:28 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 21:52:28 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 21:52:28 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 21:52:35 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 21:52:35 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 21:52:35 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 21:52:36 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 21:52:36 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 21:52:36 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 21:52:54 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 21:52:54 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 21:52:54 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 21:52:55 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 21:52:56 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 21:52:56 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 21:52:56 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 21:54:16 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 21:54:17 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 21:54:17 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 21:54:17 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 21:54:18 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 21:54:18 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 21:54:18 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 21:54:40 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 21:54:41 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 21:54:41 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 21:54:43 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 21:54:43 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 21:54:43 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 21:54:43 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 21:54:44 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 21:54:45 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 21:54:45 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 21:54:59 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 21:54:59 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 21:54:59 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:00:06 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:00:07 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:00:07 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:00:08 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:00:08 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:00:08 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:00:09 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:00:09 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:00:09 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:00:11 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:00:11 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:00:11 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:00:11 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:00:12 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:00:13 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:00:13 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:00:13 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:00:14 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:00:14 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:00:14 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:00:14 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:00:15 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:00:15 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:00:16 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:00:16 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:00:16 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:00:42 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:00:43 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:00:43 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:00:44 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:00:44 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:00:44 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:00:44 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:00:45 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:00:46 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:00:47 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:00:47 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:00:48 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:00:48 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:00:48 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:00:56 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:00:57 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:00:57 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:00:57 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:00:58 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:00:58 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:10:48 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:10:48 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:10:48 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:11:44 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:11:45 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:11:45 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:11:45 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:11:46 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:11:46 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:11:46 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:13:11 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:13:11 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:13:11 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:13:12 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:13:13 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:13:13 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:13:13 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:13:14 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:13:15 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:13:15 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:13:15 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:13:16 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:13:16 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:13:16 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:13:17 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:13:19 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:13:19 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:13:21 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:13:21 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:13:21 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:13:21 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:13:22 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:13:25 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:13:25 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:13:38 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:13:39 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:13:39 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:13:39 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:13:40 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:13:41 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:13:41 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:13:42 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:13:42 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:13:42 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:13:42 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:13:43 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:13:44 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:13:44 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:13:46 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:13:47 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:13:47 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:13:47 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:13:48 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:13:49 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:13:49 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:13:51 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:13:52 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:13:52 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:13:52 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:13:53 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:13:53 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:13:53 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:13:55 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:13:56 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:13:56 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:13:56 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:13:56 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:13:58 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:13:58 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:13:59 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:13:59 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:13:59 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:13:59 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:14:05 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:14:09 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:14:09 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:14:10 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:14:10 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:14:10 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:16:11 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:16:13 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:16:13 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:16:18 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:16:18 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:16:18 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:16:24 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:16:25 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:16:25 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:16:25 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:16:42 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:16:43 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:16:43 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:16:43 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:16:44 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:16:44 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:16:44 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:17:17 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:17:18 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:17:18 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:17:22 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:17:22 INFO  c.s.O.controller.ClassroomController - 3 = 1 = 12
+2024-08-10 22:17:22 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:17:22 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:17:26 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:17:26 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:17:26 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:18:12 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:18:13 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:18:13 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:18:15 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:18:16 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:18:16 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:18:16 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:18:20 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:18:21 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:18:21 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:18:22 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:18:24 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:18:24 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:18:24 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:18:37 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:18:38 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:18:38 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:18:40 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:18:40 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:18:41 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:18:42 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:18:42 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:18:42 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:18:45 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:18:47 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:18:47 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:18:49 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:18:50 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:18:50 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:18:50 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:18:51 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:18:53 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:18:53 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:18:54 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:18:55 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:18:55 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:18:55 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:18:56 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:18:58 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:18:58 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:18:59 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:18:59 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:18:59 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:18:59 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:19:05 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:19:06 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:19:06 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:19:07 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:19:07 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:19:07 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:19:08 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:19:08 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:19:42 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:19:43 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:19:43 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:19:44 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:19:44 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:19:45 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:19:46 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:19:46 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:19:46 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:19:49 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:19:50 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:19:50 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:19:57 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:19:57 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:19:57 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:19:58 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:19:59 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:19:59 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:20:00 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:20:00 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:20:00 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:20:00 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:20:01 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:20:02 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:20:02 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:20:03 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:20:04 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:20:04 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:20:04 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:20:05 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:20:06 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:20:06 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:20:07 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:20:07 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:20:07 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:20:07 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:20:23 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:20:24 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:20:24 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:20:25 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:20:26 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:20:26 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:20:26 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:20:27 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:20:27 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:20:29 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:20:30 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:20:30 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:20:30 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:20:31 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:20:32 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:20:32 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:20:33 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:20:44 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:20:44 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:20:44 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:20:46 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:20:46 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:20:46 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:20:46 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:20:48 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:20:48 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:20:49 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:20:51 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:20:51 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:20:51 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:25:34 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:25:35 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:25:35 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:25:57 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:25:57 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:25:57 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:26:07 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:26:07 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:26:07 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:26:32 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:26:32 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:26:32 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:26:44 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:26:45 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:26:45 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:26:47 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:26:47 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:26:47 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:26:47 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:28:13 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:28:14 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:28:14 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:28:15 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:28:15 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:28:15 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:28:18 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:28:18 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:28:18 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:28:20 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:28:20 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:28:20 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:29:37 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:29:37 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:29:37 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:40:33 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:40:34 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:40:34 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:40:34 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:40:35 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:40:36 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:40:36 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:40:37 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:40:37 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:40:37 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:40:37 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:40:38 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:40:39 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:40:39 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:40:39 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:40:40 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:40:40 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:40:40 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:40:41 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:40:42 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:40:42 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:40:43 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:40:44 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:40:44 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:40:44 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:40:44 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:40:45 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:40:45 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:40:46 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:40:47 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:40:47 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:40:47 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:40:47 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:40:49 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:40:49 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:41:29 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:41:29 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:41:29 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:41:29 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:41:30 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:41:30 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:41:30 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:48:17 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:48:17 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:48:17 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:48:17 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:48:18 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:48:19 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:48:19 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:48:19 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:48:20 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:48:20 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:48:20 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:50:59 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:50:59 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:50:59 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:53:18 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:53:18 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:53:18 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:56:51 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:56:51 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:56:52 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:56:53 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:56:53 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:56:53 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:56:54 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:56:55 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:56:55 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:57:49 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:57:49 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 22:57:50 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:57:51 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 22:57:51 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 22:57:51 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 22:57:53 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:57:54 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 22:57:54 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 23:01:28 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:01:28 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 23:01:29 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:01:30 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 23:01:30 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 23:01:30 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 23:01:32 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:01:33 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:01:33 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 23:01:37 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 23:01:37 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 23:01:37 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 23:01:38 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:01:39 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:01:39 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 23:01:40 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:01:40 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 23:01:41 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:01:41 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 23:01:41 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 23:01:41 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 23:01:43 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:01:43 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:01:43 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 23:01:44 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:01:44 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 23:01:45 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:01:45 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 23:01:45 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 23:01:45 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 23:01:46 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:01:47 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:01:47 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 23:01:48 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:01:48 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 23:01:49 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:01:49 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 23:01:49 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 23:01:49 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 23:01:54 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:01:55 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:01:55 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 23:01:57 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:01:57 INFO  c.s.O.controller.ClassroomController - 3 = 0 = 12
+2024-08-10 23:01:59 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:01:59 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0NDU3OH0.MPIGU-__6hPDQ0M6yiPQFe4xrszFHNZ1P1Aws_3MKvA
+2024-08-10 23:01:59 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 23:01:59 INFO  c.s.O.controller.ClassroomController - 3 Codigo
+2024-08-10 23:02:38 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:02:58 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:03:00 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:03:03 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:03:11 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:03:24 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:03:26 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:03:28 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:03:41 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:03:44 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:11:23 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:11:25 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:11:27 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:11:29 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:12:01 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:14:26 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:14:39 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:14:40 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmk0QGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0OTY3OX0.UbxH6mACZ2ugrKbY5THMY-v6JBQ_P7E45OVBhKU9itY
+2024-08-10 23:14:40 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 23:14:40 INFO  c.s.O.controller.ClassroomController - 5 Codigo
+2024-08-10 23:14:43 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:14:45 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:14:45 INFO  c.s.O.controller.ClassroomController - 5 = 0 = 12
+2024-08-10 23:14:47 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:14:50 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmk0QGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0OTY3OX0.UbxH6mACZ2ugrKbY5THMY-v6JBQ_P7E45OVBhKU9itY
+2024-08-10 23:14:50 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 23:14:50 INFO  c.s.O.controller.ClassroomController - 5 Codigo
+2024-08-10 23:14:52 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:14:55 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmk0QGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0OTY3OX0.UbxH6mACZ2ugrKbY5THMY-v6JBQ_P7E45OVBhKU9itY
+2024-08-10 23:14:55 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 23:14:55 INFO  c.s.O.controller.ClassroomController - 5 Codigo
+2024-08-10 23:14:56 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:15:58 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmk0QGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0OTY3OX0.UbxH6mACZ2ugrKbY5THMY-v6JBQ_P7E45OVBhKU9itY
+2024-08-10 23:15:58 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 23:15:58 INFO  c.s.O.controller.ClassroomController - 5 Codigo
+2024-08-10 23:19:15 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:21:14 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmk0QGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0OTY3OX0.UbxH6mACZ2ugrKbY5THMY-v6JBQ_P7E45OVBhKU9itY
+2024-08-10 23:21:14 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 23:21:14 INFO  c.s.O.controller.ClassroomController - 5 Codigo
+2024-08-10 23:21:15 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:21:20 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:21:20 INFO  c.s.O.controller.ClassroomController - 5 = 0 = 12
+2024-08-10 23:21:21 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:21:21 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmk0QGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0OTY3OX0.UbxH6mACZ2ugrKbY5THMY-v6JBQ_P7E45OVBhKU9itY
+2024-08-10 23:21:21 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 23:21:21 INFO  c.s.O.controller.ClassroomController - 5 Codigo
+2024-08-10 23:21:22 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:21:23 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmk0QGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0OTY3OX0.UbxH6mACZ2ugrKbY5THMY-v6JBQ_P7E45OVBhKU9itY
+2024-08-10 23:21:23 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 23:21:23 INFO  c.s.O.controller.ClassroomController - 5 Codigo
+2024-08-10 23:21:24 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:21:25 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:21:25 INFO  c.s.O.controller.ClassroomController - 5 = 0 = 12
+2024-08-10 23:21:26 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:21:26 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmk0QGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0OTY3OX0.UbxH6mACZ2ugrKbY5THMY-v6JBQ_P7E45OVBhKU9itY
+2024-08-10 23:21:26 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 23:21:26 INFO  c.s.O.controller.ClassroomController - 5 Codigo
+2024-08-10 23:21:27 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:21:28 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:21:28 INFO  c.s.O.controller.ClassroomController - 5 = 0 = 12
+2024-08-10 23:21:29 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:21:30 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmk0QGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0OTY3OX0.UbxH6mACZ2ugrKbY5THMY-v6JBQ_P7E45OVBhKU9itY
+2024-08-10 23:21:30 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 23:21:30 INFO  c.s.O.controller.ClassroomController - 5 Codigo
+2024-08-10 23:21:30 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:21:32 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:21:32 INFO  c.s.O.controller.ClassroomController - 5 = 0 = 12
+2024-08-10 23:21:33 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:23:42 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmk0QGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0OTY3OX0.UbxH6mACZ2ugrKbY5THMY-v6JBQ_P7E45OVBhKU9itY
+2024-08-10 23:23:42 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 23:23:42 INFO  c.s.O.controller.ClassroomController - 5 Codigo
+2024-08-10 23:23:45 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:23:47 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:23:47 INFO  c.s.O.controller.ClassroomController - 5 = 0 = 12
+2024-08-10 23:23:48 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:27:00 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmk0QGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0OTY3OX0.UbxH6mACZ2ugrKbY5THMY-v6JBQ_P7E45OVBhKU9itY
+2024-08-10 23:27:00 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 23:27:00 INFO  c.s.O.controller.ClassroomController - 5 Codigo
+2024-08-10 23:27:01 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:27:02 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmk0QGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0OTY3OX0.UbxH6mACZ2ugrKbY5THMY-v6JBQ_P7E45OVBhKU9itY
+2024-08-10 23:27:02 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 23:27:02 INFO  c.s.O.controller.ClassroomController - 5 Codigo
+2024-08-10 23:27:03 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:27:05 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmk0QGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0OTY3OX0.UbxH6mACZ2ugrKbY5THMY-v6JBQ_P7E45OVBhKU9itY
+2024-08-10 23:27:05 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 23:27:05 INFO  c.s.O.controller.ClassroomController - 5 Codigo
+2024-08-10 23:27:06 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:27:07 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmk0QGdtYWlsLmNvbSIsImV4cCI6MTcyMzM0OTY3OX0.UbxH6mACZ2ugrKbY5THMY-v6JBQ_P7E45OVBhKU9itY
+2024-08-10 23:27:07 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 23:27:07 INFO  c.s.O.controller.ClassroomController - 5 Codigo
+2024-08-10 23:27:08 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:27:13 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:27:14 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:27:36 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-10 23:27:36 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmk0QGdtYWlsLmNvbSIsImV4cCI6MTcyMzM1MDQ1Nn0.YVbfDRd0VixNJKD1G9R2J1CK0nATeQY9_e2sjyTWiHU
+2024-08-10 23:27:36 INFO  c.s.O.infra.security.SecurityFilter - User: educator
+2024-08-10 23:27:36 INFO  c.s.O.controller.ClassroomController - 5 Codigo
+2024-08-10 23:27:39 INFO  c.s.O.infra.security.SecurityFilter - null

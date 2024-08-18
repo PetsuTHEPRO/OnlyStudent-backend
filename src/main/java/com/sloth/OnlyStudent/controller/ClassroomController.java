@@ -13,6 +13,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,10 +22,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.sloth.OnlyStudent.entities.Classroom;
 import com.sloth.OnlyStudent.entities.Custo;
+import com.sloth.OnlyStudent.entities.Material;
 import com.sloth.OnlyStudent.entities.Status;
 import com.sloth.OnlyStudent.entities.DTO.ClassroomDTO;
 import com.sloth.OnlyStudent.repository.ClassroomRepository;
 import com.sloth.OnlyStudent.repository.EducatorRepository;
+import com.sloth.OnlyStudent.repository.MaterialRepository;
 
 import lombok.RequiredArgsConstructor;
 
@@ -42,6 +45,9 @@ public class ClassroomController {
     
     @Autowired
     private EducatorRepository educatorRepository;
+    
+    @Autowired
+    private MaterialRepository materialRepository;
     
     // Listar 3 primeiras turmas
     @GetMapping
@@ -82,11 +88,23 @@ public class ClassroomController {
 
             classroomRepository.save(newClassroom);
 
-            return new ResponseEntity<>("Classroom registered successfully!", HttpStatus.OK);
+            return new ResponseEntity<>("Turma criada com sucesso!", HttpStatus.OK);
         } else {
             logger.info("Classroom already exists!");
-            return new ResponseEntity<>("Classroom already exists in the database.", HttpStatus.CONFLICT);
+            return new ResponseEntity<>("Já existe uma turma com esse nome.", HttpStatus.CONFLICT);
         }
+    }
+    
+    @GetMapping("/{id}")
+    public ResponseEntity<Classroom> getClassroomById(@PathVariable Long id) {
+        return classroomRepository.findById(id)
+            .map(classroom -> ResponseEntity.ok().body(classroom))
+            .orElse(ResponseEntity.notFound().build());
+    }
+    
+    @GetMapping("/{codigo}/materials")
+    public List<Material> getMaterialsByClassroomCódigo(@PathVariable Long codigo) {
+        return materialRepository.findByTurmaCodigo(codigo);
     }
     
 }
