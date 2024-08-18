@@ -977,3 +977,391 @@ Caused by: java.lang.RuntimeException: Driver org.postgresql.Driver claims to no
 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
 	... 94 common frames omitted
+2024-08-18 03:58:49 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-08-18 03:58:49 INFO  c.s.O.OnlyStudentApplication - Starting OnlyStudentApplication using Java 20.0.2 with PID 67494 (/home/peterson/Documentos/Projetos/OnlyStudent/target/classes started by peterson in /home/peterson/Documentos/Projetos/OnlyStudent)
+2024-08-18 03:58:49 INFO  c.s.O.OnlyStudentApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-18 03:58:49 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-18 03:58:49 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-18 03:58:51 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-18 03:58:51 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 143 ms. Found 6 JPA repository interfaces.
+2024-08-18 03:58:52 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-08-18 03:58:52 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-18 03:58:52 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-18 03:58:52 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-08-18 03:58:52 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-18 03:58:52 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3315 ms
+2024-08-18 03:58:53 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-18 03:58:53 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-18 03:58:53 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-18 03:58:53 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-18 03:58:53 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-18 03:58:54 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3ee8bbc
+2024-08-18 03:58:54 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-18 03:58:54 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-18 03:58:57 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-18 03:58:57 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-18 03:58:58 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.ClassroomController.logger
+2024-08-18 03:58:58 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.MaterialController.logger
+2024-08-18 03:58:58 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-18 03:58:59 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-08-18 03:58:59 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-08-18 03:58:59 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-08-18 03:58:59 INFO  c.s.O.OnlyStudentApplication - Started OnlyStudentApplication in 11.526 seconds (process running for 13.59)
+2024-08-18 03:59:29 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-08-18 03:59:29 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-08-18 03:59:29 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-18 03:59:29 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-08-18 03:59:29 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-08-18 03:59:29 INFO  c.s.O.OnlyStudentApplication - Starting OnlyStudentApplication using Java 20.0.2 with PID 67494 (/home/peterson/Documentos/Projetos/OnlyStudent/target/classes started by peterson in /home/peterson/Documentos/Projetos/OnlyStudent)
+2024-08-18 03:59:29 INFO  c.s.O.OnlyStudentApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-18 03:59:30 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-18 03:59:30 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34 ms. Found 6 JPA repository interfaces.
+2024-08-18 03:59:31 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-08-18 03:59:31 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-18 03:59:31 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-18 03:59:31 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-08-18 03:59:31 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-18 03:59:31 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1486 ms
+2024-08-18 03:59:31 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-18 03:59:31 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-18 03:59:31 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-18 03:59:31 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2024-08-18 03:59:31 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@79af560c
+2024-08-18 03:59:31 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2024-08-18 03:59:31 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-18 03:59:32 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-18 03:59:32 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-18 03:59:32 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.ClassroomController.logger
+2024-08-18 03:59:33 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.MaterialController.logger
+2024-08-18 03:59:33 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-18 03:59:33 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-08-18 03:59:33 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-08-18 03:59:33 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-08-18 03:59:33 INFO  c.s.O.OnlyStudentApplication - Started OnlyStudentApplication in 4.362 seconds (process running for 47.655)
+2024-08-18 03:59:33 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-08-18 04:00:21 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (1 addition, 0 deletions, 1 modification)
+2024-08-18 04:00:21 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-08-18 04:00:21 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-18 04:00:21 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2024-08-18 04:00:21 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2024-08-18 04:00:22 INFO  c.s.O.OnlyStudentApplication - Starting OnlyStudentApplication using Java 20.0.2 with PID 67494 (/home/peterson/Documentos/Projetos/OnlyStudent/target/classes started by peterson in /home/peterson/Documentos/Projetos/OnlyStudent)
+2024-08-18 04:00:22 INFO  c.s.O.OnlyStudentApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-18 04:00:22 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-18 04:00:23 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42 ms. Found 6 JPA repository interfaces.
+2024-08-18 04:00:23 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-08-18 04:00:23 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-18 04:00:23 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-18 04:00:23 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-08-18 04:00:23 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-18 04:00:23 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1167 ms
+2024-08-18 04:00:23 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-18 04:00:23 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-18 04:00:23 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-18 04:00:23 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2024-08-18 04:00:24 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@1d22c370
+2024-08-18 04:00:24 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2024-08-18 04:00:24 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-18 04:00:25 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-18 04:00:25 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-18 04:00:25 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.ClassroomController.logger
+2024-08-18 04:00:25 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.MaterialController.logger
+2024-08-18 04:00:25 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-18 04:00:26 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-08-18 04:00:26 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-08-18 04:00:26 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-08-18 04:00:26 INFO  c.s.O.OnlyStudentApplication - Started OnlyStudentApplication in 4.281 seconds (process running for 100.062)
+2024-08-18 04:00:26 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-08-18 04:00:37 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-08-18 04:00:37 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-08-18 04:00:37 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-18 04:00:37 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2024-08-18 04:00:37 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2024-08-18 04:00:38 INFO  c.s.O.OnlyStudentApplication - Starting OnlyStudentApplication using Java 20.0.2 with PID 67494 (/home/peterson/Documentos/Projetos/OnlyStudent/target/classes started by peterson in /home/peterson/Documentos/Projetos/OnlyStudent)
+2024-08-18 04:00:38 INFO  c.s.O.OnlyStudentApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-18 04:00:38 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-18 04:00:38 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 81 ms. Found 6 JPA repository interfaces.
+2024-08-18 04:00:39 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-08-18 04:00:39 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-18 04:00:39 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-18 04:00:39 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-08-18 04:00:39 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-18 04:00:39 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1093 ms
+2024-08-18 04:00:39 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-18 04:00:39 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-18 04:00:39 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-18 04:00:39 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2024-08-18 04:00:39 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@18b009ca
+2024-08-18 04:00:39 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2024-08-18 04:00:39 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-18 04:00:40 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-18 04:00:40 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-18 04:00:40 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.ClassroomController.logger
+2024-08-18 04:00:40 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.MaterialController.logger
+2024-08-18 04:00:40 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-18 04:00:41 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-08-18 04:00:41 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-08-18 04:00:41 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-08-18 04:00:41 INFO  c.s.O.OnlyStudentApplication - Started OnlyStudentApplication in 3.008 seconds (process running for 114.836)
+2024-08-18 04:00:41 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-08-18 04:00:52 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-08-18 04:00:52 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-08-18 04:00:52 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-18 04:00:52 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2024-08-18 04:00:52 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+2024-08-18 04:00:52 INFO  c.s.O.OnlyStudentApplication - Starting OnlyStudentApplication using Java 20.0.2 with PID 67494 (/home/peterson/Documentos/Projetos/OnlyStudent/target/classes started by peterson in /home/peterson/Documentos/Projetos/OnlyStudent)
+2024-08-18 04:00:52 INFO  c.s.O.OnlyStudentApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-18 04:00:53 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-18 04:00:53 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 6 JPA repository interfaces.
+2024-08-18 04:00:53 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-08-18 04:00:53 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-18 04:00:53 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-18 04:00:53 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-08-18 04:00:53 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-18 04:00:53 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 633 ms
+2024-08-18 04:00:53 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-18 04:00:53 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-18 04:00:53 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-18 04:00:53 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+2024-08-18 04:00:53 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection org.postgresql.jdbc.PgConnection@3f75cca
+2024-08-18 04:00:53 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+2024-08-18 04:00:53 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-18 04:00:53 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-18 04:00:54 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-18 04:00:54 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.ClassroomController.logger
+2024-08-18 04:00:54 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.MaterialController.logger
+2024-08-18 04:00:54 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-18 04:00:54 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-08-18 04:00:54 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-08-18 04:00:54 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-08-18 04:00:54 INFO  c.s.O.OnlyStudentApplication - Started OnlyStudentApplication in 2.156 seconds (process running for 128.648)
+2024-08-18 04:00:54 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-08-18 04:03:17 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-18 04:03:17 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-08-18 04:03:17 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-18 04:03:17 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+2024-08-18 04:03:17 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+2024-08-18 04:03:17 INFO  c.s.O.OnlyStudentApplication - Starting OnlyStudentApplication using Java 20.0.2 with PID 67494 (/home/peterson/Documentos/Projetos/OnlyStudent/target/classes started by peterson in /home/peterson/Documentos/Projetos/OnlyStudent)
+2024-08-18 04:03:17 INFO  c.s.O.OnlyStudentApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-18 04:03:17 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-18 04:03:17 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27 ms. Found 6 JPA repository interfaces.
+2024-08-18 04:03:18 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-08-18 04:03:18 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-18 04:03:18 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-18 04:03:18 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-08-18 04:03:18 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-18 04:03:18 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 794 ms
+2024-08-18 04:03:18 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-18 04:03:18 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-18 04:03:18 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-18 04:03:18 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
+2024-08-18 04:03:18 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-6 - Added connection org.postgresql.jdbc.PgConnection@206a9793
+2024-08-18 04:03:18 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
+2024-08-18 04:03:18 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-18 04:03:19 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-18 04:03:19 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-18 04:03:19 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.ClassroomController.logger
+2024-08-18 04:03:19 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.MaterialController.logger
+2024-08-18 04:03:19 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-18 04:03:20 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-08-18 04:03:20 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-08-18 04:03:20 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-08-18 04:03:20 INFO  c.s.O.OnlyStudentApplication - Started OnlyStudentApplication in 2.869 seconds (process running for 273.91)
+2024-08-18 04:03:20 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-08-18 04:03:43 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-18 04:03:43 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-08-18 04:03:43 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-18 04:03:43 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown initiated...
+2024-08-18 04:03:43 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown completed.
+2024-08-18 04:03:44 INFO  c.s.O.OnlyStudentApplication - Starting OnlyStudentApplication using Java 20.0.2 with PID 67494 (/home/peterson/Documentos/Projetos/OnlyStudent/target/classes started by peterson in /home/peterson/Documentos/Projetos/OnlyStudent)
+2024-08-18 04:03:44 INFO  c.s.O.OnlyStudentApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-18 04:03:44 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-18 04:03:44 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 6 JPA repository interfaces.
+2024-08-18 04:03:44 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-08-18 04:03:44 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-18 04:03:44 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-18 04:03:44 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-08-18 04:03:44 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-18 04:03:44 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 636 ms
+2024-08-18 04:03:44 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-18 04:03:44 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-18 04:03:44 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-18 04:03:44 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Starting...
+2024-08-18 04:03:44 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-7 - Added connection org.postgresql.jdbc.PgConnection@3c478c6a
+2024-08-18 04:03:44 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Start completed.
+2024-08-18 04:03:44 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-18 04:03:45 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-18 04:03:45 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-18 04:03:45 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.ClassroomController.logger
+2024-08-18 04:03:45 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.MaterialController.logger
+2024-08-18 04:03:45 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-18 04:03:46 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-08-18 04:03:46 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-08-18 04:03:46 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-08-18 04:03:46 INFO  c.s.O.OnlyStudentApplication - Started OnlyStudentApplication in 2.374 seconds (process running for 300.022)
+2024-08-18 04:03:46 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-08-18 04:03:58 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-18 04:03:58 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-08-18 04:03:58 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-18 04:03:58 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown initiated...
+2024-08-18 04:03:58 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown completed.
+2024-08-18 04:03:59 INFO  c.s.O.OnlyStudentApplication - Starting OnlyStudentApplication using Java 20.0.2 with PID 67494 (/home/peterson/Documentos/Projetos/OnlyStudent/target/classes started by peterson in /home/peterson/Documentos/Projetos/OnlyStudent)
+2024-08-18 04:03:59 INFO  c.s.O.OnlyStudentApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-18 04:03:59 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-18 04:03:59 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 6 JPA repository interfaces.
+2024-08-18 04:04:00 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-08-18 04:04:00 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-18 04:04:00 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-18 04:04:00 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-08-18 04:04:00 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-18 04:04:00 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 810 ms
+2024-08-18 04:04:00 ERROR o.s.b.w.e.tomcat.TomcatStarter - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'securityFilter': Unsatisfied dependency expressed through field 'userRepository': Error creating bean with name 'userRepository' defined in com.sloth.OnlyStudent.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
+2024-08-18 04:04:00 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-08-18 04:04:00 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2024-08-18 04:04:00 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-18 04:04:00 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2024-08-18 04:04:16 INFO  c.s.O.OnlyStudentApplication - Starting OnlyStudentApplication using Java 20.0.2 with PID 67494 (/home/peterson/Documentos/Projetos/OnlyStudent/target/classes started by peterson in /home/peterson/Documentos/Projetos/OnlyStudent)
+2024-08-18 04:04:16 INFO  c.s.O.OnlyStudentApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-18 04:04:17 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-18 04:04:17 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 6 JPA repository interfaces.
+2024-08-18 04:04:17 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-08-18 04:04:17 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-18 04:04:17 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-18 04:04:17 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-08-18 04:04:17 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-18 04:04:17 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 867 ms
+2024-08-18 04:04:17 ERROR o.s.b.w.e.tomcat.TomcatStarter - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'securityFilter': Unsatisfied dependency expressed through field 'userRepository': Error creating bean with name 'userRepository' defined in com.sloth.OnlyStudent.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
+2024-08-18 04:04:17 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-08-18 04:04:17 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2024-08-18 04:04:17 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-18 04:04:17 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2024-08-18 04:04:42 INFO  c.s.O.OnlyStudentApplication - Starting OnlyStudentApplication using Java 20.0.2 with PID 67494 (/home/peterson/Documentos/Projetos/OnlyStudent/target/classes started by peterson in /home/peterson/Documentos/Projetos/OnlyStudent)
+2024-08-18 04:04:42 INFO  c.s.O.OnlyStudentApplication - The following 1 profile is active: "dev"
+2024-08-18 04:04:42 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-18 04:04:42 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 6 JPA repository interfaces.
+2024-08-18 04:04:43 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-08-18 04:04:43 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-18 04:04:43 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-18 04:04:43 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-08-18 04:04:43 INFO  o.a.c.c.C.[Tomcat-2].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-18 04:04:43 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 551 ms
+2024-08-18 04:04:43 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-18 04:04:43 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-18 04:04:43 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-18 04:04:43 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Starting...
+2024-08-18 04:04:43 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-8 - Added connection org.postgresql.jdbc.PgConnection@721b5c1b
+2024-08-18 04:04:43 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Start completed.
+2024-08-18 04:04:43 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-18 04:04:43 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-18 04:04:43 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-18 04:04:43 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.ClassroomController.logger
+2024-08-18 04:04:44 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.MaterialController.logger
+2024-08-18 04:04:44 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-18 04:04:44 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-08-18 04:04:44 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-08-18 04:04:44 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-08-18 04:04:44 INFO  c.s.O.OnlyStudentApplication - Started OnlyStudentApplication in 2.045 seconds (process running for 358.234)
+2024-08-18 04:04:44 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-08-18 04:04:58 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-18 04:04:58 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-08-18 04:04:58 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-18 04:04:58 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown initiated...
+2024-08-18 04:04:59 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown completed.
+2024-08-18 04:04:59 INFO  c.s.O.OnlyStudentApplication - Starting OnlyStudentApplication using Java 20.0.2 with PID 67494 (/home/peterson/Documentos/Projetos/OnlyStudent/target/classes started by peterson in /home/peterson/Documentos/Projetos/OnlyStudent)
+2024-08-18 04:04:59 INFO  c.s.O.OnlyStudentApplication - The following 1 profile is active: "dev"
+2024-08-18 04:04:59 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-18 04:04:59 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 6 JPA repository interfaces.
+2024-08-18 04:04:59 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-08-18 04:04:59 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-18 04:04:59 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-18 04:04:59 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-08-18 04:04:59 INFO  o.a.c.c.C.[Tomcat-2].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-18 04:04:59 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 464 ms
+2024-08-18 04:04:59 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-18 04:04:59 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-18 04:04:59 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-18 04:04:59 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Starting...
+2024-08-18 04:04:59 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-9 - Added connection org.postgresql.jdbc.PgConnection@3f056d83
+2024-08-18 04:04:59 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Start completed.
+2024-08-18 04:04:59 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-18 04:05:00 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-18 04:05:00 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-18 04:05:00 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.ClassroomController.logger
+2024-08-18 04:05:00 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.MaterialController.logger
+2024-08-18 04:05:00 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-18 04:05:00 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-08-18 04:05:00 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-08-18 04:05:00 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-08-18 04:05:00 INFO  c.s.O.OnlyStudentApplication - Started OnlyStudentApplication in 1.783 seconds (process running for 374.691)
+2024-08-18 04:05:00 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-08-18 04:09:42 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-18 04:09:42 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-08-18 04:09:42 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-18 04:09:42 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Shutdown initiated...
+2024-08-18 04:09:42 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Shutdown completed.
+2024-08-18 04:09:43 INFO  c.s.O.OnlyStudentApplication - Starting OnlyStudentApplication using Java 20.0.2 with PID 67494 (/home/peterson/Documentos/Projetos/OnlyStudent/target/classes started by peterson in /home/peterson/Documentos/Projetos/OnlyStudent)
+2024-08-18 04:09:43 INFO  c.s.O.OnlyStudentApplication - The following 1 profile is active: "dev"
+2024-08-18 04:09:44 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-18 04:09:44 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 62 ms. Found 6 JPA repository interfaces.
+2024-08-18 04:09:45 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-08-18 04:09:45 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-18 04:09:45 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-18 04:09:45 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-08-18 04:09:45 INFO  o.a.c.c.C.[Tomcat-2].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-18 04:09:45 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1621 ms
+2024-08-18 04:09:45 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-18 04:09:45 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-18 04:09:45 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-18 04:09:45 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Starting...
+2024-08-18 04:09:45 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-10 - Added connection org.postgresql.jdbc.PgConnection@47f84fc4
+2024-08-18 04:09:45 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Start completed.
+2024-08-18 04:09:45 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-18 04:09:46 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-18 04:09:46 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-18 04:09:46 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.ClassroomController.logger
+2024-08-18 04:09:46 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.MaterialController.logger
+2024-08-18 04:09:47 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-18 04:09:47 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-08-18 04:09:47 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-08-18 04:09:47 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-08-18 04:09:48 INFO  c.s.O.OnlyStudentApplication - Started OnlyStudentApplication in 4.736 seconds (process running for 661.741)
+2024-08-18 04:09:48 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
