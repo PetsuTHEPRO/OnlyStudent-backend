@@ -32,10 +32,6 @@ public class User{
 	@Enumerated(EnumType.STRING)
     @Column(nullable = false)
     private UserRole role;
-	
-	public User() {
-		
-	}
     
 	public User(Long id, String name, String telephone, String email, String password, UserRole role) {
 		this.id = id;

@@ -59,10 +59,6 @@ public class Classroom {
 	@OneToMany(mappedBy = "turma")
     private Set<Material> materials;
 
-    // Construtor padrão
-    public Classroom() {
-    }
-    
 	public Classroom(Long codigo, String name, String description, Status status, Custo custo, double price, HashSet alunos,
 			Educator educator, HashSet material) {
 		super();
