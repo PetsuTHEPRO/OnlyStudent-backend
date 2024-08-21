@@ -25,7 +25,11 @@ public class Material {
     @ManyToOne
     @JoinColumn(name = "turma_id")
     private Classroom turma;
-        
+    
+    public Material() {
+    	super();
+    }
+    
     public Material(Long id, String name, MaterialType tipo, String url, Classroom turma) {
         this.id = id;
         this.name = name;

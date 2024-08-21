@@ -2,6 +2,7 @@ package com.sloth.OnlyStudent.controller;
 
 import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,6 +13,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -25,9 +27,11 @@ import com.sloth.OnlyStudent.entities.Custo;
 import com.sloth.OnlyStudent.entities.Material;
 import com.sloth.OnlyStudent.entities.Status;
 import com.sloth.OnlyStudent.entities.DTO.ClassroomDTO;
+import com.sloth.OnlyStudent.entities.DTO.StudentIdDTO;
 import com.sloth.OnlyStudent.repository.ClassroomRepository;
 import com.sloth.OnlyStudent.repository.EducatorRepository;
 import com.sloth.OnlyStudent.repository.MaterialRepository;
+import com.sloth.OnlyStudent.repository.StudentRepository;
 
 import lombok.RequiredArgsConstructor;
 
@@ -47,6 +51,9 @@ public class ClassroomController {
     private EducatorRepository educatorRepository;
     
     @Autowired
+    private StudentRepository studentRepository;
+    
+    @Autowired
     private MaterialRepository materialRepository;
     
     // Listar 3 primeiras turmas
@@ -56,13 +63,40 @@ public class ClassroomController {
         return classroomRepository.findTop3ByEducatorIdOrderByCodigoAsc(codigo);
     }
     
-    @GetMapping("/turma")
-    public Page<Classroom> getClassrooms(@RequestParam Long codigo, 
+    @GetMapping("turmasAluno")
+    public List<Classroom> getClassroomsAlunos(@RequestParam Long codigo){
+    	return classroomRepository.findTop3ByAlunosIdOrderByCodigoAsc(codigo);
+    }
+    
+    @GetMapping("/turmaEducator")
+    public Page<Classroom> getClassroomsEducator(@RequestParam Long codigo, 
             @RequestParam(defaultValue = "0") int page, 
             @RequestParam(defaultValue = "12") int size) {	
     	logger.info(codigo + " = " + page + " = " + size);
     	Pageable pageable = PageRequest.of(page, size);
         return classroomRepository.findByEducatorId(codigo, pageable);
+    }
+    
+    @GetMapping("/{codigo}/students/info")
+    public ResponseEntity<Set<StudentIdDTO>> getStudentsInfo(@PathVariable Long codigo) {
+        Classroom classroom = classroomRepository.findByCodigo(codigo)
+                .orElseThrow();
+
+        Set<StudentIdDTO> alunosInfo = classroom.getAlunosInfo();
+        return ResponseEntity.ok(alunosInfo);
+    }
+    
+    @DeleteMapping("/{codigo}")
+    public ResponseEntity<Void> deleteClassroom(@PathVariable Long codigo) {
+        // Verifica se a turma existe
+        Classroom classroom = classroomRepository.findByCodigo(codigo)
+                .orElseThrow();
+
+        // Apaga a turma
+        classroomRepository.delete(classroom);
+
+        // Retorna status 204 No Content
+        return ResponseEntity.noContent().build();
     }
     
     @PostMapping("/register")
@@ -97,6 +131,7 @@ public class ClassroomController {
     
     @GetMapping("/{id}")
     public ResponseEntity<Classroom> getClassroomById(@PathVariable Long id) {
+    	logger.info("Entrou aqui");
         return classroomRepository.findById(id)
             .map(classroom -> ResponseEntity.ok().body(classroom))
             .orElse(ResponseEntity.notFound().build());

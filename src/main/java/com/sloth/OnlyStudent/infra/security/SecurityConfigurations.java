@@ -42,7 +42,9 @@ public class SecurityConfigurations {
                         .requestMatchers(HttpMethod.GET, "/student/**").permitAll()
                         .requestMatchers(HttpMethod.POST, "/educator/**").permitAll()
                         .requestMatchers(HttpMethod.GET, "/educator/**").permitAll()
+                        .requestMatchers(HttpMethod.DELETE, "turma/**").permitAll()
                         .requestMatchers(HttpMethod.PUT, "/educator/**").permitAll()
+                        .requestMatchers(HttpMethod.PUT, "/student/**").permitAll()
                         .requestMatchers(HttpMethod.POST, "/material/**").permitAll()
                         .requestMatchers(HttpMethod.POST, "/support/**").permitAll()
                         .anyRequest().authenticated()
@@ -55,7 +57,7 @@ public class SecurityConfigurations {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(List.of("https://onlystudy.netlify.app", "http://localhost:5173")); // Adicione suas origens aqui
+        configuration.setAllowedOrigins(List.of("https://onlystudy.netlify.app", "http://localhost:5173", "http://192.168.2.43:5173", "192.168.2.43:5173")); // Adicione suas origens aqui
         configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS")); // Métodos permitidos
         configuration.setAllowedHeaders(List.of("*")); // Cabeçalhos permitidos
         configuration.setAllowCredentials(true); // Permite envio de cookies e credenciais

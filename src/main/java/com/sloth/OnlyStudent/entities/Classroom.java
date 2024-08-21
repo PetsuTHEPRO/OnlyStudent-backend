@@ -1,9 +1,12 @@
 package com.sloth.OnlyStudent.entities;
 
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
 
+import com.sloth.OnlyStudent.entities.DTO.StudentIdDTO;
+
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
@@ -16,7 +19,9 @@ import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
+import jakarta.persistence.PostLoad;
 import jakarta.persistence.Table;
+import jakarta.persistence.Transient;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -52,13 +57,25 @@ public class Classroom {
     )
     private Set<Student> alunos;
 	
+	// Variável para armazenar a quantidade de alunos
+    @Transient
+    private int totalAlunos;
+    
+ // Variável para armazenar a quantidade de materiais
+    @Transient
+    private int totalMateriais;
+    
 	@ManyToOne
     @JoinColumn(name = "educator_id", nullable = false)
 	private Educator educator;
 	
-	@OneToMany(mappedBy = "turma")
+	@OneToMany(mappedBy = "turma", cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<Material> materials;
 
+	public Classroom() {
+		super();
+	}
+	
 	public Classroom(Long codigo, String name, String description, Status status, Custo custo, double price, HashSet alunos,
 			Educator educator, HashSet material) {
 		super();
@@ -76,7 +93,19 @@ public class Classroom {
 	public Long getCodigo() {
 		return codigo;
 	}
-
+	
+    @PostLoad
+    public void calculateTotalAlunos() {
+        this.totalAlunos = (alunos != null) ? alunos.size() : 0;
+        this.totalMateriais = (materials != null) ? materials.size() : 0;
+    }
+    
+ // Método para obter o ID e o nome dos alunos
+    public Set<StudentIdDTO> getAlunosInfo() {
+        return alunos.stream()
+                     .map(aluno -> new StudentIdDTO(aluno.getId(), aluno.getName())) // Mapeia cada Student para um StudentDTO
+                     .collect(Collectors.toSet()); // Coleta os DTOs em um Set
+    }
 	public void setCodigo(Long codigo) {
 		this.codigo = codigo;
 	}
@@ -117,10 +146,6 @@ public class Classroom {
 		this.price = price;
 	}
 
-	public Set<Student> getAlunos() {
-		return alunos;
-	}
-
 	public void setAlunos(Set<Student> alunos) {
 		this.alunos = alunos;
 	}
@@ -132,8 +157,21 @@ public class Classroom {
 	public void setEducator(Educator educator) {
 		this.educator = educator;
 	}
-	
-	//private ArrayList<Material> materiais;
-	
-	
+
+	public int getTotalAlunos() {
+		return totalAlunos;
+	}
+
+	public void setTotalAlunos(int totalAlunos) {
+		this.totalAlunos = totalAlunos;
+	}
+
+	public int getTotalMateriais() {
+		return totalMateriais;
+	}
+
+	public void setTotalMateriais(int totalMateriais) {
+		this.totalMateriais = totalMateriais;
+	}
+		
 }

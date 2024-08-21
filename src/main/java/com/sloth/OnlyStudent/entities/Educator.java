@@ -15,7 +15,11 @@ import lombok.Setter;
 public class Educator extends User{
 	
 	private String especialidade;
-
+	
+	public Educator() {
+    	super();
+    }
+	
 	public Educator(Long id, String name, String telephone, String login, String password, UserRole role, String especialidade) {
 		super(id, name, telephone, login, password, role);
 		this.especialidade = especialidade;
