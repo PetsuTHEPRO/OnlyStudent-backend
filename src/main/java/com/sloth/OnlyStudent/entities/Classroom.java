@@ -71,10 +71,6 @@ public class Classroom {
 	
 	@OneToMany(mappedBy = "turma", cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<Material> materials;
-
-	public Classroom() {
-		super();
-	}
 	
 	public Classroom(Long codigo, String name, String description, Status status, Custo custo, double price, HashSet alunos,
 			Educator educator, HashSet material) {

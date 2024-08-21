@@ -42,10 +42,6 @@ public class User{
 		this.role = role;
 	}
 	
-	public User() {
-		// TODO Auto-generated constructor stub
-	}
-
 	public UserRole getRoles() {
 		return role;
 	}

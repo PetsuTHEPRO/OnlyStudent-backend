@@ -21,10 +21,6 @@ public class Student extends User{
     @ManyToMany(mappedBy = "alunos")
     private Set<Classroom> classrooms = new HashSet<>();
 	
-    public Student() {
-    	super();
-    }
-    
 	public Student(Long id, String name, String telephone, String login, String password, UserRole roles) {
 		super(id, name, telephone, login, password, roles);
 		// TODO Auto-generated constructor stub
