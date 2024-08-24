@@ -17,6 +17,7 @@ import com.sloth.OnlyStudent.entities.User;
 import com.sloth.OnlyStudent.entities.DTO.EducatorDTO;
 import com.sloth.OnlyStudent.repository.EducatorRepository;
 import com.sloth.OnlyStudent.repository.UserRepository;
+import com.sloth.OnlyStudent.services.EducatorService;
 
 import lombok.RequiredArgsConstructor;
 
@@ -34,12 +35,17 @@ public class EducatorController {
     @Autowired
     private EducatorRepository educatorRepository;
 	
-	@GetMapping("/findByEmail")
+    @Autowired
+    private EducatorService educatorService;
+    
+	@GetMapping("/idByEmail")
 	public ResponseEntity<Long> getEducatorIdByEmail(@RequestParam String email) {
-        User educator = educatorRepository.findByEmail(email);
-        if (educator != null) {
-            return ResponseEntity.ok(educator.getId()); // Retorna o ID do Educator
+        Long idEducator = educatorService.getEducatorIdByEmail(email);
+        
+        if (idEducator >= 0) {
+            return ResponseEntity.ok(idEducator); // Retorna o ID do Educator
         }
+        
         return ResponseEntity.notFound().build();
     }
 	
@@ -72,5 +78,4 @@ public class EducatorController {
 		
 		return ResponseEntity.notFound().build();
     }
-	
 }

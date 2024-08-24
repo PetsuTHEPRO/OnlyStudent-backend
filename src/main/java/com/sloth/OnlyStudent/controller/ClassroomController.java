@@ -12,7 +12,6 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -27,18 +26,19 @@ import com.sloth.OnlyStudent.entities.Custo;
 import com.sloth.OnlyStudent.entities.Material;
 import com.sloth.OnlyStudent.entities.Status;
 import com.sloth.OnlyStudent.entities.DTO.ClassroomDTO;
+import com.sloth.OnlyStudent.entities.DTO.ClassroomsDTO;
 import com.sloth.OnlyStudent.entities.DTO.StudentIdDTO;
 import com.sloth.OnlyStudent.repository.ClassroomRepository;
 import com.sloth.OnlyStudent.repository.EducatorRepository;
 import com.sloth.OnlyStudent.repository.MaterialRepository;
 import com.sloth.OnlyStudent.repository.StudentRepository;
+import com.sloth.OnlyStudent.services.ClassroomService;
 
 import lombok.RequiredArgsConstructor;
 
 @RestController
 @RequestMapping("turma")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "http://localhost:5173/")
 public class ClassroomController {
 	
 	@Autowired
@@ -46,6 +46,9 @@ public class ClassroomController {
 
     @Autowired
     private ClassroomRepository classroomRepository;
+    
+    @Autowired
+    private ClassroomService classroomService;
     
     @Autowired
     private EducatorRepository educatorRepository;
@@ -58,23 +61,31 @@ public class ClassroomController {
     
     // Listar 3 primeiras turmas
     @GetMapping
-    public List<Classroom> getClassrooms(@RequestParam Long codigo) {
-    	logger.info(codigo + " Codigo");
-        return classroomRepository.findTop3ByEducatorIdOrderByCodigoAsc(codigo);
+    public List<ClassroomsDTO> getClassrooms(@RequestParam Long codigo) {
+        return classroomService.getClassroomsTop3ByEducatorId(codigo);
     }
     
     @GetMapping("turmasAluno")
-    public List<Classroom> getClassroomsAlunos(@RequestParam Long codigo){
-    	return classroomRepository.findTop3ByAlunosIdOrderByCodigoAsc(codigo);
+    public List<ClassroomsDTO> getClassroomsAlunos(@RequestParam Long codigo){
+    	return classroomService.getClassroomsTop3ByStudentId(codigo);
     }
     
-    @GetMapping("/turmaEducator")
-    public Page<Classroom> getClassroomsEducator(@RequestParam Long codigo, 
+    @GetMapping("/educatorTurmas")
+    public Page<ClassroomsDTO> getClassroomsEducator(@RequestParam Long codigo, 
             @RequestParam(defaultValue = "0") int page, 
-            @RequestParam(defaultValue = "12") int size) {	
-    	logger.info(codigo + " = " + page + " = " + size);
+            @RequestParam(defaultValue = "12") int size) {
     	Pageable pageable = PageRequest.of(page, size);
-        return classroomRepository.findByEducatorId(codigo, pageable);
+        return classroomService.getClassroomsByEducatorId(codigo, pageable);  
+    }
+    
+    @GetMapping("/studentTurmas")
+    public Page<ClassroomsDTO> getClassroomsStudent(@RequestParam Long codigo,
+    		@RequestParam(defaultValue = "0") int page,
+    		@RequestParam(defaultValue = "12") int size){
+        
+        Pageable pageable = PageRequest.of(page, size);
+        return classroomService.getClassroomsByStudentId(codigo, pageable);  
+        
     }
     
     @GetMapping("/{codigo}/students/info")
