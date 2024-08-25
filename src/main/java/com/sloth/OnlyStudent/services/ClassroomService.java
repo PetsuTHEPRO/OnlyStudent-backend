@@ -1,6 +1,7 @@
 package com.sloth.OnlyStudent.services;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -10,8 +11,11 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import com.sloth.OnlyStudent.entities.Classroom;
+import com.sloth.OnlyStudent.entities.Status;
 import com.sloth.OnlyStudent.entities.DTO.ClassroomsDTO;
 import com.sloth.OnlyStudent.repository.ClassroomRepository;
+
+import jakarta.transaction.Transactional;
 
 @Service
 public class ClassroomService {
@@ -94,4 +98,48 @@ public class ClassroomService {
                 classroom.getTotalMateriais()
             ));
     }
+
+    @Transactional
+	public Classroom updateStatus(Long id, Status status) {
+		// TODO Auto-generated method stub
+		
+		Classroom classroom = classroomRepository.findById(id)
+	            .orElseThrow();
+	        classroom.setStatus(status);
+	    return classroomRepository.save(classroom);
+	}
+
+	public List<ClassroomsDTO> getClassroomsTop3Destaque() {
+		// TODO Auto-generated method stub
+		List<Classroom> classrooms = classroomRepository.findAll();
+		
+		List<Classroom> topClassrooms = classrooms.stream()
+		        .peek(classroom -> {
+		            // Atualiza os valores de totalAlunos e totalMateriais
+		            classroom.getTotalAlunos();
+		            classroom.getTotalMateriais();
+		        })
+		        .sorted(Comparator.comparingInt(classroom -> 
+		            ((Classroom) classroom).getTotalAlunos() + ((Classroom) classroom).getTotalMateriais()
+		        ).reversed())
+		        .limit(3) // Seleciona as 3 primeiras turmas
+		        .collect(Collectors.toList());
+		
+	    // Mapear as turmas para DTOs
+	    List<ClassroomsDTO> topClassroomsDTOs = topClassrooms.stream()
+	        .map(classroom -> new ClassroomsDTO(
+	            classroom.getCodigo(),
+	            classroom.getName(),
+	            classroom.getDescription(),
+	            classroom.getStatus(),
+	            classroom.getCusto(),
+	            classroom.getPrice(),
+	            classroom.getTotalAlunos(),
+	            classroom.getTotalMateriais()
+	        ))
+	        .collect(Collectors.toList());
+
+	    return topClassroomsDTOs;
+	    
+	}
 }

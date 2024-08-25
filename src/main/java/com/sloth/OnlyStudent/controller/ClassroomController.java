@@ -12,10 +12,12 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -27,6 +29,7 @@ import com.sloth.OnlyStudent.entities.Material;
 import com.sloth.OnlyStudent.entities.Status;
 import com.sloth.OnlyStudent.entities.DTO.ClassroomDTO;
 import com.sloth.OnlyStudent.entities.DTO.ClassroomsDTO;
+import com.sloth.OnlyStudent.entities.DTO.StatusDTO;
 import com.sloth.OnlyStudent.entities.DTO.StudentIdDTO;
 import com.sloth.OnlyStudent.repository.ClassroomRepository;
 import com.sloth.OnlyStudent.repository.EducatorRepository;
@@ -70,6 +73,11 @@ public class ClassroomController {
     	return classroomService.getClassroomsTop3ByStudentId(codigo);
     }
     
+    @GetMapping("destaque")
+    public List<ClassroomsDTO> getClassroomsDestaque(){
+    	return classroomService.getClassroomsTop3Destaque();
+    }
+    
     @GetMapping("/educatorTurmas")
     public Page<ClassroomsDTO> getClassroomsEducator(@RequestParam Long codigo, 
             @RequestParam(defaultValue = "0") int page, 
@@ -108,6 +116,11 @@ public class ClassroomController {
 
         // Retorna status 204 No Content
         return ResponseEntity.noContent().build();
+    }
+    
+    @PutMapping("/{id}/status")
+    public void updateStatus(@PathVariable Long id, @RequestBody StatusDTO body) {
+        classroomService.updateStatus(id, body.status());
     }
     
     @PostMapping("/register")

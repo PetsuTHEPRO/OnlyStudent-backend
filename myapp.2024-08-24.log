@@ -1,0 +1,1002 @@
+2024-08-24 00:05:50 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-24 00:05:50 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-24 00:05:50 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-08-24 00:05:51 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:05:52 INFO  c.s.O.infra.security.SecurityFilter - undefined
+2024-08-24 00:05:52 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: Cannot invoke "com.sloth.OnlyStudent.entities.User.getRoles()" because "user" is null
+	at com.sloth.OnlyStudent.infra.security.SecurityFilter.doFilterInternal(SecurityFilter.java:39)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2024-08-24 00:05:55 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:05:55 WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$PlainPageSerializationWarning - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2024-08-24 00:05:55 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:05:55 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:05:59 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:05:59 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2024-08-24 00:05:59 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2024-08-24 00:06:02 INFO  c.s.O.infra.security.SecurityFilter - undefined
+2024-08-24 00:06:02 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: Cannot invoke "com.sloth.OnlyStudent.entities.User.getRoles()" because "user" is null
+	at com.sloth.OnlyStudent.infra.security.SecurityFilter.doFilterInternal(SecurityFilter.java:39)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2024-08-24 00:06:03 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:06:03 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:06:03 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:06:11 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:06:11 INFO  c.s.O.infra.security.SecurityFilter - undefined
+2024-08-24 00:06:11 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: Cannot invoke "com.sloth.OnlyStudent.entities.User.getRoles()" because "user" is null
+	at com.sloth.OnlyStudent.infra.security.SecurityFilter.doFilterInternal(SecurityFilter.java:39)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2024-08-24 00:06:15 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:06:17 INFO  c.s.O.infra.security.SecurityFilter - undefined
+2024-08-24 00:06:17 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: Cannot invoke "com.sloth.OnlyStudent.entities.User.getRoles()" because "user" is null
+	at com.sloth.OnlyStudent.infra.security.SecurityFilter.doFilterInternal(SecurityFilter.java:39)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2024-08-24 00:06:18 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:07:10 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2024-08-24 00:07:10 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-08-24 00:07:10 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-24 00:07:10 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-08-24 00:07:10 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-08-24 00:07:11 INFO  c.s.O.OnlyStudentApplication - Starting OnlyStudentApplication using Java 20.0.2 with PID 6386 (/home/peterson/Documentos/Projetos/OnlyStudent/target/classes started by peterson in /home/peterson/Documentos/Projetos/OnlyStudent)
+2024-08-24 00:07:11 INFO  c.s.O.OnlyStudentApplication - The following 1 profile is active: "dev"
+2024-08-24 00:07:11 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-24 00:07:11 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 6 JPA repository interfaces.
+2024-08-24 00:07:11 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-08-24 00:07:11 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-24 00:07:11 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-24 00:07:11 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-08-24 00:07:11 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-24 00:07:11 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 747 ms
+2024-08-24 00:07:12 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-24 00:07:12 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-24 00:07:12 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-24 00:07:12 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2024-08-24 00:07:12 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@2b92504f
+2024-08-24 00:07:12 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2024-08-24 00:07:12 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-24 00:07:12 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-24 00:07:13 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-24 00:07:13 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.ClassroomController.logger
+2024-08-24 00:07:13 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.MaterialController.logger
+2024-08-24 00:07:13 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-24 00:07:14 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-08-24 00:07:14 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-08-24 00:07:14 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-08-24 00:07:14 INFO  c.s.O.OnlyStudentApplication - Started OnlyStudentApplication in 3.314 seconds (process running for 10244.525)
+2024-08-24 00:07:14 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-08-24 00:07:48 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-24 00:07:48 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-24 00:07:48 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-08-24 00:07:48 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:08:44 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:10:46 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:10:46 WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$PlainPageSerializationWarning - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2024-08-24 00:10:51 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NTk3MX0.Y3q9Op7OVkMlHYxAfYnq7HSYgzUErzmzKHIms3kn_sg
+2024-08-24 00:10:54 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:11:27 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NTk3MX0.Y3q9Op7OVkMlHYxAfYnq7HSYgzUErzmzKHIms3kn_sg
+2024-08-24 00:11:52 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NTk3MX0.Y3q9Op7OVkMlHYxAfYnq7HSYgzUErzmzKHIms3kn_sg
+2024-08-24 00:16:23 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:16:31 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:16:31 INFO  c.s.O.infra.security.SecurityFilter - undefined
+2024-08-24 00:16:31 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: Cannot invoke "com.sloth.OnlyStudent.entities.User.getRoles()" because "user" is null
+	at com.sloth.OnlyStudent.infra.security.SecurityFilter.doFilterInternal(SecurityFilter.java:39)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2024-08-24 00:18:09 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NjU5MX0.7Mj5UsG0yez1K7P54SUpjc4JScGS6xC7OqhW_cSY3YU
+2024-08-24 00:18:15 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NjU5MX0.7Mj5UsG0yez1K7P54SUpjc4JScGS6xC7OqhW_cSY3YU
+2024-08-24 00:18:17 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NjU5MX0.7Mj5UsG0yez1K7P54SUpjc4JScGS6xC7OqhW_cSY3YU
+2024-08-24 00:18:20 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NjU5MX0.7Mj5UsG0yez1K7P54SUpjc4JScGS6xC7OqhW_cSY3YU
+2024-08-24 00:18:24 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NjU5MX0.7Mj5UsG0yez1K7P54SUpjc4JScGS6xC7OqhW_cSY3YU
+2024-08-24 00:18:27 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NjU5MX0.7Mj5UsG0yez1K7P54SUpjc4JScGS6xC7OqhW_cSY3YU
+2024-08-24 00:18:30 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NjU5MX0.7Mj5UsG0yez1K7P54SUpjc4JScGS6xC7OqhW_cSY3YU
+2024-08-24 00:18:39 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:18:40 INFO  c.s.O.infra.security.SecurityFilter - undefined
+2024-08-24 00:18:40 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: Cannot invoke "com.sloth.OnlyStudent.entities.User.getRoles()" because "user" is null
+	at com.sloth.OnlyStudent.infra.security.SecurityFilter.doFilterInternal(SecurityFilter.java:39)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2024-08-24 00:19:45 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NjcxOX0.xYMWPZ9i_iIRInTMitC4YiVAjae_0MQwbW5LhDZN438
+2024-08-24 00:19:46 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NjcxOX0.xYMWPZ9i_iIRInTMitC4YiVAjae_0MQwbW5LhDZN438
+2024-08-24 00:19:59 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:19:59 INFO  c.s.O.infra.security.SecurityFilter - undefined
+2024-08-24 00:19:59 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: Cannot invoke "com.sloth.OnlyStudent.entities.User.getRoles()" because "user" is null
+	at com.sloth.OnlyStudent.infra.security.SecurityFilter.doFilterInternal(SecurityFilter.java:39)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2024-08-24 00:21:08 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:21:08 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3Njg2OH0.3DHgFyM0t5Aer3vKmwaM36W_PwVvHyKS2-bpyW70HQk
+2024-08-24 00:23:06 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3Njg2OH0.3DHgFyM0t5Aer3vKmwaM36W_PwVvHyKS2-bpyW70HQk
+2024-08-24 00:23:07 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3Njg2OH0.3DHgFyM0t5Aer3vKmwaM36W_PwVvHyKS2-bpyW70HQk
+2024-08-24 00:23:12 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3Njg2OH0.3DHgFyM0t5Aer3vKmwaM36W_PwVvHyKS2-bpyW70HQk
+2024-08-24 00:23:49 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:23:50 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0NDc3MDMwfQ.Lu12z6ju2YQBbKLNYHiCmWmB7bcLj-P1k52pWLWfE9Q
+2024-08-24 00:23:50 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:23:50 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:23:58 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:23:58 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2024-08-24 00:23:58 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2024-08-24 00:23:59 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:23:59 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:23:59 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:24:02 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0NDc3MDMwfQ.Lu12z6ju2YQBbKLNYHiCmWmB7bcLj-P1k52pWLWfE9Q
+2024-08-24 00:24:03 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:24:03 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:24:38 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:24:38 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:24:38 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:24:59 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:24:59 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2024-08-24 00:24:59 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2024-08-24 00:25:01 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0NDc3MDMwfQ.Lu12z6ju2YQBbKLNYHiCmWmB7bcLj-P1k52pWLWfE9Q
+2024-08-24 00:25:01 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:25:01 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:25:08 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:25:09 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NzEwOX0.aCP3fpKEMMLGbp6QzyW5b2_Fcw-Bz4NZMftkEP6dFaU
+2024-08-24 00:25:12 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:25:12 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:25:12 INFO  c.s.O.controller.ClassroomController - Entrou aqui
+2024-08-24 00:25:12 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2024-08-24 00:25:12 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2024-08-24 00:25:12 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:25:12 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2024-08-24 00:25:12 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2024-08-24 00:25:15 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NzEwOX0.aCP3fpKEMMLGbp6QzyW5b2_Fcw-Bz4NZMftkEP6dFaU
+2024-08-24 00:25:16 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:25:17 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:25:17 INFO  c.s.O.controller.ClassroomController - Entrou aqui
+2024-08-24 00:25:17 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:25:17 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2024-08-24 00:25:17 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2024-08-24 00:25:17 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:25:17 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2024-08-24 00:25:17 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2024-08-24 00:25:18 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NzEwOX0.aCP3fpKEMMLGbp6QzyW5b2_Fcw-Bz4NZMftkEP6dFaU
+2024-08-24 00:25:19 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:26:17 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:26:17 INFO  c.s.O.controller.ClassroomController - Entrou aqui
+2024-08-24 00:26:17 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:26:17 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2024-08-24 00:26:17 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2024-08-24 00:26:17 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:26:17 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2024-08-24 00:26:17 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2024-08-24 00:26:20 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:26:20 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:26:20 INFO  c.s.O.controller.ClassroomController - Entrou aqui
+2024-08-24 00:26:20 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2024-08-24 00:26:20 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2024-08-24 00:26:20 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:26:20 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2024-08-24 00:26:20 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2024-08-24 00:26:21 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:26:21 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:26:21 INFO  c.s.O.controller.ClassroomController - Entrou aqui
+2024-08-24 00:26:21 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2024-08-24 00:26:21 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2024-08-24 00:26:21 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:26:21 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2024-08-24 00:26:21 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2024-08-24 00:28:05 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:28:06 INFO  c.s.O.controller.ClassroomController - Entrou aqui
+2024-08-24 00:28:06 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:28:06 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2024-08-24 00:28:06 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2024-08-24 00:28:06 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:28:06 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2024-08-24 00:28:06 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2024-08-24 00:28:09 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:28:09 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:28:09 INFO  c.s.O.controller.ClassroomController - Entrou aqui
+2024-08-24 00:28:09 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2024-08-24 00:28:09 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2024-08-24 00:28:09 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:28:09 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2024-08-24 00:28:09 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2024-08-24 00:28:14 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:28:14 INFO  c.s.O.controller.ClassroomController - Entrou aqui
+2024-08-24 00:28:14 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:28:14 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2024-08-24 00:28:14 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2024-08-24 00:28:14 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:28:14 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2024-08-24 00:28:14 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2024-08-24 00:28:18 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:28:18 INFO  c.s.O.controller.ClassroomController - Entrou aqui
+2024-08-24 00:28:18 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:28:18 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2024-08-24 00:28:18 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2024-08-24 00:28:18 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:28:18 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2024-08-24 00:28:18 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2024-08-24 00:28:29 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:28:29 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:28:29 INFO  c.s.O.controller.ClassroomController - Entrou aqui
+2024-08-24 00:28:30 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2024-08-24 00:28:30 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2024-08-24 00:28:30 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:28:30 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2024-08-24 00:28:30 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2024-08-24 00:28:39 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:28:39 INFO  c.s.O.controller.ClassroomController - Entrou aqui
+2024-08-24 00:28:39 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:28:39 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2024-08-24 00:28:39 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2024-08-24 00:28:39 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:28:40 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2024-08-24 00:28:40 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2024-08-24 00:29:04 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:29:04 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:29:04 INFO  c.s.O.controller.ClassroomController - Entrou aqui
+2024-08-24 00:29:04 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2024-08-24 00:29:04 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2024-08-24 00:29:04 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:29:04 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2024-08-24 00:29:04 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2024-08-24 00:29:20 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:29:20 INFO  c.s.O.controller.ClassroomController - Entrou aqui
+2024-08-24 00:29:20 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:29:20 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2024-08-24 00:29:20 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2024-08-24 00:29:20 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:29:20 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2024-08-24 00:29:20 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2024-08-24 00:29:27 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:29:27 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:29:27 INFO  c.s.O.controller.ClassroomController - Entrou aqui
+2024-08-24 00:29:27 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2024-08-24 00:29:27 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2024-08-24 00:29:27 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:29:27 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2024-08-24 00:29:27 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2024-08-24 00:29:47 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:29:47 INFO  c.s.O.controller.ClassroomController - Entrou aqui
+2024-08-24 00:29:47 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:29:47 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2024-08-24 00:29:47 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2024-08-24 00:29:47 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:29:47 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2024-08-24 00:29:47 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2024-08-24 00:30:21 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:30:21 INFO  c.s.O.controller.ClassroomController - Entrou aqui
+2024-08-24 00:30:21 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:30:21 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2024-08-24 00:30:21 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2024-08-24 00:30:22 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:30:22 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2024-08-24 00:30:22 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2024-08-24 00:35:17 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:35:17 INFO  c.s.O.controller.ClassroomController - Entrou aqui
+2024-08-24 00:35:17 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:35:17 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2024-08-24 00:35:17 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2024-08-24 00:35:17 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:35:17 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2024-08-24 00:35:17 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2024-08-24 00:36:04 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NzEwOX0.aCP3fpKEMMLGbp6QzyW5b2_Fcw-Bz4NZMftkEP6dFaU
+2024-08-24 00:36:05 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:36:11 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NzEwOX0.aCP3fpKEMMLGbp6QzyW5b2_Fcw-Bz4NZMftkEP6dFaU
+2024-08-24 00:36:43 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:36:44 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:36:46 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:36:47 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:36:48 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NzEwOX0.aCP3fpKEMMLGbp6QzyW5b2_Fcw-Bz4NZMftkEP6dFaU
+2024-08-24 00:37:31 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:37:32 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:37:34 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:37:35 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:37:35 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NzEwOX0.aCP3fpKEMMLGbp6QzyW5b2_Fcw-Bz4NZMftkEP6dFaU
+2024-08-24 00:37:51 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:38:19 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NzEwOX0.aCP3fpKEMMLGbp6QzyW5b2_Fcw-Bz4NZMftkEP6dFaU
+2024-08-24 00:38:20 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:38:21 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NzEwOX0.aCP3fpKEMMLGbp6QzyW5b2_Fcw-Bz4NZMftkEP6dFaU
+2024-08-24 00:38:22 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:38:23 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NzEwOX0.aCP3fpKEMMLGbp6QzyW5b2_Fcw-Bz4NZMftkEP6dFaU
+2024-08-24 00:38:24 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:38:25 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NzEwOX0.aCP3fpKEMMLGbp6QzyW5b2_Fcw-Bz4NZMftkEP6dFaU
+2024-08-24 00:38:51 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:38:53 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:38:54 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:38:56 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:38:57 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:40:14 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:40:15 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NzEwOX0.aCP3fpKEMMLGbp6QzyW5b2_Fcw-Bz4NZMftkEP6dFaU
+2024-08-24 00:40:18 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:40:22 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:40:22 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NzEwOX0.aCP3fpKEMMLGbp6QzyW5b2_Fcw-Bz4NZMftkEP6dFaU
+2024-08-24 00:40:23 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:40:25 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:40:26 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:40:26 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NzEwOX0.aCP3fpKEMMLGbp6QzyW5b2_Fcw-Bz4NZMftkEP6dFaU
+2024-08-24 00:41:00 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:41:01 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NzEwOX0.aCP3fpKEMMLGbp6QzyW5b2_Fcw-Bz4NZMftkEP6dFaU
+2024-08-24 00:41:27 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:41:48 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:42:03 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:42:03 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:42:04 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NzEwOX0.aCP3fpKEMMLGbp6QzyW5b2_Fcw-Bz4NZMftkEP6dFaU
+2024-08-24 00:42:07 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 00:42:08 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NzEwOX0.aCP3fpKEMMLGbp6QzyW5b2_Fcw-Bz4NZMftkEP6dFaU
+2024-08-24 01:09:11 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:09:12 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:09:14 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:09:15 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:09:15 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NzEwOX0.aCP3fpKEMMLGbp6QzyW5b2_Fcw-Bz4NZMftkEP6dFaU
+2024-08-24 01:09:16 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:09:17 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:09:19 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:09:19 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:09:20 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NzEwOX0.aCP3fpKEMMLGbp6QzyW5b2_Fcw-Bz4NZMftkEP6dFaU
+2024-08-24 01:09:26 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:09:26 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:09:28 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:09:28 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:09:29 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NzEwOX0.aCP3fpKEMMLGbp6QzyW5b2_Fcw-Bz4NZMftkEP6dFaU
+2024-08-24 01:09:30 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:09:31 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:09:32 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:09:33 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:09:34 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:09:34 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:09:35 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:09:36 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:09:37 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:09:37 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:09:38 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:09:38 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:09:40 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:09:42 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:09:43 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:09:44 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:09:46 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:09:48 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NzEwOX0.aCP3fpKEMMLGbp6QzyW5b2_Fcw-Bz4NZMftkEP6dFaU
+2024-08-24 01:09:49 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:09:52 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NzEwOX0.aCP3fpKEMMLGbp6QzyW5b2_Fcw-Bz4NZMftkEP6dFaU
+2024-08-24 01:09:53 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:09:54 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NzEwOX0.aCP3fpKEMMLGbp6QzyW5b2_Fcw-Bz4NZMftkEP6dFaU
+2024-08-24 01:09:55 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:09:57 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NzEwOX0.aCP3fpKEMMLGbp6QzyW5b2_Fcw-Bz4NZMftkEP6dFaU
+2024-08-24 01:09:57 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:09:59 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NzEwOX0.aCP3fpKEMMLGbp6QzyW5b2_Fcw-Bz4NZMftkEP6dFaU
+2024-08-24 01:10:00 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:10:01 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NzEwOX0.aCP3fpKEMMLGbp6QzyW5b2_Fcw-Bz4NZMftkEP6dFaU
+2024-08-24 01:11:20 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:11:21 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:11:22 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:11:25 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:11:26 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NzEwOX0.aCP3fpKEMMLGbp6QzyW5b2_Fcw-Bz4NZMftkEP6dFaU
+2024-08-24 01:11:28 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:11:28 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:11:30 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:11:32 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:11:33 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NzEwOX0.aCP3fpKEMMLGbp6QzyW5b2_Fcw-Bz4NZMftkEP6dFaU
+2024-08-24 01:11:34 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:11:55 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NzEwOX0.aCP3fpKEMMLGbp6QzyW5b2_Fcw-Bz4NZMftkEP6dFaU
+2024-08-24 01:17:11 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:17:12 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:17:14 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:17:14 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:17:15 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NzEwOX0.aCP3fpKEMMLGbp6QzyW5b2_Fcw-Bz4NZMftkEP6dFaU
+2024-08-24 01:17:18 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:17:31 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NzEwOX0.aCP3fpKEMMLGbp6QzyW5b2_Fcw-Bz4NZMftkEP6dFaU
+2024-08-24 01:22:09 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:22:10 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:22:13 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:22:14 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:22:15 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NzEwOX0.aCP3fpKEMMLGbp6QzyW5b2_Fcw-Bz4NZMftkEP6dFaU
+2024-08-24 01:22:16 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:22:17 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NzEwOX0.aCP3fpKEMMLGbp6QzyW5b2_Fcw-Bz4NZMftkEP6dFaU
+2024-08-24 01:22:18 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:22:20 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NzEwOX0.aCP3fpKEMMLGbp6QzyW5b2_Fcw-Bz4NZMftkEP6dFaU
+2024-08-24 01:22:21 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:22:22 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NzEwOX0.aCP3fpKEMMLGbp6QzyW5b2_Fcw-Bz4NZMftkEP6dFaU
+2024-08-24 01:22:23 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:22:46 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NzEwOX0.aCP3fpKEMMLGbp6QzyW5b2_Fcw-Bz4NZMftkEP6dFaU
+2024-08-24 01:22:49 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:22:50 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NzEwOX0.aCP3fpKEMMLGbp6QzyW5b2_Fcw-Bz4NZMftkEP6dFaU
+2024-08-24 01:22:51 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 01:22:52 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDQ3NzEwOX0.aCP3fpKEMMLGbp6QzyW5b2_Fcw-Bz4NZMftkEP6dFaU
+2024-08-24 01:32:29 INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2024-08-24 01:32:29 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-08-24 01:32:29 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-24 01:32:29 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2024-08-24 01:32:29 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2024-08-24 15:20:07 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-08-24 15:20:07 INFO  c.s.O.OnlyStudentApplication - Starting OnlyStudentApplication using Java 20.0.2 with PID 9202 (/home/peterson/Documentos/Projetos/OnlyStudent/target/classes started by peterson in /home/peterson/Documentos/Projetos/OnlyStudent)
+2024-08-24 15:20:07 INFO  c.s.O.OnlyStudentApplication - The following 1 profile is active: "dev"
+2024-08-24 15:20:07 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-24 15:20:07 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-24 15:20:09 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-24 15:20:09 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 92 ms. Found 6 JPA repository interfaces.
+2024-08-24 15:20:10 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-08-24 15:20:10 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-24 15:20:10 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-24 15:20:10 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-08-24 15:20:10 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-24 15:20:10 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2775 ms
+2024-08-24 15:20:10 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-24 15:20:10 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-24 15:20:10 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-24 15:20:11 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-24 15:20:11 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-24 15:20:11 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@35ca6fca
+2024-08-24 15:20:11 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-24 15:20:12 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-24 15:20:13 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-24 15:20:14 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-24 15:20:14 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.ClassroomController.logger
+2024-08-24 15:20:14 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-08-24 15:20:14 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.MaterialController.logger
+2024-08-24 15:20:15 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-24 15:20:15 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-08-24 15:20:15 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-08-24 15:20:15 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-08-24 15:20:15 INFO  c.s.O.OnlyStudentApplication - Started OnlyStudentApplication in 9.459 seconds (process running for 11.384)
+2024-08-24 15:20:22 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-24 15:20:22 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-24 15:20:22 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-08-24 15:20:22 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 15:20:23 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 15:21:54 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 15:22:07 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 15:22:11 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 15:25:13 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 15:30:01 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 15:33:26 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 15:33:38 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 15:33:47 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 15:33:59 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 15:35:44 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 15:35:46 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 15:35:50 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 15:35:58 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 15:36:08 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 15:36:14 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 15:36:27 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 15:37:37 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 15:38:47 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 15:38:54 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 15:39:06 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 15:39:46 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 15:40:00 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 15:41:04 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 15:42:28 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 15:44:36 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 15:45:17 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 15:46:02 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 15:46:28 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 15:46:37 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 15:46:46 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 15:47:18 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 15:48:12 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 15:49:55 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 16:02:41 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 16:02:59 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 16:03:25 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 16:04:41 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 16:04:46 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 16:04:51 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 16:04:56 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 16:05:01 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 16:05:22 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 16:05:53 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 16:07:03 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 16:08:55 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 16:09:13 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 16:10:06 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 16:10:11 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 16:11:24 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 16:12:17 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 16:13:32 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 16:13:39 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 16:13:49 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 16:14:12 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 16:14:17 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 16:14:52 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 16:15:28 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 16:16:30 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 16:16:54 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 16:17:05 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 16:17:18 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 16:23:21 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 16:34:23 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 16:40:21 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 17:19:29 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUzMDgyM30.KUtMt5yvFIddgTYBsXm0WzGvvZVoiq45nK9A2FyGsMQ
+2024-08-24 18:58:14 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 18:58:37 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0NTQzODk0fQ.nODRq6TYOZAX7IQR-BJ5GeGHXqAXkzIzl7ZxkgZGN40
+2024-08-24 18:58:38 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 18:58:38 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 18:59:02 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 18:59:03 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2024-08-24 18:59:03 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2024-08-24 18:59:36 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 18:59:36 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDU0Mzk3Nn0.gIiOXdSpaa17Q4fq44Hr-VU0sUiS_5apeJk-im7tTso
+2024-08-24 19:00:48 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDU0Mzk3Nn0.gIiOXdSpaa17Q4fq44Hr-VU0sUiS_5apeJk-im7tTso
+2024-08-24 19:08:38 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDU0Mzk3Nn0.gIiOXdSpaa17Q4fq44Hr-VU0sUiS_5apeJk-im7tTso
+2024-08-24 19:08:49 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDU0Mzk3Nn0.gIiOXdSpaa17Q4fq44Hr-VU0sUiS_5apeJk-im7tTso
+2024-08-24 19:08:52 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDU0Mzk3Nn0.gIiOXdSpaa17Q4fq44Hr-VU0sUiS_5apeJk-im7tTso
+2024-08-24 19:09:12 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDU0Mzk3Nn0.gIiOXdSpaa17Q4fq44Hr-VU0sUiS_5apeJk-im7tTso
+2024-08-24 19:09:45 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDU0Mzk3Nn0.gIiOXdSpaa17Q4fq44Hr-VU0sUiS_5apeJk-im7tTso
+2024-08-24 19:09:47 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 19:09:48 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 19:09:48 WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$PlainPageSerializationWarning - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2024-08-24 19:09:56 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 19:09:58 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 19:09:59 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 19:10:01 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDU0Mzk3Nn0.gIiOXdSpaa17Q4fq44Hr-VU0sUiS_5apeJk-im7tTso
+2024-08-24 19:10:06 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDU0Mzk3Nn0.gIiOXdSpaa17Q4fq44Hr-VU0sUiS_5apeJk-im7tTso
+2024-08-24 19:11:14 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 19:11:15 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 19:11:18 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 19:11:18 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 19:11:19 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDU0Mzk3Nn0.gIiOXdSpaa17Q4fq44Hr-VU0sUiS_5apeJk-im7tTso
+2024-08-24 19:11:30 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 19:11:31 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 19:11:32 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 19:11:33 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 19:11:33 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDU0Mzk3Nn0.gIiOXdSpaa17Q4fq44Hr-VU0sUiS_5apeJk-im7tTso
+2024-08-24 19:14:10 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDU0Mzk3Nn0.gIiOXdSpaa17Q4fq44Hr-VU0sUiS_5apeJk-im7tTso
+2024-08-24 19:19:54 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDU0Mzk3Nn0.gIiOXdSpaa17Q4fq44Hr-VU0sUiS_5apeJk-im7tTso
+2024-08-24 19:20:04 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDU0Mzk3Nn0.gIiOXdSpaa17Q4fq44Hr-VU0sUiS_5apeJk-im7tTso
+2024-08-24 19:20:28 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDU0Mzk3Nn0.gIiOXdSpaa17Q4fq44Hr-VU0sUiS_5apeJk-im7tTso
+2024-08-24 19:23:00 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDU0Mzk3Nn0.gIiOXdSpaa17Q4fq44Hr-VU0sUiS_5apeJk-im7tTso
+2024-08-24 19:27:56 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDU0Mzk3Nn0.gIiOXdSpaa17Q4fq44Hr-VU0sUiS_5apeJk-im7tTso
+2024-08-24 19:28:00 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDU0Mzk3Nn0.gIiOXdSpaa17Q4fq44Hr-VU0sUiS_5apeJk-im7tTso
+2024-08-24 19:28:11 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 19:28:12 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 19:28:16 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 19:28:25 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDU0Mzk3Nn0.gIiOXdSpaa17Q4fq44Hr-VU0sUiS_5apeJk-im7tTso
+2024-08-24 19:28:33 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDU0Mzk3Nn0.gIiOXdSpaa17Q4fq44Hr-VU0sUiS_5apeJk-im7tTso
+2024-08-24 19:29:59 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDU0Mzk3Nn0.gIiOXdSpaa17Q4fq44Hr-VU0sUiS_5apeJk-im7tTso
+2024-08-24 19:30:43 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDU0Mzk3Nn0.gIiOXdSpaa17Q4fq44Hr-VU0sUiS_5apeJk-im7tTso
+2024-08-24 19:36:06 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDU0Mzk3Nn0.gIiOXdSpaa17Q4fq44Hr-VU0sUiS_5apeJk-im7tTso
+2024-08-24 19:38:27 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDU0Mzk3Nn0.gIiOXdSpaa17Q4fq44Hr-VU0sUiS_5apeJk-im7tTso
+2024-08-24 19:42:08 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDU0Mzk3Nn0.gIiOXdSpaa17Q4fq44Hr-VU0sUiS_5apeJk-im7tTso
+2024-08-24 19:43:11 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 19:43:15 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDU0Mzk3Nn0.gIiOXdSpaa17Q4fq44Hr-VU0sUiS_5apeJk-im7tTso
+2024-08-24 20:09:32 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 20:09:33 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDU0Mzk3Nn0.gIiOXdSpaa17Q4fq44Hr-VU0sUiS_5apeJk-im7tTso
+2024-08-24 20:32:40 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDU0Mzk3Nn0.gIiOXdSpaa17Q4fq44Hr-VU0sUiS_5apeJk-im7tTso
+2024-08-24 20:36:56 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 20:39:15 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 20:43:23 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 20:47:49 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDU0Mzk3Nn0.gIiOXdSpaa17Q4fq44Hr-VU0sUiS_5apeJk-im7tTso
+2024-08-24 20:50:31 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 20:51:59 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 20:52:15 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 20:52:35 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 20:54:09 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 20:54:14 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 20:54:53 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDU0Mzk3Nn0.gIiOXdSpaa17Q4fq44Hr-VU0sUiS_5apeJk-im7tTso
+2024-08-24 20:54:56 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 20:54:58 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDU0Mzk3Nn0.gIiOXdSpaa17Q4fq44Hr-VU0sUiS_5apeJk-im7tTso
+2024-08-24 20:54:58 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 20:54:59 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDU0Mzk3Nn0.gIiOXdSpaa17Q4fq44Hr-VU0sUiS_5apeJk-im7tTso
+2024-08-24 20:55:00 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 20:55:32 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 20:56:03 INFO  c.s.O.infra.security.SecurityFilter - null
+2024-08-24 21:00:02 INFO  c.s.O.infra.security.SecurityFilter - null
