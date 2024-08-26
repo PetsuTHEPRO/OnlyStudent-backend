@@ -1641,3 +1641,90 @@ Caused by: java.lang.Error: Unresolved compilation problem:
 2024-08-26 16:43:23 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
 2024-08-26 16:44:13 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
 2024-08-26 16:44:13 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-26 16:54:33 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 16:54:33 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-26 16:54:33 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 16:54:33 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 16:54:33 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 16:54:33 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 16:54:37 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 16:54:37 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-26 16:54:37 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 16:54:37 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 16:54:37 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 16:54:37 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 16:54:43 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 16:54:43 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-26 16:54:43 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 16:54:43 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:00:29 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:00:29 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-26 17:00:30 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:00:30 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:00:31 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "undefined"]
+2024-08-26 17:00:34 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:00:34 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-26 17:00:37 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:00:37 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-26 17:00:38 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:00:38 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:00:38 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:00:38 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:00:39 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:00:39 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-26 17:00:39 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:00:39 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:00:39 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "undefined"]
+2024-08-26 17:00:44 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:00:47 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:00:47 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-26 17:00:47 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:01:03 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:01:03 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-26 17:01:03 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:01:06 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:01:06 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-26 17:01:06 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:01:19 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:01:19 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:01:24 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:01:24 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-26 17:01:25 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:01:25 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:05:15 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:05:15 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:05:23 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:05:23 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:05:29 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:05:34 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:05:48 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:05:48 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-26 17:05:48 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:05:48 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:05:48 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:05:48 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:05:56 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:05:56 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-26 17:05:56 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:05:56 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:05:58 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:05:58 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-26 17:05:58 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:05:58 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:05:58 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:05:58 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:06:03 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:06:03 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-26 17:06:04 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:06:04 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:06:04 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:06:04 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:06:05 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:06:05 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-26 17:06:05 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:06:05 INFO  c.s.O.infra.security.SecurityFilter - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwNzk5Nn0.8WSkg2b0klK7i9zaK6w3mn2AQv779oOwEz43uvK3dbo
+2024-08-26 17:12:19 INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2024-08-26 17:12:19 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-08-26 17:12:19 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-26 17:12:19 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-08-26 17:12:19 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

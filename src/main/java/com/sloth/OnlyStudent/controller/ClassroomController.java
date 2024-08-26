@@ -185,7 +185,7 @@ public class ClassroomController {
                     .collect(Collectors.toList());
                 // Criar o DTO
                 ClassroomDetailsDTO classroomDetailsDTO = new ClassroomDetailsDTO(name, descricao, educator, materiais, nomesAlunos);
-
+                logger.info(classroomDetailsDTO.name() + " = " + classroomDetailsDTO.description() + " = " + classroomDetailsDTO.educator() + " = " + classroomDetailsDTO.nomeAlunos());
                 // Retornar o DTO
                 return ResponseEntity.ok().body(classroomDetailsDTO);
             })
