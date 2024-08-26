@@ -32,6 +32,7 @@ import com.sloth.OnlyStudent.entities.DTO.ClassroomDTO;
 import com.sloth.OnlyStudent.entities.DTO.ClassroomDetailsDTO;
 import com.sloth.OnlyStudent.entities.DTO.ClassroomNameDTO;
 import com.sloth.OnlyStudent.entities.DTO.ClassroomsDTO;
+import com.sloth.OnlyStudent.entities.DTO.MaterialDetailsDTO;
 import com.sloth.OnlyStudent.entities.DTO.StatusDTO;
 import com.sloth.OnlyStudent.entities.DTO.StudentIdDTO;
 import com.sloth.OnlyStudent.repository.ClassroomRepository;
@@ -178,7 +179,18 @@ public class ClassroomController {
                 String name = classroom.getName();
                 String educator = classroom.getEducator().getName(); // Supondo que Classroom tenha um Educator e você queira o nome dele
                 String descricao = classroom.getDescription();
-                Set<Material> materiais = classroom.getMaterials(); // Supondo que Classroom tenha uma coleção de materiais
+                
+                Set<Material> materiais = classroom.getMaterials();
+
+                Set<MaterialDetailsDTO> materialDetailsDTOs = materiais.stream()
+                    .map(material -> new MaterialDetailsDTO(
+                        material.getId(),
+                        material.getName(),
+                        material.getTipo(),
+                        material.getUrl()
+                    ))
+                    .collect(Collectors.toSet());
+                
                 Set<Student> alunos = classroom.getAlunos(); // Supondo que você tenha um Set<Student>
                 List<String> nomesAlunos = alunos.stream()
                     .map(Student::getName) // Mapeia cada Student para o nome
