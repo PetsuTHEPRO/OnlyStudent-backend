@@ -3,6 +3,7 @@ package com.sloth.OnlyStudent.controller;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,7 +27,9 @@ import com.sloth.OnlyStudent.entities.Classroom;
 import com.sloth.OnlyStudent.entities.Custo;
 import com.sloth.OnlyStudent.entities.Material;
 import com.sloth.OnlyStudent.entities.Status;
+import com.sloth.OnlyStudent.entities.Student;
 import com.sloth.OnlyStudent.entities.DTO.ClassroomDTO;
+import com.sloth.OnlyStudent.entities.DTO.ClassroomDetailsDTO;
 import com.sloth.OnlyStudent.entities.DTO.ClassroomNameDTO;
 import com.sloth.OnlyStudent.entities.DTO.ClassroomsDTO;
 import com.sloth.OnlyStudent.entities.DTO.StatusDTO;
@@ -168,12 +171,27 @@ public class ClassroomController {
     }
     
     @GetMapping("/{id}")
-    public ResponseEntity<Classroom> getClassroomById(@PathVariable Long id) {
-    	logger.info("Entrou aqui");
+    public ResponseEntity<ClassroomDetailsDTO> getClassroomById(@PathVariable Long id) {
         return classroomRepository.findById(id)
-            .map(classroom -> ResponseEntity.ok().body(classroom))
+            .map(classroom -> {
+                // Extrair as informações necessárias do Classroom
+                String name = classroom.getName();
+                String educator = classroom.getEducator().getName(); // Supondo que Classroom tenha um Educator e você queira o nome dele
+                String descricao = classroom.getDescription();
+                Set<Material> materiais = classroom.getMaterials(); // Supondo que Classroom tenha uma coleção de materiais
+                Set<Student> alunos = classroom.getAlunos(); // Supondo que você tenha um Set<Student>
+                List<String> nomesAlunos = alunos.stream()
+                    .map(Student::getName) // Mapeia cada Student para o nome
+                    .collect(Collectors.toList());
+                // Criar o DTO
+                ClassroomDetailsDTO classroomDetailsDTO = new ClassroomDetailsDTO(name, descricao, educator, materiais, nomesAlunos);
+
+                // Retornar o DTO
+                return ResponseEntity.ok().body(classroomDetailsDTO);
+            })
             .orElse(ResponseEntity.notFound().build());
     }
+
     
     @GetMapping("/{codigo}/materials")
     public List<Material> getMaterialsByClassroomCódigo(@PathVariable Long codigo) {
