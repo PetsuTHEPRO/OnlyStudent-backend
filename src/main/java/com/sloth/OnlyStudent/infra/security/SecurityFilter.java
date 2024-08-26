@@ -36,9 +36,14 @@ public class SecurityFilter extends OncePerRequestFilter {
         if(token != null){
         	var email = tokenService.validateToken(token);
             User user = userRepository.findByEmail(email);
-            var authorities = Collections.singletonList(new SimpleGrantedAuthority("ROLE_" + user.getRoles().getRole().toUpperCase()));
-            var authentication = new UsernamePasswordAuthenticationToken(user, null, authorities);
-            SecurityContextHolder.getContext().setAuthentication(authentication);
+            if(user != null) {
+            	var authorities = Collections.singletonList(new SimpleGrantedAuthority("ROLE_" + user.getRoles().getRole().toUpperCase()));
+            	var authentication = new UsernamePasswordAuthenticationToken(user, null, authorities);
+            	SecurityContextHolder.getContext().setAuthentication(authentication);     
+            }else {
+            	logger.info("Token expirado!");
+            }
+            
         }
         filterChain.doFilter(request, response);
     }

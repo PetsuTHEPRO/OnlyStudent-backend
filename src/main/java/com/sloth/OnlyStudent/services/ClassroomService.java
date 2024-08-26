@@ -12,6 +12,8 @@ import org.springframework.stereotype.Service;
 
 import com.sloth.OnlyStudent.entities.Classroom;
 import com.sloth.OnlyStudent.entities.Status;
+import com.sloth.OnlyStudent.entities.DTO.ClassroomDTO;
+import com.sloth.OnlyStudent.entities.DTO.ClassroomNameDTO;
 import com.sloth.OnlyStudent.entities.DTO.ClassroomsDTO;
 import com.sloth.OnlyStudent.repository.ClassroomRepository;
 
@@ -142,4 +144,28 @@ public class ClassroomService {
 	    return topClassroomsDTOs;
 	    
 	}
+
+	public List<ClassroomNameDTO> searchClassrooms(String query) {		
+	    List<Classroom> classrooms = classroomRepository.findByNameContainingIgnoreCase(query);
+
+	    return classrooms.stream()
+	        .map(classroom -> new ClassroomNameDTO(classroom.getName()))
+	        .collect(Collectors.toList());
+	}
+	
+	public Page<ClassroomsDTO> getAllClassrooms(String search, Pageable pageable) {
+		
+		Page<Classroom> classrooms = classroomRepository.findByNameStartingWithIgnoreCase(search, pageable);
+
+        return classrooms.map(classroom -> new ClassroomsDTO(
+                classroom.getCodigo(),
+                classroom.getName(),
+                classroom.getDescription(),
+                classroom.getStatus(),
+                classroom.getCusto(),
+                classroom.getPrice(),
+                classroom.getTotalAlunos(),
+                classroom.getTotalMateriais()
+            ));
+    }
 }

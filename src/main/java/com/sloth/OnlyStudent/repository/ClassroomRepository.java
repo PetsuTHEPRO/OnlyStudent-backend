@@ -6,13 +6,11 @@ import java.util.Optional;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import com.sloth.OnlyStudent.entities.Classroom;
-import com.sloth.OnlyStudent.entities.Status;
 
 @Repository
 public interface ClassroomRepository extends JpaRepository<Classroom, Long> {
@@ -31,4 +29,8 @@ public interface ClassroomRepository extends JpaRepository<Classroom, Long> {
 	List<Classroom> findTop3ByAlunosIdOrderByCodigoAsc(Long studentId);
 	
 	boolean existsByName(String name);
+
+	List<Classroom> findByNameContainingIgnoreCase(String name);
+	
+	Page<Classroom> findByNameStartingWithIgnoreCase(String name, Pageable pageable);
 }

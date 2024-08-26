@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.sloth.OnlyStudent.entities.Educator;
 import com.sloth.OnlyStudent.entities.Student;
 import com.sloth.OnlyStudent.entities.DTO.EducatorDTO;
 import com.sloth.OnlyStudent.entities.DTO.StudentDTO;
@@ -43,7 +42,7 @@ public class StudentController {
 		Student student = studentRepository.findById(id).get();
 		
 		if(student != null) {
-			return ResponseEntity.ok(new StudentDTO(student.getName(), student.getTelephone(), student.getEmail(), student.getClassrooms()));
+			return ResponseEntity.ok(new StudentDTO(student.getName(), student.getTelephone(), student.getEmail()));
 		}
 		return ResponseEntity.notFound().build();
 	}

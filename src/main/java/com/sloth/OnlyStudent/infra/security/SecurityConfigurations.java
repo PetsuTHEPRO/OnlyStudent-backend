@@ -33,21 +33,25 @@ public class SecurityConfigurations {
                 .cors(cors -> cors.configurationSource(corsConfigurationSource())) // Adiciona a configuração de CORS
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(authorize -> authorize
-                        .requestMatchers(HttpMethod.POST, "/auth/login").permitAll()
-                        .requestMatchers(HttpMethod.POST, "/auth/register").permitAll()
-                        .requestMatchers(HttpMethod.GET, "/turma/**").permitAll()
-                        .requestMatchers(HttpMethod.POST, "/turma/**").permitAll()
-                        .requestMatchers(HttpMethod.PUT, "/turma/**").permitAll()
-                        .requestMatchers(HttpMethod.POST, "/admin/**").hasRole("ADMIN")
+                		// Rotas Públicas
+                        .requestMatchers(HttpMethod.POST, "/auth/login", "/auth/register").permitAll()
+                        // Rotas do Estudante
                         .requestMatchers(HttpMethod.POST, "/student/**").hasRole("STUDENT")
-                        .requestMatchers(HttpMethod.GET, "/student/**").permitAll()
-                        .requestMatchers(HttpMethod.POST, "/educator/**").permitAll()
-                        .requestMatchers(HttpMethod.GET, "/educator/**").permitAll()
-                        .requestMatchers(HttpMethod.DELETE, "turma/**").permitAll()
-                        .requestMatchers(HttpMethod.PUT, "/educator/**").permitAll()
-                        .requestMatchers(HttpMethod.PUT, "/student/**").permitAll()
+                        .requestMatchers(HttpMethod.GET, "/student/**").hasRole("STUDENT")
+                        .requestMatchers(HttpMethod.PUT, "/student/**").hasRole("STUDENT")
+                        // Rotas do Professor
+                        .requestMatchers(HttpMethod.POST, "/educator/**").hasRole("EDUCATOR")
+                        .requestMatchers(HttpMethod.PUT, "/educator/**").hasRole("EDUCATOR")
+                        .requestMatchers(HttpMethod.GET, "/educator/**").hasRole("EDUCATOR")
+                        // Rotas de Estudamte e Professor
+                        .requestMatchers(HttpMethod.POST, "/turma/**").hasAnyRole("EDUCATOR", "STUDENT")
+                        .requestMatchers(HttpMethod.GET, "/turma/**").hasAnyRole("EDUCATOR", "STUDENT")
+                        .requestMatchers(HttpMethod.PUT, "/turma/**").hasAnyRole("EDUCATOR", "STUDENT")
+                        .requestMatchers(HttpMethod.DELETE, "turma/**").hasAnyRole("EDUCATOR", "STUDENT")
                         .requestMatchers(HttpMethod.POST, "/material/**").permitAll()
+                        .requestMatchers(HttpMethod.POST, "/admin/**").hasRole("ADMIN")
                         .requestMatchers(HttpMethod.POST, "/support/**").permitAll()
+                        .requestMatchers(HttpMethod.GET, "/token/**").permitAll()
                         .anyRequest().authenticated()
                 )
                 .addFilterBefore(securityFilter, UsernamePasswordAuthenticationFilter.class);
