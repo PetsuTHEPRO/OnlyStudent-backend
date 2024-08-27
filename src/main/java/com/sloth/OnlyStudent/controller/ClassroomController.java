@@ -196,7 +196,7 @@ public class ClassroomController {
                     .map(Student::getName) // Mapeia cada Student para o nome
                     .collect(Collectors.toList());
                 // Criar o DTO
-                ClassroomDetailsDTO classroomDetailsDTO = new ClassroomDetailsDTO(name, descricao, educator, materiais, nomesAlunos);
+                ClassroomDetailsDTO classroomDetailsDTO = new ClassroomDetailsDTO(name, descricao, educator, materialDetailsDTOs, nomesAlunos);
                 logger.info(classroomDetailsDTO.name() + " = " + classroomDetailsDTO.description() + " = " + classroomDetailsDTO.educator() + " = " + classroomDetailsDTO.nomeAlunos());
                 // Retornar o DTO
                 return ResponseEntity.ok().body(classroomDetailsDTO);
