@@ -33,7 +33,7 @@ public class SecurityConfigurations {
                 .cors(cors -> cors.configurationSource(corsConfigurationSource())) // Adiciona a configuração de CORS
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(authorize -> authorize
-                		// Rotas Públicas
+                		// Rotas Públicassss
                         .requestMatchers(HttpMethod.POST, "/auth/login", "/auth/register").permitAll()
                         // Rotas do Estudante
                         .requestMatchers(HttpMethod.POST, "/student/**").hasRole("STUDENT")
