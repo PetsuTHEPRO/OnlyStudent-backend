@@ -3,6 +3,7 @@ package com.sloth.OnlyStudent.services;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,10 +13,11 @@ import org.springframework.stereotype.Service;
 
 import com.sloth.OnlyStudent.entities.Classroom;
 import com.sloth.OnlyStudent.entities.Status;
-import com.sloth.OnlyStudent.entities.DTO.ClassroomDTO;
+import com.sloth.OnlyStudent.entities.Student;
 import com.sloth.OnlyStudent.entities.DTO.ClassroomNameDTO;
 import com.sloth.OnlyStudent.entities.DTO.ClassroomsDTO;
 import com.sloth.OnlyStudent.repository.ClassroomRepository;
+import com.sloth.OnlyStudent.repository.StudentRepository;
 
 import jakarta.transaction.Transactional;
 
@@ -25,6 +27,9 @@ public class ClassroomService {
 
     @Autowired
     private ClassroomRepository classroomRepository;
+    
+    @Autowired
+    private StudentRepository studentRepository;
 
     public List<ClassroomsDTO> getClassroomsTop3ByEducatorId(Long codigo) {
     	List<Classroom> classrooms = classroomRepository.findTop3ByEducatorIdOrderByCodigoAsc(codigo);
@@ -168,4 +173,29 @@ public class ClassroomService {
                 classroom.getTotalMateriais()
             ));
     }
+	
+	public boolean addStudentInClassroom(Long codigoClassroom, Long idAluno) {
+        Optional<Student> optionalStudent = studentRepository.findById(idAluno);
+        Optional<Classroom> optionalClassroom = classroomRepository.findByCodigo(codigoClassroom);
+
+        if (optionalStudent.isPresent() && optionalClassroom.isPresent()) {
+            Student student = optionalStudent.get();
+            Classroom classroom = optionalClassroom.get();
+
+            // Adiciona a turma ao conjunto de turmas do aluno
+            student.getClassrooms().add(classroom);
+
+            // Adiciona o aluno ao conjunto de alunos da turma
+            classroom.getAlunos().add(student);
+
+            // Salva as entidades no banco de dados
+            studentRepository.save(student);
+            classroomRepository.save(classroom);
+
+            return true;
+        }
+
+        return false;
+    }
+	
 }

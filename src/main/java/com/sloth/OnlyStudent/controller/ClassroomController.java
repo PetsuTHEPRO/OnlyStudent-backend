@@ -2,6 +2,7 @@ package com.sloth.OnlyStudent.controller;
 
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -202,6 +203,18 @@ public class ClassroomController {
                 return ResponseEntity.ok().body(classroomDetailsDTO);
             })
             .orElse(ResponseEntity.notFound().build());
+    }
+    
+    @PostMapping("/{codigo}/entrar")
+    public ResponseEntity<?> entrarNaTurma(@PathVariable Long codigo, @RequestBody Map<String, String> payload) {
+    	
+        boolean sucesso = classroomService.addStudentInClassroom(codigo, Long.valueOf(payload.get("idAluno")));
+
+        if (sucesso) {
+            return ResponseEntity.ok("Entrada confirmada com sucesso.");
+        } else {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Erro ao confirmar a entrada.");
+        }
     }
 
     
