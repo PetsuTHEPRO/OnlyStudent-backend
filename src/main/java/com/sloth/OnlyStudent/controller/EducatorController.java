@@ -63,8 +63,6 @@ public class EducatorController {
 	@PutMapping("/updateProfile")
     public ResponseEntity<?> updateUserByEmail(@RequestParam String login, @RequestBody EducatorDTO user) {
 
-		logger.info(user.especialidade() + " = " + login);
-
 		Educator educator = educatorRepository.findByEmail(login);
 		
 		if(educator != null) {

@@ -2143,3 +2143,230 @@ Caused by: java.lang.Error: Unresolved compilation problem:
 2024-08-27 15:52:17 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
 2024-08-27 15:52:17 INFO  c.s.O.OnlyStudentApplication - Started OnlyStudentApplication in 2.439 seconds (process running for 53006.958)
 2024-08-27 15:52:17 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-08-27 16:33:39 INFO  o.a.c.c.C.[Tomcat-6].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-27 16:33:39 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-27 16:33:39 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 124 ms
+2024-08-27 16:33:39 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0NzgyOTk2fQ.mwXBM0aIdsJLIg2x4_0ql-KHj95t1UNmH6apZS7qTJk
+2024-08-27 16:33:40 INFO  c.s.O.infra.security.SecurityFilter - Token expirado!
+2024-08-27 16:33:40 INFO  c.s.O.c.AuthenticationController - Token está inválido!
+2024-08-27 16:37:02 INFO  c.s.O.infra.security.SecurityFilter - Token: null
+2024-08-27 16:42:13 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2024-08-27 16:42:13 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-08-27 16:42:13 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-27 16:42:13 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-41 - Shutdown initiated...
+2024-08-27 16:42:13 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-41 - Shutdown completed.
+2024-08-27 16:42:14 INFO  c.s.O.OnlyStudentApplication - Starting OnlyStudentApplication using Java 20.0.2 with PID 36105 (/home/peterson/Documentos/Projetos/OnlyStudent/target/classes started by peterson in /home/peterson/Documentos/Projetos/OnlyStudent)
+2024-08-27 16:42:14 INFO  c.s.O.OnlyStudentApplication - The following 1 profile is active: "dev"
+2024-08-27 16:42:15 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-27 16:42:16 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 70 ms. Found 6 JPA repository interfaces.
+2024-08-27 16:42:16 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-08-27 16:42:16 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-27 16:42:16 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-27 16:42:16 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-08-27 16:42:16 INFO  o.a.c.c.C.[Tomcat-6].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-27 16:42:16 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2178 ms
+2024-08-27 16:42:16 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-27 16:42:16 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-27 16:42:16 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-27 16:42:16 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-42 - Starting...
+2024-08-27 16:42:17 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-42 - Added connection org.postgresql.jdbc.PgConnection@2e239b45
+2024-08-27 16:42:17 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-42 - Start completed.
+2024-08-27 16:42:17 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-27 16:42:17 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-27 16:42:18 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-27 16:42:18 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.ClassroomController.logger
+2024-08-27 16:42:18 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.MaterialController.logger
+2024-08-27 16:42:18 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-27 16:42:19 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-08-27 16:42:19 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-08-27 16:42:19 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-08-27 16:42:19 INFO  c.s.O.OnlyStudentApplication - Started OnlyStudentApplication in 5.493 seconds (process running for 56008.867)
+2024-08-27 16:42:19 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-08-27 16:42:38 INFO  o.a.c.c.C.[Tomcat-6].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-27 16:42:38 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-27 16:42:38 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 15 ms
+2024-08-27 16:42:38 INFO  c.s.O.infra.security.SecurityFilter - Token: null
+2024-08-27 16:43:09 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-27 16:43:09 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-08-27 16:43:09 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-27 16:43:09 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-42 - Shutdown initiated...
+2024-08-27 16:43:09 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-42 - Shutdown completed.
+2024-08-27 16:43:09 INFO  c.s.O.OnlyStudentApplication - Starting OnlyStudentApplication using Java 20.0.2 with PID 36105 (/home/peterson/Documentos/Projetos/OnlyStudent/target/classes started by peterson in /home/peterson/Documentos/Projetos/OnlyStudent)
+2024-08-27 16:43:09 INFO  c.s.O.OnlyStudentApplication - The following 1 profile is active: "dev"
+2024-08-27 16:43:09 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-27 16:43:09 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 84 ms. Found 6 JPA repository interfaces.
+2024-08-27 16:43:10 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-08-27 16:43:10 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-27 16:43:10 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-27 16:43:10 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-08-27 16:43:10 INFO  o.a.c.c.C.[Tomcat-6].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-27 16:43:10 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 761 ms
+2024-08-27 16:43:10 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-27 16:43:10 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-27 16:43:10 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-27 16:43:10 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-43 - Starting...
+2024-08-27 16:43:10 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-43 - Added connection org.postgresql.jdbc.PgConnection@54d05e50
+2024-08-27 16:43:10 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-43 - Start completed.
+2024-08-27 16:43:10 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-27 16:43:11 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-27 16:43:11 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-27 16:43:11 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.ClassroomController.logger
+2024-08-27 16:43:11 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.MaterialController.logger
+2024-08-27 16:43:11 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-27 16:43:12 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-08-27 16:43:12 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-08-27 16:43:12 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-08-27 16:43:12 INFO  c.s.O.OnlyStudentApplication - Started OnlyStudentApplication in 3.084 seconds (process running for 56061.903)
+2024-08-27 16:43:12 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-08-27 16:43:49 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-27 16:43:49 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-08-27 16:43:49 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-27 16:43:49 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-43 - Shutdown initiated...
+2024-08-27 16:43:49 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-43 - Shutdown completed.
+2024-08-27 16:43:49 INFO  c.s.O.OnlyStudentApplication - Starting OnlyStudentApplication using Java 20.0.2 with PID 36105 (/home/peterson/Documentos/Projetos/OnlyStudent/target/classes started by peterson in /home/peterson/Documentos/Projetos/OnlyStudent)
+2024-08-27 16:43:49 INFO  c.s.O.OnlyStudentApplication - The following 1 profile is active: "dev"
+2024-08-27 16:43:49 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-27 16:43:49 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 45 ms. Found 6 JPA repository interfaces.
+2024-08-27 16:43:50 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-08-27 16:43:50 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-27 16:43:50 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-27 16:43:50 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-08-27 16:43:50 INFO  o.a.c.c.C.[Tomcat-6].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-27 16:43:50 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 739 ms
+2024-08-27 16:43:50 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-27 16:43:50 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-27 16:43:50 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-27 16:43:50 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-44 - Starting...
+2024-08-27 16:43:50 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-44 - Added connection org.postgresql.jdbc.PgConnection@6a4eba7e
+2024-08-27 16:43:50 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-44 - Start completed.
+2024-08-27 16:43:50 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-27 16:43:50 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-27 16:43:51 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-27 16:43:51 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.ClassroomController.logger
+2024-08-27 16:43:51 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.MaterialController.logger
+2024-08-27 16:43:51 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-27 16:43:52 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-08-27 16:43:52 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-08-27 16:43:52 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-08-27 16:43:52 INFO  c.s.O.OnlyStudentApplication - Started OnlyStudentApplication in 2.727 seconds (process running for 56101.49)
+2024-08-27 16:43:52 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-08-27 16:44:08 INFO  o.a.c.c.C.[Tomcat-6].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-27 16:44:08 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-27 16:44:08 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-08-27 16:44:08 INFO  c.s.O.infra.security.SecurityFilter - Token: null
+2024-08-27 16:44:08 INFO  c.s.O.controller.ClassroomController - EspecialidadeGraduação
+2024-08-27 16:46:26 INFO  c.s.O.infra.security.SecurityFilter - Token: null
+2024-08-27 16:46:26 INFO  c.s.O.controller.ClassroomController - Especialidadenull
+2024-08-27 16:47:02 INFO  c.s.O.infra.security.SecurityFilter - Token: null
+2024-08-27 16:47:02 INFO  c.s.O.controller.ClassroomController - Especialidadenull
+2024-08-27 16:49:25 INFO  c.s.O.infra.security.SecurityFilter - Token: null
+2024-08-27 16:49:25 INFO  c.s.O.controller.ClassroomController - Especialidadenull
+2024-08-27 16:50:56 INFO  c.s.O.infra.security.SecurityFilter - Token: null
+2024-08-27 16:50:56 INFO  c.s.O.controller.ClassroomController - Especialidadenull
+2024-08-27 16:50:56 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODc0NjU2fQ.Fyw4j3UZ-qTXuQOtaj1anpfd4fpPq_vtJse-0o0D6Po
+2024-08-27 16:50:56 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-27 16:50:57 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODc0NjU2fQ.Fyw4j3UZ-qTXuQOtaj1anpfd4fpPq_vtJse-0o0D6Po
+2024-08-27 16:50:57 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODc0NjU2fQ.Fyw4j3UZ-qTXuQOtaj1anpfd4fpPq_vtJse-0o0D6Po
+2024-08-27 16:50:57 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODc0NjU2fQ.Fyw4j3UZ-qTXuQOtaj1anpfd4fpPq_vtJse-0o0D6Po
+2024-08-27 16:50:58 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODc0NjU2fQ.Fyw4j3UZ-qTXuQOtaj1anpfd4fpPq_vtJse-0o0D6Po
+2024-08-27 16:50:58 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODc0NjU2fQ.Fyw4j3UZ-qTXuQOtaj1anpfd4fpPq_vtJse-0o0D6Po
+2024-08-27 16:50:58 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODc0NjU2fQ.Fyw4j3UZ-qTXuQOtaj1anpfd4fpPq_vtJse-0o0D6Po
+2024-08-27 16:50:58 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODc0NjU2fQ.Fyw4j3UZ-qTXuQOtaj1anpfd4fpPq_vtJse-0o0D6Po
+2024-08-27 16:50:58 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODc0NjU2fQ.Fyw4j3UZ-qTXuQOtaj1anpfd4fpPq_vtJse-0o0D6Po
+2024-08-27 16:50:58 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODc0NjU2fQ.Fyw4j3UZ-qTXuQOtaj1anpfd4fpPq_vtJse-0o0D6Po
+2024-08-27 16:57:45 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODc0NjU2fQ.Fyw4j3UZ-qTXuQOtaj1anpfd4fpPq_vtJse-0o0D6Po
+2024-08-27 16:57:45 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-27 16:57:46 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODc0NjU2fQ.Fyw4j3UZ-qTXuQOtaj1anpfd4fpPq_vtJse-0o0D6Po
+2024-08-27 16:57:46 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODc0NjU2fQ.Fyw4j3UZ-qTXuQOtaj1anpfd4fpPq_vtJse-0o0D6Po
+2024-08-27 16:57:46 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODc0NjU2fQ.Fyw4j3UZ-qTXuQOtaj1anpfd4fpPq_vtJse-0o0D6Po
+2024-08-27 16:57:47 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODc0NjU2fQ.Fyw4j3UZ-qTXuQOtaj1anpfd4fpPq_vtJse-0o0D6Po
+2024-08-27 16:57:47 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODc0NjU2fQ.Fyw4j3UZ-qTXuQOtaj1anpfd4fpPq_vtJse-0o0D6Po
+2024-08-27 16:57:47 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODc0NjU2fQ.Fyw4j3UZ-qTXuQOtaj1anpfd4fpPq_vtJse-0o0D6Po
+2024-08-27 16:57:47 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODc0NjU2fQ.Fyw4j3UZ-qTXuQOtaj1anpfd4fpPq_vtJse-0o0D6Po
+2024-08-27 16:57:47 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODc0NjU2fQ.Fyw4j3UZ-qTXuQOtaj1anpfd4fpPq_vtJse-0o0D6Po
+2024-08-27 16:57:47 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODc0NjU2fQ.Fyw4j3UZ-qTXuQOtaj1anpfd4fpPq_vtJse-0o0D6Po
+2024-08-27 16:57:55 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODc0NjU2fQ.Fyw4j3UZ-qTXuQOtaj1anpfd4fpPq_vtJse-0o0D6Po
+2024-08-27 16:57:55 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-27 16:57:56 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODc0NjU2fQ.Fyw4j3UZ-qTXuQOtaj1anpfd4fpPq_vtJse-0o0D6Po
+2024-08-27 16:58:26 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODc0NjU2fQ.Fyw4j3UZ-qTXuQOtaj1anpfd4fpPq_vtJse-0o0D6Po
+2024-08-27 16:58:27 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODc0NjU2fQ.Fyw4j3UZ-qTXuQOtaj1anpfd4fpPq_vtJse-0o0D6Po
+2024-08-27 16:58:27 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODc0NjU2fQ.Fyw4j3UZ-qTXuQOtaj1anpfd4fpPq_vtJse-0o0D6Po
+2024-08-27 17:00:15 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODc0NjU2fQ.Fyw4j3UZ-qTXuQOtaj1anpfd4fpPq_vtJse-0o0D6Po
+2024-08-27 17:00:15 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-27 17:00:16 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODc0NjU2fQ.Fyw4j3UZ-qTXuQOtaj1anpfd4fpPq_vtJse-0o0D6Po
+2024-08-27 17:00:16 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODc0NjU2fQ.Fyw4j3UZ-qTXuQOtaj1anpfd4fpPq_vtJse-0o0D6Po
+2024-08-27 17:01:16 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODc0NjU2fQ.Fyw4j3UZ-qTXuQOtaj1anpfd4fpPq_vtJse-0o0D6Po
+2024-08-27 17:01:16 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-27 17:01:16 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODc0NjU2fQ.Fyw4j3UZ-qTXuQOtaj1anpfd4fpPq_vtJse-0o0D6Po
+2024-08-27 17:01:16 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODc0NjU2fQ.Fyw4j3UZ-qTXuQOtaj1anpfd4fpPq_vtJse-0o0D6Po
+2024-08-27 17:10:32 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-27 17:10:32 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-08-27 17:10:33 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-27 17:10:33 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-44 - Shutdown initiated...
+2024-08-27 17:10:33 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-44 - Shutdown completed.
+2024-08-27 17:10:33 INFO  c.s.O.OnlyStudentApplication - Starting OnlyStudentApplication using Java 20.0.2 with PID 36105 (/home/peterson/Documentos/Projetos/OnlyStudent/target/classes started by peterson in /home/peterson/Documentos/Projetos/OnlyStudent)
+2024-08-27 17:10:33 INFO  c.s.O.OnlyStudentApplication - The following 1 profile is active: "dev"
+2024-08-27 17:10:36 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-27 17:10:36 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 95 ms. Found 6 JPA repository interfaces.
+2024-08-27 17:10:36 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-08-27 17:10:36 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-27 17:10:36 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-27 17:10:36 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-08-27 17:10:36 INFO  o.a.c.c.C.[Tomcat-6].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-27 17:10:36 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2970 ms
+2024-08-27 17:10:37 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-27 17:10:37 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-27 17:10:37 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-27 17:10:37 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-45 - Starting...
+2024-08-27 17:10:37 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-45 - Added connection org.postgresql.jdbc.PgConnection@22a50d9a
+2024-08-27 17:10:37 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-45 - Start completed.
+2024-08-27 17:10:37 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-27 17:10:38 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-27 17:10:39 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-27 17:10:39 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.ClassroomController.logger
+2024-08-27 17:10:39 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.MaterialController.logger
+2024-08-27 17:10:39 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-27 17:10:40 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-08-27 17:10:40 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-08-27 17:10:40 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-08-27 17:10:40 INFO  c.s.O.OnlyStudentApplication - Started OnlyStudentApplication in 6.801 seconds (process running for 57709.72)
+2024-08-27 17:10:40 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-08-27 17:30:40 INFO  o.a.c.c.C.[Tomcat-6].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-27 17:30:40 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-27 17:30:40 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2024-08-27 17:30:40 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODc0NjU2fQ.Fyw4j3UZ-qTXuQOtaj1anpfd4fpPq_vtJse-0o0D6Po
+2024-08-27 17:30:41 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-27 17:30:41 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODc0NjU2fQ.Fyw4j3UZ-qTXuQOtaj1anpfd4fpPq_vtJse-0o0D6Po
+2024-08-27 17:30:41 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODc0NjU2fQ.Fyw4j3UZ-qTXuQOtaj1anpfd4fpPq_vtJse-0o0D6Po
+2024-08-27 17:30:47 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODc0NjU2fQ.Fyw4j3UZ-qTXuQOtaj1anpfd4fpPq_vtJse-0o0D6Po
+2024-08-27 17:30:47 INFO  c.s.O.c.AuthenticationController - null = yuri@gmail.com
+2024-08-27 18:26:55 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODc0NjU2fQ.Fyw4j3UZ-qTXuQOtaj1anpfd4fpPq_vtJse-0o0D6Po
+2024-08-27 18:26:55 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-27 18:26:56 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODc0NjU2fQ.Fyw4j3UZ-qTXuQOtaj1anpfd4fpPq_vtJse-0o0D6Po
+2024-08-27 18:26:56 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODc0NjU2fQ.Fyw4j3UZ-qTXuQOtaj1anpfd4fpPq_vtJse-0o0D6Po
+2024-08-27 18:27:05 INFO  c.s.O.infra.security.SecurityFilter - Token: null
+2024-08-27 18:27:05 INFO  c.s.O.controller.ClassroomController - Especialidadenull
+2024-08-27 18:27:06 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODgwNDI1fQ.cONBInlBKuEuL21zbsAF3ZWZgAfxBOuDCDTWcvN-7OI
+2024-08-27 18:27:06 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-27 18:27:06 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODgwNDI1fQ.cONBInlBKuEuL21zbsAF3ZWZgAfxBOuDCDTWcvN-7OI
+2024-08-27 18:27:06 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODgwNDI1fQ.cONBInlBKuEuL21zbsAF3ZWZgAfxBOuDCDTWcvN-7OI
+2024-08-27 18:27:06 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODgwNDI1fQ.cONBInlBKuEuL21zbsAF3ZWZgAfxBOuDCDTWcvN-7OI
+2024-08-27 18:27:06 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODgwNDI1fQ.cONBInlBKuEuL21zbsAF3ZWZgAfxBOuDCDTWcvN-7OI
+2024-08-27 18:27:06 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODgwNDI1fQ.cONBInlBKuEuL21zbsAF3ZWZgAfxBOuDCDTWcvN-7OI
+2024-08-27 18:27:07 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODgwNDI1fQ.cONBInlBKuEuL21zbsAF3ZWZgAfxBOuDCDTWcvN-7OI
+2024-08-27 18:27:07 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODgwNDI1fQ.cONBInlBKuEuL21zbsAF3ZWZgAfxBOuDCDTWcvN-7OI
+2024-08-27 18:27:07 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODgwNDI1fQ.cONBInlBKuEuL21zbsAF3ZWZgAfxBOuDCDTWcvN-7OI
+2024-08-27 18:27:07 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODgwNDI1fQ.cONBInlBKuEuL21zbsAF3ZWZgAfxBOuDCDTWcvN-7OI
+2024-08-27 18:28:32 INFO  c.s.O.infra.security.SecurityFilter - Token: null
+2024-08-27 18:28:32 INFO  c.s.O.controller.ClassroomController - Especialidadenull
+2024-08-27 18:28:32 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODgwNTEyfQ.cdvZCK371EeQ8OOqlpGxXeoYFkUHyE0AY0yslSSHShs
+2024-08-27 18:28:32 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-27 18:28:33 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODgwNTEyfQ.cdvZCK371EeQ8OOqlpGxXeoYFkUHyE0AY0yslSSHShs
+2024-08-27 18:28:33 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODgwNTEyfQ.cdvZCK371EeQ8OOqlpGxXeoYFkUHyE0AY0yslSSHShs
+2024-08-27 18:28:33 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODgwNTEyfQ.cdvZCK371EeQ8OOqlpGxXeoYFkUHyE0AY0yslSSHShs
+2024-08-27 18:28:33 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODgwNTEyfQ.cdvZCK371EeQ8OOqlpGxXeoYFkUHyE0AY0yslSSHShs
+2024-08-27 18:28:33 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODgwNTEyfQ.cdvZCK371EeQ8OOqlpGxXeoYFkUHyE0AY0yslSSHShs
+2024-08-27 18:28:33 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODgwNTEyfQ.cdvZCK371EeQ8OOqlpGxXeoYFkUHyE0AY0yslSSHShs
+2024-08-27 18:28:34 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODgwNTEyfQ.cdvZCK371EeQ8OOqlpGxXeoYFkUHyE0AY0yslSSHShs
+2024-08-27 18:28:34 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODgwNTEyfQ.cdvZCK371EeQ8OOqlpGxXeoYFkUHyE0AY0yslSSHShs
+2024-08-27 18:28:34 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0ODgwNTEyfQ.cdvZCK371EeQ8OOqlpGxXeoYFkUHyE0AY0yslSSHShs
