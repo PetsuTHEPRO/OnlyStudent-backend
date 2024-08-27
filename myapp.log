@@ -1816,3 +1816,330 @@ Caused by: java.lang.Error: Unresolved compilation problem:
 2024-08-27 15:16:13 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
 2024-08-27 15:16:13 INFO  c.s.O.OnlyStudentApplication - Started OnlyStudentApplication in 1.745 seconds (process running for 50843.386)
 2024-08-27 15:16:13 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-08-27 15:19:24 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-27 15:19:24 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-08-27 15:19:24 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-27 15:19:24 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-34 - Shutdown initiated...
+2024-08-27 15:19:24 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-34 - Shutdown completed.
+2024-08-27 15:19:24 INFO  c.s.O.OnlyStudentApplication - Starting OnlyStudentApplication using Java 20.0.2 with PID 36105 (/home/peterson/Documentos/Projetos/OnlyStudent/target/classes started by peterson in /home/peterson/Documentos/Projetos/OnlyStudent)
+2024-08-27 15:19:24 INFO  c.s.O.OnlyStudentApplication - The following 1 profile is active: "dev"
+2024-08-27 15:19:25 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-27 15:19:25 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 50 ms. Found 6 JPA repository interfaces.
+2024-08-27 15:19:25 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-08-27 15:19:25 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-27 15:19:25 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-27 15:19:25 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-08-27 15:19:25 INFO  o.a.c.c.C.[Tomcat-3].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-27 15:19:25 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1335 ms
+2024-08-27 15:19:26 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-27 15:19:26 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-27 15:19:26 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-27 15:19:26 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-35 - Starting...
+2024-08-27 15:19:26 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-35 - Added connection org.postgresql.jdbc.PgConnection@24c98198
+2024-08-27 15:19:26 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-35 - Start completed.
+2024-08-27 15:19:26 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-27 15:19:26 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-27 15:19:26 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-27 15:19:27 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.ClassroomController.logger
+2024-08-27 15:19:27 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.MaterialController.logger
+2024-08-27 15:19:27 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-27 15:19:28 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-08-27 15:19:28 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-08-27 15:19:28 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-08-27 15:19:28 INFO  c.s.O.OnlyStudentApplication - Started OnlyStudentApplication in 3.812 seconds (process running for 51037.69)
+2024-08-27 15:19:28 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-08-27 15:49:41 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2024-08-27 15:49:41 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-08-27 15:49:41 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-27 15:49:41 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-35 - Shutdown initiated...
+2024-08-27 15:49:41 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-35 - Shutdown completed.
+2024-08-27 15:49:42 INFO  c.s.O.OnlyStudentApplication - Starting OnlyStudentApplication using Java 20.0.2 with PID 36105 (/home/peterson/Documentos/Projetos/OnlyStudent/target/classes started by peterson in /home/peterson/Documentos/Projetos/OnlyStudent)
+2024-08-27 15:49:42 INFO  c.s.O.OnlyStudentApplication - The following 1 profile is active: "dev"
+2024-08-27 15:49:42 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-27 15:49:42 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 6 JPA repository interfaces.
+2024-08-27 15:49:42 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-08-27 15:49:42 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-27 15:49:42 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-27 15:49:42 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-08-27 15:49:42 INFO  o.a.c.c.C.[Tomcat-3].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-27 15:49:42 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 673 ms
+2024-08-27 15:49:42 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-27 15:49:42 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-27 15:49:43 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-27 15:49:43 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-36 - Starting...
+2024-08-27 15:49:43 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-36 - Added connection org.postgresql.jdbc.PgConnection@1fc076e2
+2024-08-27 15:49:43 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-36 - Start completed.
+2024-08-27 15:49:43 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-27 15:49:43 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-27 15:49:43 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-27 15:49:44 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'classroomController' defined in file [/home/peterson/Documentos/Projetos/OnlyStudent/target/classes/com/sloth/OnlyStudent/controller/ClassroomController.class]: Failed to instantiate [com.sloth.OnlyStudent.controller.ClassroomController]: Constructor threw exception
+2024-08-27 15:49:44 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-27 15:49:44 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-36 - Shutdown initiated...
+2024-08-27 15:49:44 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-36 - Shutdown completed.
+2024-08-27 15:49:44 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-08-27 15:49:44 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-27 15:49:44 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'classroomController' defined in file [/home/peterson/Documentos/Projetos/OnlyStudent/target/classes/com/sloth/OnlyStudent/controller/ClassroomController.class]: Failed to instantiate [com.sloth.OnlyStudent.controller.ClassroomController]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1319)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.sloth.OnlyStudent.OnlyStudentApplication.main(OnlyStudentApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.sloth.OnlyStudent.controller.ClassroomController]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:221)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:88)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1313)
+	... 20 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+
+	at com.sloth.OnlyStudent.controller.ClassroomController.<init>(ClassroomController.java:49)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:195)
+	... 22 common frames omitted
+2024-08-27 15:50:20 INFO  c.s.O.OnlyStudentApplication - Starting OnlyStudentApplication using Java 20.0.2 with PID 36105 (/home/peterson/Documentos/Projetos/OnlyStudent/target/classes started by peterson in /home/peterson/Documentos/Projetos/OnlyStudent)
+2024-08-27 15:50:20 INFO  c.s.O.OnlyStudentApplication - The following 1 profile is active: "dev"
+2024-08-27 15:50:21 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-27 15:50:21 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29 ms. Found 6 JPA repository interfaces.
+2024-08-27 15:50:21 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-08-27 15:50:21 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-27 15:50:21 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-27 15:50:21 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-08-27 15:50:21 INFO  o.a.c.c.C.[Tomcat-4].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-27 15:50:21 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 980 ms
+2024-08-27 15:50:22 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-27 15:50:22 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-27 15:50:22 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-27 15:50:22 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-37 - Starting...
+2024-08-27 15:50:22 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-37 - Added connection org.postgresql.jdbc.PgConnection@21d22a52
+2024-08-27 15:50:22 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-37 - Start completed.
+2024-08-27 15:50:22 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-27 15:50:22 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-27 15:50:22 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-27 15:50:22 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.ClassroomController.logger
+2024-08-27 15:50:22 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.MaterialController.logger
+2024-08-27 15:50:22 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-27 15:50:23 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-08-27 15:50:23 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-08-27 15:50:23 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-08-27 15:50:23 INFO  c.s.O.OnlyStudentApplication - Started OnlyStudentApplication in 2.447 seconds (process running for 52892.683)
+2024-08-27 15:50:23 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-08-27 15:50:56 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-27 15:50:56 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-08-27 15:50:56 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-27 15:50:56 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-37 - Shutdown initiated...
+2024-08-27 15:50:56 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-37 - Shutdown completed.
+2024-08-27 15:50:57 INFO  c.s.O.OnlyStudentApplication - Starting OnlyStudentApplication using Java 20.0.2 with PID 36105 (/home/peterson/Documentos/Projetos/OnlyStudent/target/classes started by peterson in /home/peterson/Documentos/Projetos/OnlyStudent)
+2024-08-27 15:50:57 INFO  c.s.O.OnlyStudentApplication - The following 1 profile is active: "dev"
+2024-08-27 15:50:57 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-27 15:50:57 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 6 JPA repository interfaces.
+2024-08-27 15:50:57 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-08-27 15:50:57 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-27 15:50:57 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-27 15:50:57 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-08-27 15:50:57 INFO  o.a.c.c.C.[Tomcat-4].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-27 15:50:57 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 476 ms
+2024-08-27 15:50:57 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-27 15:50:57 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-27 15:50:57 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-27 15:50:57 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-38 - Starting...
+2024-08-27 15:50:57 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-38 - Added connection org.postgresql.jdbc.PgConnection@1c4ba334
+2024-08-27 15:50:57 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-38 - Start completed.
+2024-08-27 15:50:57 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-27 15:50:57 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-27 15:50:58 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-27 15:50:58 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.ClassroomController.logger
+2024-08-27 15:50:58 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.MaterialController.logger
+2024-08-27 15:50:58 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-27 15:50:58 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-08-27 15:50:58 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-08-27 15:50:58 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-08-27 15:50:58 INFO  c.s.O.OnlyStudentApplication - Started OnlyStudentApplication in 1.855 seconds (process running for 52928.244)
+2024-08-27 15:50:58 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-08-27 15:51:40 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-27 15:51:40 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-08-27 15:51:40 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-27 15:51:40 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-38 - Shutdown initiated...
+2024-08-27 15:51:40 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-38 - Shutdown completed.
+2024-08-27 15:51:40 INFO  c.s.O.OnlyStudentApplication - Starting OnlyStudentApplication using Java 20.0.2 with PID 36105 (/home/peterson/Documentos/Projetos/OnlyStudent/target/classes started by peterson in /home/peterson/Documentos/Projetos/OnlyStudent)
+2024-08-27 15:51:40 INFO  c.s.O.OnlyStudentApplication - The following 1 profile is active: "dev"
+2024-08-27 15:51:41 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-27 15:51:41 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27 ms. Found 6 JPA repository interfaces.
+2024-08-27 15:51:41 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-08-27 15:51:41 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-27 15:51:41 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-27 15:51:41 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-08-27 15:51:41 INFO  o.a.c.c.C.[Tomcat-4].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-27 15:51:41 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 567 ms
+2024-08-27 15:51:41 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-27 15:51:41 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-27 15:51:41 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-27 15:51:41 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-39 - Starting...
+2024-08-27 15:51:41 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-39 - Added connection org.postgresql.jdbc.PgConnection@40d5eaf4
+2024-08-27 15:51:41 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-39 - Start completed.
+2024-08-27 15:51:41 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-27 15:51:41 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-27 15:51:42 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-27 15:51:42 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'classroomController' defined in file [/home/peterson/Documentos/Projetos/OnlyStudent/target/classes/com/sloth/OnlyStudent/controller/ClassroomController.class]: Failed to instantiate [com.sloth.OnlyStudent.controller.ClassroomController]: Constructor threw exception
+2024-08-27 15:51:42 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-27 15:51:42 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-39 - Shutdown initiated...
+2024-08-27 15:51:42 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-39 - Shutdown completed.
+2024-08-27 15:51:42 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-08-27 15:51:42 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-27 15:51:42 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'classroomController' defined in file [/home/peterson/Documentos/Projetos/OnlyStudent/target/classes/com/sloth/OnlyStudent/controller/ClassroomController.class]: Failed to instantiate [com.sloth.OnlyStudent.controller.ClassroomController]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1319)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.sloth.OnlyStudent.OnlyStudentApplication.main(OnlyStudentApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.sloth.OnlyStudent.controller.ClassroomController]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:221)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:88)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1313)
+	... 20 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+
+	at com.sloth.OnlyStudent.controller.ClassroomController.<init>(ClassroomController.java:49)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:195)
+	... 22 common frames omitted
+2024-08-27 15:51:47 INFO  c.s.O.OnlyStudentApplication - Starting OnlyStudentApplication using Java 20.0.2 with PID 36105 (/home/peterson/Documentos/Projetos/OnlyStudent/target/classes started by peterson in /home/peterson/Documentos/Projetos/OnlyStudent)
+2024-08-27 15:51:47 INFO  c.s.O.OnlyStudentApplication - The following 1 profile is active: "dev"
+2024-08-27 15:51:47 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-27 15:51:47 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 6 JPA repository interfaces.
+2024-08-27 15:51:47 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-08-27 15:51:47 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-27 15:51:47 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-27 15:51:47 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-08-27 15:51:47 INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-27 15:51:47 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 494 ms
+2024-08-27 15:51:47 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-27 15:51:47 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-27 15:51:47 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-27 15:51:47 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-40 - Starting...
+2024-08-27 15:51:48 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-40 - Added connection org.postgresql.jdbc.PgConnection@34c3f5f2
+2024-08-27 15:51:48 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-40 - Start completed.
+2024-08-27 15:51:48 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-27 15:51:48 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-27 15:51:48 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-27 15:51:48 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'classroomController' defined in file [/home/peterson/Documentos/Projetos/OnlyStudent/target/classes/com/sloth/OnlyStudent/controller/ClassroomController.class]: Failed to instantiate [com.sloth.OnlyStudent.controller.ClassroomController]: Constructor threw exception
+2024-08-27 15:51:48 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-27 15:51:48 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-40 - Shutdown initiated...
+2024-08-27 15:51:48 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-40 - Shutdown completed.
+2024-08-27 15:51:48 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-08-27 15:51:48 WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-40 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1623)
+2024-08-27 15:51:48 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-27 15:51:48 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'classroomController' defined in file [/home/peterson/Documentos/Projetos/OnlyStudent/target/classes/com/sloth/OnlyStudent/controller/ClassroomController.class]: Failed to instantiate [com.sloth.OnlyStudent.controller.ClassroomController]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1319)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.sloth.OnlyStudent.OnlyStudentApplication.main(OnlyStudentApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.sloth.OnlyStudent.controller.ClassroomController]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:221)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:88)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1313)
+	... 20 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+
+	at com.sloth.OnlyStudent.controller.ClassroomController.<init>(ClassroomController.java:49)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:195)
+	... 22 common frames omitted
+2024-08-27 15:52:15 INFO  c.s.O.OnlyStudentApplication - Starting OnlyStudentApplication using Java 20.0.2 with PID 36105 (/home/peterson/Documentos/Projetos/OnlyStudent/target/classes started by peterson in /home/peterson/Documentos/Projetos/OnlyStudent)
+2024-08-27 15:52:15 INFO  c.s.O.OnlyStudentApplication - The following 1 profile is active: "dev"
+2024-08-27 15:52:15 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-27 15:52:15 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 6 JPA repository interfaces.
+2024-08-27 15:52:15 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-08-27 15:52:15 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-27 15:52:15 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-27 15:52:15 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-08-27 15:52:15 INFO  o.a.c.c.C.[Tomcat-6].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-27 15:52:15 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 628 ms
+2024-08-27 15:52:15 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-27 15:52:15 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-27 15:52:15 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-27 15:52:15 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-41 - Starting...
+2024-08-27 15:52:15 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-41 - Added connection org.postgresql.jdbc.PgConnection@4654d3d8
+2024-08-27 15:52:15 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-41 - Start completed.
+2024-08-27 15:52:15 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-27 15:52:16 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-27 15:52:16 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-27 15:52:16 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.ClassroomController.logger
+2024-08-27 15:52:16 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.MaterialController.logger
+2024-08-27 15:52:16 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-27 15:52:17 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-08-27 15:52:17 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-08-27 15:52:17 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-08-27 15:52:17 INFO  c.s.O.OnlyStudentApplication - Started OnlyStudentApplication in 2.439 seconds (process running for 53006.958)
+2024-08-27 15:52:17 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged

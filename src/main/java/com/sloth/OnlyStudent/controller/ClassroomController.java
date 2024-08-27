@@ -177,6 +177,7 @@ public class ClassroomController {
         return classroomRepository.findById(id)
             .map(classroom -> {
                 // Extrair as informações necessárias do Classroom
+            	Long codigo = classroom.getCodigo();
                 String name = classroom.getName();
                 String educator = classroom.getEducator().getName(); // Supondo que Classroom tenha um Educator e você queira o nome dele
                 String descricao = classroom.getDescription();
@@ -197,7 +198,7 @@ public class ClassroomController {
                     .map(Student::getName) // Mapeia cada Student para o nome
                     .collect(Collectors.toList());
                 // Criar o DTO
-                ClassroomDetailsDTO classroomDetailsDTO = new ClassroomDetailsDTO(name, descricao, educator, materialDetailsDTOs, nomesAlunos);
+                ClassroomDetailsDTO classroomDetailsDTO = new ClassroomDetailsDTO(codigo, name, descricao, educator, materialDetailsDTOs, nomesAlunos);
                 logger.info(classroomDetailsDTO.name() + " = " + classroomDetailsDTO.description() + " = " + classroomDetailsDTO.educator() + " = " + classroomDetailsDTO.nomeAlunos());
                 // Retornar o DTO
                 return ResponseEntity.ok().body(classroomDetailsDTO);
