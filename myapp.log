@@ -2988,3 +2988,574 @@ Caused by: org.hibernate.query.sqm.UnknownEntityException: Could not resolve roo
 2024-08-28 03:50:46 INFO  c.s.O.c.AuthenticationController - Token está válido!
 2024-08-28 03:50:46 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDkxMzY0NH0.WZ8ie7xw3UYCRXI6IZKxL-BSJTODTMrcM_qNgMML8ho
 2024-08-28 03:50:46 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDkxMzY0NH0.WZ8ie7xw3UYCRXI6IZKxL-BSJTODTMrcM_qNgMML8ho
+2024-08-28 03:55:23 INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2024-08-28 03:55:23 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-08-28 03:55:23 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-28 03:55:23 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-29 - Shutdown initiated...
+2024-08-28 03:55:23 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-29 - Shutdown completed.
+2024-08-28 15:31:35 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-08-28 15:31:35 INFO  c.s.O.OnlyStudentApplication - Starting OnlyStudentApplication using Java 20.0.2 with PID 7346 (/home/peterson/Documentos/Projetos/OnlyStudent/target/classes started by peterson in /home/peterson/Documentos/Projetos/OnlyStudent)
+2024-08-28 15:31:35 INFO  c.s.O.OnlyStudentApplication - The following 1 profile is active: "dev"
+2024-08-28 15:31:35 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-28 15:31:35 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-28 15:31:37 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-28 15:31:37 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 123 ms. Found 6 JPA repository interfaces.
+2024-08-28 15:31:39 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-08-28 15:31:39 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-28 15:31:39 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-28 15:31:39 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-08-28 15:31:39 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-28 15:31:39 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3766 ms
+2024-08-28 15:31:39 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-28 15:31:39 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-28 15:31:39 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-28 15:31:40 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-28 15:31:40 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-28 15:31:41 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4eaa48d7
+2024-08-28 15:31:41 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-28 15:31:41 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-28 15:31:44 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-28 15:31:44 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-28 15:31:45 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.ClassroomController.logger
+2024-08-28 15:31:45 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-08-28 15:31:45 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.MaterialController.logger
+2024-08-28 15:31:45 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-28 15:31:46 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-08-28 15:31:46 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-08-28 15:31:46 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-08-28 15:31:46 INFO  c.s.O.OnlyStudentApplication - Started OnlyStudentApplication in 12.756 seconds (process running for 15.019)
+2024-08-28 15:33:11 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-28 15:33:11 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-28 15:33:11 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2024-08-28 15:33:11 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDkxMzY0NH0.WZ8ie7xw3UYCRXI6IZKxL-BSJTODTMrcM_qNgMML8ho
+2024-08-28 15:33:11 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 15:33:12 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDkxMzY0NH0.WZ8ie7xw3UYCRXI6IZKxL-BSJTODTMrcM_qNgMML8ho
+2024-08-28 15:33:12 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDkxMzY0NH0.WZ8ie7xw3UYCRXI6IZKxL-BSJTODTMrcM_qNgMML8ho
+2024-08-28 15:33:22 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDkxMzY0NH0.WZ8ie7xw3UYCRXI6IZKxL-BSJTODTMrcM_qNgMML8ho
+2024-08-28 15:33:22 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 15:33:22 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDkxMzY0NH0.WZ8ie7xw3UYCRXI6IZKxL-BSJTODTMrcM_qNgMML8ho
+2024-08-28 15:33:22 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDkxMzY0NH0.WZ8ie7xw3UYCRXI6IZKxL-BSJTODTMrcM_qNgMML8ho
+2024-08-28 15:33:22 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDkxMzY0NH0.WZ8ie7xw3UYCRXI6IZKxL-BSJTODTMrcM_qNgMML8ho
+2024-08-28 15:33:53 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDkxMzY0NH0.WZ8ie7xw3UYCRXI6IZKxL-BSJTODTMrcM_qNgMML8ho
+2024-08-28 15:33:53 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 15:33:53 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDkxMzY0NH0.WZ8ie7xw3UYCRXI6IZKxL-BSJTODTMrcM_qNgMML8ho
+2024-08-28 15:33:53 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDkxMzY0NH0.WZ8ie7xw3UYCRXI6IZKxL-BSJTODTMrcM_qNgMML8ho
+2024-08-28 15:33:53 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDkxMzY0NH0.WZ8ie7xw3UYCRXI6IZKxL-BSJTODTMrcM_qNgMML8ho
+2024-08-28 15:33:57 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDkxMzY0NH0.WZ8ie7xw3UYCRXI6IZKxL-BSJTODTMrcM_qNgMML8ho
+2024-08-28 15:33:57 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 15:33:57 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDkxMzY0NH0.WZ8ie7xw3UYCRXI6IZKxL-BSJTODTMrcM_qNgMML8ho
+2024-08-28 15:33:57 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDkxMzY0NH0.WZ8ie7xw3UYCRXI6IZKxL-BSJTODTMrcM_qNgMML8ho
+2024-08-28 15:33:57 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDkxMzY0NH0.WZ8ie7xw3UYCRXI6IZKxL-BSJTODTMrcM_qNgMML8ho
+2024-08-28 15:33:59 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDkxMzY0NH0.WZ8ie7xw3UYCRXI6IZKxL-BSJTODTMrcM_qNgMML8ho
+2024-08-28 15:33:59 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 15:33:59 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDkxMzY0NH0.WZ8ie7xw3UYCRXI6IZKxL-BSJTODTMrcM_qNgMML8ho
+2024-08-28 15:33:59 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDkxMzY0NH0.WZ8ie7xw3UYCRXI6IZKxL-BSJTODTMrcM_qNgMML8ho
+2024-08-28 15:34:02 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDkxMzY0NH0.WZ8ie7xw3UYCRXI6IZKxL-BSJTODTMrcM_qNgMML8ho
+2024-08-28 15:34:02 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 15:34:03 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDkxMzY0NH0.WZ8ie7xw3UYCRXI6IZKxL-BSJTODTMrcM_qNgMML8ho
+2024-08-28 15:34:03 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDkxMzY0NH0.WZ8ie7xw3UYCRXI6IZKxL-BSJTODTMrcM_qNgMML8ho
+2024-08-28 15:36:34 INFO  c.s.O.infra.security.SecurityFilter - Token: null
+2024-08-28 15:36:35 INFO  c.s.O.controller.ClassroomController - Especialidadenull
+2024-08-28 15:36:35 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:36:35 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 15:36:35 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:36:35 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:36:35 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:36:35 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:36:35 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:36:36 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:36:36 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:36:36 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:36:40 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:36:40 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 15:36:40 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:36:40 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:36:40 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:36:40 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:36:41 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:36:41 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:36:41 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:36:41 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:44:56 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:44:56 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:44:56 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:44:57 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:44:57 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:44:57 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:44:57 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:44:57 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:49:14 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:49:14 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 15:49:14 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:49:14 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:49:14 WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$PlainPageSerializationWarning - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2024-08-28 15:49:14 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:49:14 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:49:14 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:54:26 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:54:26 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 15:54:28 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:54:28 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:54:28 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:54:28 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:54:28 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:54:50 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:54:50 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:54:50 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:56:23 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:56:23 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 15:56:23 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:56:23 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:56:23 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:56:23 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:56:23 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:57:38 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:57:38 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 15:57:38 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:57:38 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:57:39 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:57:39 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 15:57:39 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:00:24 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:00:24 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:00:24 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:00:24 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:00:24 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:00:25 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:00:25 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:00:25 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:00:25 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:00:25 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:00:28 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:00:28 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:00:29 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:00:29 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:00:32 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:00:32 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:00:33 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:00:33 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:00:33 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:00:33 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:00:35 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:00:35 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:00:36 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:00:40 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:00:40 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:00:40 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:00:40 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:00:40 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:00:41 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:00:41 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:00:41 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:00:41 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:00:41 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:00:41 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:00:41 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:00:41 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:00:41 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:00:42 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:00:42 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:00:42 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:00:42 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:00:42 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:00:42 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:00:43 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:00:43 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:00:43 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:00:43 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:00:43 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:00:43 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:00:43 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:00:44 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:00:44 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:00:44 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:07:51 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:07:51 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:07:51 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:07:51 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:07:52 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:07:52 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:07:52 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:08:19 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:08:19 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:08:19 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:08:19 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:08:20 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:08:20 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:08:20 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:08:24 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:08:24 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:08:24 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:08:24 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:08:24 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:08:24 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:08:24 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:08:26 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:08:26 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:08:26 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:08:26 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:08:27 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:08:27 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:08:27 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:08:59 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:08:59 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:09:00 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:09:00 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:09:00 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:09:00 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:09:00 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:09:02 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:09:02 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:09:02 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:09:02 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:09:02 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:09:02 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:09:02 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU2NTk1fQ.eYGu5zW04heVUhPB4Enyy2naP9J1MPmaFtYBR4uvQN8
+2024-08-28 16:10:07 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-28 16:10:07 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-08-28 16:10:07 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-28 16:10:07 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-08-28 16:10:07 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-08-28 16:10:07 INFO  c.s.O.OnlyStudentApplication - Starting OnlyStudentApplication using Java 20.0.2 with PID 7346 (/home/peterson/Documentos/Projetos/OnlyStudent/target/classes started by peterson in /home/peterson/Documentos/Projetos/OnlyStudent)
+2024-08-28 16:10:07 INFO  c.s.O.OnlyStudentApplication - The following 1 profile is active: "dev"
+2024-08-28 16:10:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-28 16:10:09 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 56 ms. Found 6 JPA repository interfaces.
+2024-08-28 16:10:09 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-08-28 16:10:09 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-28 16:10:09 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-28 16:10:09 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-08-28 16:10:09 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-28 16:10:09 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1630 ms
+2024-08-28 16:10:09 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-28 16:10:09 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-28 16:10:09 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-28 16:10:09 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2024-08-28 16:10:09 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@47183881
+2024-08-28 16:10:09 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2024-08-28 16:10:09 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-28 16:10:10 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-28 16:10:10 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-28 16:10:11 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.ClassroomController.logger
+2024-08-28 16:10:11 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.MaterialController.logger
+2024-08-28 16:10:11 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-28 16:10:11 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-08-28 16:10:11 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-08-28 16:10:11 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-08-28 16:10:11 INFO  c.s.O.OnlyStudentApplication - Started OnlyStudentApplication in 3.951 seconds (process running for 2319.928)
+2024-08-28 16:10:11 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-08-28 16:10:12 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2024-08-28 16:10:12 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-08-28 16:10:12 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-28 16:10:12 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2024-08-28 16:10:13 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2024-08-28 16:10:13 INFO  c.s.O.OnlyStudentApplication - Starting OnlyStudentApplication using Java 20.0.2 with PID 7346 (/home/peterson/Documentos/Projetos/OnlyStudent/target/classes started by peterson in /home/peterson/Documentos/Projetos/OnlyStudent)
+2024-08-28 16:10:13 INFO  c.s.O.OnlyStudentApplication - The following 1 profile is active: "dev"
+2024-08-28 16:10:13 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-28 16:10:13 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 6 JPA repository interfaces.
+2024-08-28 16:10:13 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-08-28 16:10:13 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-28 16:10:13 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-28 16:10:13 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-08-28 16:10:13 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-28 16:10:13 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 520 ms
+2024-08-28 16:10:13 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-28 16:10:13 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-28 16:10:13 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-28 16:10:13 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2024-08-28 16:10:14 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@1ee807fd
+2024-08-28 16:10:14 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2024-08-28 16:10:14 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-28 16:10:14 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-28 16:10:14 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-28 16:10:15 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.ClassroomController.logger
+2024-08-28 16:10:15 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.sloth.OnlyStudent.controller.MaterialController.logger
+2024-08-28 16:10:15 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-28 16:10:16 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-08-28 16:10:16 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-08-28 16:10:16 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-08-28 16:10:16 INFO  c.s.O.OnlyStudentApplication - Started OnlyStudentApplication in 2.848 seconds (process running for 2324.451)
+2024-08-28 16:10:16 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-08-28 16:10:22 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-28 16:10:22 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-28 16:10:22 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2024-08-28 16:10:22 INFO  c.s.O.infra.security.SecurityFilter - Token: null
+2024-08-28 16:10:22 INFO  c.s.O.controller.ClassroomController - Especialidadenull
+2024-08-28 16:10:23 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:10:23 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:10:23 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:10:23 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:10:23 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:10:23 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:10:23 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:10:23 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:10:23 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:10:23 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:10:31 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:10:31 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:10:32 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:10:32 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:10:32 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:10:32 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:10:32 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:10:32 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:10:32 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:10:32 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:11:04 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:11:04 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:11:05 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:11:05 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:11:05 INFO  c.s.O.controller.ClassroomController - programação = kjkjkjkjkjk = peterkkk = [Yuri Ma, Andre]
+2024-08-28 16:11:09 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:11:09 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:11:09 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:11:09 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:11:09 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:11:09 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:11:09 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:11:09 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:11:09 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:11:09 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:11:13 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:11:13 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:11:13 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:11:13 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:11:13 INFO  c.s.O.controller.ClassroomController - programação = kjkjkjkjkjk = peterkkk = [Yuri Ma, Andre]
+2024-08-28 16:11:23 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:11:23 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:11:23 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:11:23 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:11:23 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:11:23 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:11:23 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:11:23 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:11:24 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:11:24 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:11:26 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:11:26 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:11:26 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:11:26 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:11:26 INFO  c.s.O.controller.ClassroomController - Quimica Fundamental - Vespetino = 343 = Yuri Prof = [Yuri Ma, Andre]
+2024-08-28 16:14:21 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:14:21 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:14:22 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:14:22 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:14:22 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:14:22 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:14:22 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:14:22 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:14:22 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:14:22 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:14:36 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:14:36 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:14:36 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:14:36 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:14:36 WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$PlainPageSerializationWarning - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2024-08-28 16:14:36 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:14:36 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:14:36 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:15:26 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:15:27 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:15:27 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:15:27 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:15:27 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:15:27 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:15:27 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:15:28 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:15:32 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:15:32 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:15:32 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:15:32 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:15:32 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:15:32 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:15:32 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:15:32 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:15:32 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:15:32 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:15:32 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:15:39 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:15:39 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:15:39 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:15:39 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:15:39 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:15:39 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:15:39 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:15:43 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:15:43 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:15:43 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:15:43 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:16:32 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:16:32 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:16:32 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:16:32 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:16:32 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:16:32 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:16:32 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:16:32 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:16:32 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:16:32 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:16:32 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:16:33 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:16:33 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:16:33 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:16:33 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:17:19 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:17:19 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:17:19 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:17:19 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:17:24 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:17:24 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:17:24 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:17:24 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:17:51 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:17:51 INFO  c.s.O.c.AuthenticationController - null = yuri@gmail.com
+2024-08-28 16:17:56 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:17:56 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:17:57 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:17:57 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:17:59 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:17:59 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:17:59 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:17:59 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:17:59 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:17:59 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:17:59 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:18:25 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:18:25 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:18:26 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:18:56 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:18:56 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:18:56 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:18:56 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:18:57 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:18:57 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:18:57 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:18:57 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:18:57 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:18:58 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:18:58 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:18:58 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:18:58 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:18:58 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:18:58 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:18:58 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:18:58 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:18:58 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmlAZ21haWwuY29tIiwiZXhwIjoxNzI0OTU4NjIyfQ.bX5jbJlKaH6qjWLViVBpMb2ISfvB0NcCt0dxcso0cA8
+2024-08-28 16:19:15 INFO  c.s.O.infra.security.SecurityFilter - Token: null
+2024-08-28 16:19:16 INFO  c.s.O.controller.ClassroomController - EspecialidadeGraduação
+2024-08-28 16:19:16 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:19:16 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:19:16 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:19:16 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:19:16 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:19:30 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:19:31 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:19:31 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:19:32 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:19:32 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:19:32 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:19:36 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:19:36 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:19:36 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:19:36 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:19:36 INFO  c.s.O.controller.ClassroomController - Quimica Fundamental - Vespetino = 343 = Yuri Prof = [Andreee, Yuri Ma]
+2024-08-28 16:19:50 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:19:50 INFO  c.s.O.controller.ClassroomController - ID 1: 12ID 2: 14
+2024-08-28 16:19:51 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:19:51 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:19:51 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:19:51 INFO  c.s.O.controller.ClassroomController - Quimica Fundamental - Vespetino = 343 = Yuri Prof = [Andreee, Yuri Ma]
+2024-08-28 16:19:51 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:20:17 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:20:17 INFO  c.s.O.controller.ClassroomController - Codigo: 12
+2024-08-28 16:20:19 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:20:19 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:20:19 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:20:20 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:20:20 INFO  c.s.O.controller.ClassroomController - Quimica Fundamental - Vespetino = 343 = Yuri Prof = [Andreee, Yuri Ma]
+2024-08-28 16:20:31 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:20:31 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:20:31 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:20:34 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:20:34 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:20:34 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:20:34 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:20:35 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:20:42 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:20:42 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:20:42 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:20:42 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:20:47 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:20:47 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:20:47 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:20:47 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:20:47 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:20:47 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:20:47 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:20:48 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:20:49 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:20:49 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:20:49 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:20:49 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:21:14 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:21:14 INFO  c.s.O.controller.ClassroomController - Classroom exists: false
+2024-08-28 16:21:14 INFO  c.s.O.controller.ClassroomController - Educator: 3
+2024-08-28 16:21:14 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:21:14 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:21:14 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:21:14 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:21:14 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:21:14 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:21:22 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:21:22 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:21:22 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:21:22 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:21:22 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:21:22 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:21:23 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:21:24 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:21:24 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:21:24 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:21:24 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:21:24 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:21:25 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:21:26 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:21:26 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:21:26 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:21:26 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:21:26 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:21:29 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:21:29 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:21:29 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:21:29 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:21:29 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:21:41 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:21:41 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:21:41 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:21:41 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:21:41 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:21:44 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:21:44 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:21:45 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:21:45 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:21:45 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:21:47 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:21:47 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:21:47 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:21:47 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:21:47 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:21:48 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:21:48 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:21:48 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:21:48 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:21:48 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:21:54 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:21:54 INFO  c.s.O.c.AuthenticationController - Token está válido!
+2024-08-28 16:21:54 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:21:54 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU
+2024-08-28 16:21:54 INFO  c.s.O.infra.security.SecurityFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6Inl1cmkzQGdtYWlsLmNvbSIsImV4cCI6MTcyNDk1OTE1Nn0.D8iNEoPFFT1l_u3uTN3A4dotTHFbvGGgtqGXowNboaU

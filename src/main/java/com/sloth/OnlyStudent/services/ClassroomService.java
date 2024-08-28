@@ -165,7 +165,7 @@ public class ClassroomService {
         return classrooms.map(classroom -> new ClassroomsDTO(
                 classroom.getCodigo(),
                 classroom.getName(),
-                classroom.getDescription(),
+                classroom.getEducator().getName(),
                 classroom.getStatus(),
                 classroom.getCusto(),
                 classroom.getPrice(),
