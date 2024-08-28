@@ -40,7 +40,7 @@ public class ClassroomService {
             ClassroomsDTO dto = new ClassroomsDTO(
                     classroom.getCodigo(),
                     classroom.getName(),
-                    classroom.getDescription(),
+                    classroom.getEducator().getName(),
                     classroom.getStatus(),
                     classroom.getCusto(),
                     classroom.getPrice(),
@@ -61,7 +61,7 @@ public class ClassroomService {
             ClassroomsDTO dto = new ClassroomsDTO(
                     classroom.getCodigo(),
                     classroom.getName(),
-                    classroom.getDescription(),
+                    classroom.getEducator().getName(),
                     classroom.getStatus(),
                     classroom.getCusto(),
                     classroom.getPrice(),
@@ -81,7 +81,7 @@ public class ClassroomService {
     	return classrooms.map(classroom -> new ClassroomsDTO(
                 classroom.getCodigo(),
                 classroom.getName(),
-                classroom.getDescription(),
+                classroom.getEducator().getName(),
                 classroom.getStatus(),
                 classroom.getCusto(),
                 classroom.getPrice(),
@@ -97,7 +97,7 @@ public class ClassroomService {
     	return classrooms.map(classroom -> new ClassroomsDTO(
                 classroom.getCodigo(),
                 classroom.getName(),
-                classroom.getDescription(),
+                classroom.getEducator().getName(),
                 classroom.getStatus(),
                 classroom.getCusto(),
                 classroom.getPrice(),
@@ -137,7 +137,7 @@ public class ClassroomService {
 	        .map(classroom -> new ClassroomsDTO(
 	            classroom.getCodigo(),
 	            classroom.getName(),
-	            classroom.getDescription(),
+                classroom.getEducator().getName(),
 	            classroom.getStatus(),
 	            classroom.getCusto(),
 	            classroom.getPrice(),

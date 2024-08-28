@@ -13,4 +13,5 @@ public interface MaterialRepository extends JpaRepository<Material, Long>{
 	List<Material> findByTurmaCodigo(Long codigo);
 	
 	boolean existsByNameAndTurmaCodigo(String name, Long turmaCodigo);
+	
 }

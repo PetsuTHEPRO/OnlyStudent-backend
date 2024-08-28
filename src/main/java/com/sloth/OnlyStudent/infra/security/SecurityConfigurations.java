@@ -49,6 +49,7 @@ public class SecurityConfigurations {
                         .requestMatchers(HttpMethod.PUT, "/turma/**").hasAnyRole("EDUCATOR", "STUDENT")
                         .requestMatchers(HttpMethod.DELETE, "turma/**").hasAnyRole("EDUCATOR", "STUDENT")
                         .requestMatchers(HttpMethod.POST, "/material/**").permitAll()
+                        .requestMatchers(HttpMethod.DELETE, "/material/**").permitAll()
                         .requestMatchers(HttpMethod.POST, "/admin/**").hasRole("ADMIN")
                         .requestMatchers(HttpMethod.POST, "/support/**").permitAll()
                         .requestMatchers(HttpMethod.GET, "/token/**").permitAll()

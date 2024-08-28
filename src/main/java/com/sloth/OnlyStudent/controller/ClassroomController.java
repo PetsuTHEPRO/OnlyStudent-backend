@@ -42,6 +42,8 @@ import com.sloth.OnlyStudent.repository.MaterialRepository;
 import com.sloth.OnlyStudent.repository.StudentRepository;
 import com.sloth.OnlyStudent.services.ClassroomService;
 
+import jakarta.persistence.EntityNotFoundException;
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 
 @RestController
@@ -135,6 +137,37 @@ public class ClassroomController {
 
         // Retorna status 204 No Content
         return ResponseEntity.noContent().build();
+    }
+    
+ // Endpoint para remover um material de uma turma
+    @DeleteMapping("/{classroomId}/material/{materialId}")
+    @Transactional
+    public ResponseEntity<String> removeMaterialFromClassroom(@PathVariable Long classroomId, @PathVariable Long materialId) {
+        try {
+        	logger.info("ID 1: " + classroomId + "ID 2: " + materialId);
+            // Buscar a turma
+            Classroom classroom = classroomRepository.findById(classroomId)
+                    .orElseThrow(() -> new EntityNotFoundException("Classroom not found"));
+
+            // Buscar o material
+            Material material = materialRepository.findById(materialId)
+                    .orElseThrow(() -> new EntityNotFoundException("Material not found"));
+
+            // Remover o material da turma
+            if (classroom.getMaterials().remove(material)) {
+                // Atualizar a referência bidirecional
+                material.setTurma(null);
+                materialRepository.save(material); // Opcional, se necessário salvar o material
+
+                // Salvar as alterações na turma
+                classroomRepository.save(classroom);
+                return new ResponseEntity<>("Material removed from classroom successfully!", HttpStatus.OK);
+            } else {
+                return new ResponseEntity<>("Material not found in the classroom.", HttpStatus.NOT_FOUND);
+            }
+        } catch (EntityNotFoundException e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.NOT_FOUND);
+        }
     }
     
     @PutMapping("/{id}/status")
