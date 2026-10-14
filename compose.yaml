@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:16
+    container_name: onlystudent-postgres
+    environment:
+      POSTGRES_DB: school
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: "123"
+    ports:
+      - "5432:5432"
+    volumes:
+      - onlystudent-pgdata:/var/lib/postgresql/data
+      - ./scripts/create-test-db.sql:/docker-entrypoint-initdb.d/10-create-test-db.sql:ro
+
+volumes:
+  onlystudent-pgdata:
