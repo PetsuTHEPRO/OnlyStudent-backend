@@ -79,7 +79,7 @@ public class ClassroomController {
     public Page<ClassroomsDTO> getAllClassrooms(
     		@RequestParam String search,
     		@RequestParam(defaultValue = "0") int page, 
-            @RequestParam(defaultValue = "12") int size) {
+            @RequestParam(defaultValue = "50") int size) {
     	Pageable pageable = PageRequest.of(page, size);
             return classroomService.getAllClassrooms(search, pageable);
     }
@@ -102,7 +102,7 @@ public class ClassroomController {
     @GetMapping("/educatorTurmas")
     public Page<ClassroomsDTO> getClassroomsEducator(@RequestParam Long codigo, 
             @RequestParam(defaultValue = "0") int page, 
-            @RequestParam(defaultValue = "12") int size) {
+            @RequestParam(defaultValue = "50") int size) {
     	Pageable pageable = PageRequest.of(page, size);
         return classroomService.getClassroomsByEducatorId(codigo, pageable);  
     }
@@ -110,7 +110,7 @@ public class ClassroomController {
     @GetMapping("/studentTurmas")
     public Page<ClassroomsDTO> getClassroomsStudent(@RequestParam Long codigo,
     		@RequestParam(defaultValue = "0") int page,
-    		@RequestParam(defaultValue = "12") int size){
+            @RequestParam(defaultValue = "50") int size){
         
         Pageable pageable = PageRequest.of(page, size);
         return classroomService.getClassroomsByStudentId(codigo, pageable);  

@@ -21,6 +21,7 @@ import com.sloth.OnlyStudent.repository.AdministratorRepository;
 
 @RestController
 @RequestMapping("admin")
+@PreAuthorize("hasRole('ADMIN')")
 public class AdministratorController {
 	
     @Autowired

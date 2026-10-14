@@ -33,7 +33,6 @@
 	    <dependency>
     	    <groupId>org.springframework.boot</groupId>
        	 	<artifactId>spring-boot-starter-data-jpa</artifactId>
-        	<version>3.1.0</version> <!-- Use the appropriate version for your project -->
     	</dependency>
 	    <dependency>
 	      <groupId>org.postgresql</groupId>
@@ -66,12 +65,12 @@
 		</dependency>
 		
 		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
-		<dependency>
-		    <groupId>org.projectlombok</groupId>
-		    <artifactId>lombok</artifactId>
-		    <version>1.18.30</version>
-		    <scope>provided</scope>
-		</dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.42</version> <!-- Recomendado, ou no mínimo 1.18.40 -->
+            <scope>provided</scope>
+        </dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -120,11 +119,12 @@
 					</execution>
 				</executions>
 				<dependencies>
-					<dependency>
-						<groupId>org.springframework.restdocs</groupId>
-						<artifactId>spring-restdocs-asciidoctor</artifactId>
-						<version>${spring-restdocs.version}</version>
-					</dependency>
+                    <!-- Opção um: escrever diretamente -->
+                    <dependency>
+                        <groupId>org.springframework.restdocs</groupId>
+                        <artifactId>spring-restdocs-asciidoctor</artifactId>
+                        <version>3.0.1</version>
+                    </dependency>
 				</dependencies>
 			</plugin>
 			<plugin>
@@ -139,6 +139,20 @@
 					</excludes>
 				</configuration>
 			</plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <annotationProcessorPaths>
+                        <path>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                            <version>1.18.42</version>
+                        </path>
+                    </annotationProcessorPaths>
+                </configuration>
+            </plugin>
 		</plugins>
 	</build>
 

@@ -20,7 +20,7 @@ public interface ClassroomRepository extends JpaRepository<Classroom, Long> {
 	Page<Classroom> findByEducatorId(Long codigo, Pageable pageable);
 	
 	@Query(value = "SELECT c.* FROM classroom c JOIN classroom_student cs ON c.codigo = cs.classroom_id WHERE cs.student_id = :studentId",
-	           countQuery = "SELECT count(c.id) FROM classroom_student cs WHERE cs.student_id = :studentId",
+	           countQuery = "SELECT count(*) FROM classroom_student cs WHERE cs.student_id = :studentId",
 	           nativeQuery = true)
 	    Page<Classroom> findByStudentId(@Param("studentId") Long studentId, Pageable pageable);
 

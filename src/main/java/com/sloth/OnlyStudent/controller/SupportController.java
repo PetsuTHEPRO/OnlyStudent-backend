@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
-import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.util.HtmlUtils;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,7 +21,6 @@ import lombok.RequiredArgsConstructor;
 @RestController
 @RequestMapping("/support")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "http://localhost:5173/")
 public class SupportController {
 
 	@Autowired
@@ -80,12 +79,12 @@ public class SupportController {
                 "    </div>" +
                 "    <div class=\"section\">" +
                 "      <h2>Detalhes do Suporte</h2>" +
-                "      <p><strong>🧑‍💼Nome do Solicitador:</strong> " + supportDTO.name() + "</p>" +
-                "      <p><strong>📧 Email para Contato:</strong> " + supportDTO.email() + "</p>" +
-                "      <p><strong>📞 Telefone para Contato:</strong> " + supportDTO.phone() + "</p>" +
-                "      <p><strong>📝 Motivação:</strong> " + supportDTO.razao() + "</p>" +
+                "      <p><strong>🧑‍💼Nome do Solicitador:</strong> " + HtmlUtils.htmlEscape(supportDTO.name()) + "</p>" +
+                "      <p><strong>📧 Email para Contato:</strong> " + HtmlUtils.htmlEscape(supportDTO.email()) + "</p>" +
+                "      <p><strong>📞 Telefone para Contato:</strong> " + HtmlUtils.htmlEscape(supportDTO.phone()) + "</p>" +
+                "      <p><strong>📝 Motivação:</strong> " + HtmlUtils.htmlEscape(supportDTO.razao()) + "</p>" +
                 "      <p><strong>📝 Descrição:</strong></p>" +
-                "      <p>" + supportDTO.descricao() + "</p>" +
+                "      <p>" + HtmlUtils.htmlEscape(supportDTO.descricao()) + "</p>" +
                 "    </div>" +
                 "    <div class=\"footer\">" +
                 "      <p>Atenciosamente, Only Study</p>" +
