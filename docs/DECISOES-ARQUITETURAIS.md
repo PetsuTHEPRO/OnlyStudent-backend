@@ -35,3 +35,14 @@
 - Preservado por precaução (possível cliente externo).
 - **Ação futura:** auditar uso em 30 dias e descontinuar se confirmado
   como morto.
+
+## Endpoints de administrador preservados
+
+- A auditoria do frontend atual não encontrou chamadas nem tela que consuma
+  `/admin/**`.
+- As rotas de listagem, consulta, criação, atualização, remoção e
+  `admin-resource` permanecem disponíveis para possíveis consumidores
+  administrativos externos ou futuros.
+- As respostas mantêm o shape anterior (`id`, `name`, `telephone`,
+  `email`, `role` e o alias legado `roles`), sem expor `password`.
+- Reavaliar a necessidade das rotas após confirmação de consumidores.

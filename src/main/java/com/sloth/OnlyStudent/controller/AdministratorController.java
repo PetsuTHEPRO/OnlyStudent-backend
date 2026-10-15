@@ -2,10 +2,9 @@ package com.sloth.OnlyStudent.controller;
 
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,64 +14,62 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.sloth.OnlyStudent.entities.Administrator;
+import com.sloth.OnlyStudent.application.administrator.CreateAdministratorUseCase;
+import com.sloth.OnlyStudent.application.administrator.DeleteAdministratorUseCase;
+import com.sloth.OnlyStudent.application.administrator.GetAdministratorUseCase;
+import com.sloth.OnlyStudent.application.administrator.ListAdministratorsUseCase;
+import com.sloth.OnlyStudent.application.administrator.UpdateAdministratorUseCase;
+import com.sloth.OnlyStudent.entities.DTO.AdministratorResponseDTO;
 import com.sloth.OnlyStudent.entities.DTO.RegisterDTO;
-import com.sloth.OnlyStudent.repository.AdministratorRepository;
+
+import jakarta.validation.Valid;
+import lombok.RequiredArgsConstructor;
 
 @RestController
 @RequestMapping("admin")
 @PreAuthorize("hasRole('ADMIN')")
+@RequiredArgsConstructor
+@Validated
 public class AdministratorController {
-	
-    @Autowired
-    private AdministratorRepository repository;
-    @Autowired
-	private PasswordEncoder passwordEncoder;
-    
-    // Listar todos os administradores
+
+    private final ListAdministratorsUseCase listAdministratorsUseCase;
+    private final GetAdministratorUseCase getAdministratorUseCase;
+    private final CreateAdministratorUseCase createAdministratorUseCase;
+    private final UpdateAdministratorUseCase updateAdministratorUseCase;
+    private final DeleteAdministratorUseCase deleteAdministratorUseCase;
+
     @GetMapping
-    public List<Administrator> getAll() {
-        return repository.findAll();
+    public List<AdministratorResponseDTO> getAll() {
+        return listAdministratorsUseCase.execute();
     }
-    
-    // Obter um administrador específico por ID
+
     @GetMapping("/{id}")
-    public ResponseEntity<Administrator> getById(@PathVariable Long id) {
-        return repository.findById(id)
-                .map(admin -> ResponseEntity.ok().body(admin))
-                .orElse(ResponseEntity.notFound().build());
+    public ResponseEntity<AdministratorResponseDTO> getById(@PathVariable Long id) {
+        return getAdministratorUseCase.execute(id)
+                .map(ResponseEntity::ok)
+                .orElseGet(() -> ResponseEntity.notFound().build());
     }
-    
-    // Criar um novo administrador
+
     @PostMapping
-    public Administrator create(@RequestBody RegisterDTO administrator) {
-        return repository.save(new Administrator(null, administrator.name(), administrator.telephone(), administrator.email(), passwordEncoder.encode(administrator.password()), administrator.role()));
+    public AdministratorResponseDTO create(@Valid @RequestBody RegisterDTO administrator) {
+        return createAdministratorUseCase.execute(administrator);
     }
-    
-    // Atualizar um administrador existente
+
     @PutMapping("/{id}")
-    public ResponseEntity<Administrator> update(@PathVariable Long id, @RequestBody RegisterDTO administratorDetails) {
-        return repository.findById(id)
-                .map(admin -> {
-                    admin.setName(administratorDetails.name());
-                    admin.setEmail(administratorDetails.email());
-                    // Adicione outras atualizações de campo conforme necessário
-                    Administrator updatedAdmin = repository.save(admin);
-                    return ResponseEntity.ok().body(updatedAdmin);
-                }).orElse(ResponseEntity.notFound().build());
+    public ResponseEntity<AdministratorResponseDTO> update(@PathVariable Long id,
+            @Valid @RequestBody RegisterDTO administratorDetails) {
+        return updateAdministratorUseCase.execute(id, administratorDetails)
+                .map(ResponseEntity::ok)
+                .orElseGet(() -> ResponseEntity.notFound().build());
     }
-    
-    // Deletar um administrador
+
     @DeleteMapping("/{id}")
-    public ResponseEntity<?> delete(@PathVariable Long id) {
-        return repository.findById(id)
-                .map(admin -> {
-                    repository.delete(admin);
-                    return ResponseEntity.ok().build();
-                }).orElse(ResponseEntity.notFound().build());
+    public ResponseEntity<Void> delete(@PathVariable Long id) {
+        return deleteAdministratorUseCase.execute(id)
+                ? ResponseEntity.ok().build()
+                : ResponseEntity.notFound().build();
     }
-    
-    // Recurso específico para administradores
+
     @GetMapping("/admin-resource")
     @PreAuthorize("hasRole('ADMIN')")
     public String getAdminResource() {

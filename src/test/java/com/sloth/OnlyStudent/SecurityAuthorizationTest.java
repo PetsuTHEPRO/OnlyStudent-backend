@@ -23,6 +23,11 @@ import org.springframework.test.web.servlet.MockMvc;
 
 import com.sloth.OnlyStudent.controller.AdministratorController;
 import com.sloth.OnlyStudent.controller.MaterialController;
+import com.sloth.OnlyStudent.application.administrator.CreateAdministratorUseCase;
+import com.sloth.OnlyStudent.application.administrator.DeleteAdministratorUseCase;
+import com.sloth.OnlyStudent.application.administrator.GetAdministratorUseCase;
+import com.sloth.OnlyStudent.application.administrator.ListAdministratorsUseCase;
+import com.sloth.OnlyStudent.application.administrator.UpdateAdministratorUseCase;
 import com.sloth.OnlyStudent.application.material.CreateMaterialUseCase;
 import com.sloth.OnlyStudent.application.material.DeleteMaterialUseCase;
 import com.sloth.OnlyStudent.entities.Classroom;
@@ -31,7 +36,6 @@ import com.sloth.OnlyStudent.entities.User;
 import com.sloth.OnlyStudent.entities.UserRole;
 import com.sloth.OnlyStudent.infra.security.SecurityConfigurations;
 import com.sloth.OnlyStudent.infra.security.TokenService;
-import com.sloth.OnlyStudent.repository.AdministratorRepository;
 import com.sloth.OnlyStudent.repository.ClassroomRepository;
 import com.sloth.OnlyStudent.repository.MaterialRepository;
 import com.sloth.OnlyStudent.repository.UserRepository;
@@ -63,7 +67,19 @@ class SecurityAuthorizationTest {
     private ClassroomRepository classroomRepository;
 
     @MockBean
-    private AdministratorRepository administratorRepository;
+    private ListAdministratorsUseCase listAdministratorsUseCase;
+
+    @MockBean
+    private GetAdministratorUseCase getAdministratorUseCase;
+
+    @MockBean
+    private CreateAdministratorUseCase createAdministratorUseCase;
+
+    @MockBean
+    private UpdateAdministratorUseCase updateAdministratorUseCase;
+
+    @MockBean
+    private DeleteAdministratorUseCase deleteAdministratorUseCase;
 
     @Test
     void materialEndpointsRequireAuthenticationAndEducatorRole() throws Exception {
@@ -109,7 +125,7 @@ class SecurityAuthorizationTest {
                 .andExpect(status().isForbidden())
                 .andExpect(content().string("Acesso negado."));
 
-        when(administratorRepository.findAll()).thenReturn(List.of());
+        when(listAdministratorsUseCase.execute()).thenReturn(List.of());
         mockMvc.perform(get("/admin")
                         .with(authentication(authenticationFor(1L, UserRole.ADMIN))))
                 .andExpect(status().isOk());

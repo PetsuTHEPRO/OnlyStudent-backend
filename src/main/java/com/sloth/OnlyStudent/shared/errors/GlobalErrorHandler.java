@@ -110,6 +110,12 @@ public class GlobalErrorHandler {
         return ResponseEntity.status(HttpStatus.CONFLICT).body(exception.getMessage());
     }
 
+    @ExceptionHandler(SupportDeliveryException.class)
+    public ResponseEntity<String> handleSupportDelivery(SupportDeliveryException exception) {
+        logger.error("Unable to deliver support email", exception);
+        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(exception.getMessage());
+    }
+
     @ExceptionHandler(DataIntegrityViolationException.class)
     public ResponseEntity<String> handleDataIntegrityViolation(DataIntegrityViolationException exception) {
         String message = exception.getMostSpecificCause().getMessage();

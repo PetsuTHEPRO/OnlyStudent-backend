@@ -14,7 +14,6 @@ import java.util.Optional;
 import org.junit.jupiter.api.Test;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
-import org.springframework.test.util.ReflectionTestUtils;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.sloth.OnlyStudent.application.material.CreateMaterialUseCase;
@@ -24,10 +23,10 @@ import com.sloth.OnlyStudent.application.profile.GetEducatorProfileUseCase;
 import com.sloth.OnlyStudent.application.profile.GetStudentProfileUseCase;
 import com.sloth.OnlyStudent.application.profile.StudentProfileMapper;
 import com.sloth.OnlyStudent.application.profile.UpdateEducatorProfileUseCase;
+import com.sloth.OnlyStudent.application.support.SupportEmailContentMapper;
 import com.sloth.OnlyStudent.controller.AdministratorController;
 import com.sloth.OnlyStudent.controller.EducatorController;
 import com.sloth.OnlyStudent.controller.StudentController;
-import com.sloth.OnlyStudent.controller.SupportController;
 import com.sloth.OnlyStudent.entities.Administrator;
 import com.sloth.OnlyStudent.entities.Classroom;
 import com.sloth.OnlyStudent.entities.Educator;
@@ -152,11 +151,11 @@ class CriticalCorrectionsTest {
 
     @Test
     void supportMessageEscapesUserProvidedHtml() {
-        SupportController controller = new SupportController();
+        SupportEmailContentMapper mapper = new SupportEmailContentMapper();
         SupportDTO request = new SupportDTO("<script>alert(1)</script>", "a&b@example.com", "555",
                 "<b>motivo</b>", "<img src=x onerror=alert(1)>");
 
-        String html = ReflectionTestUtils.invokeMethod(controller, "generateHtmlContent", request);
+        String html = mapper.toHtml(request);
 
         assertNotNull(html);
         assertTrue(html.contains("&lt;script&gt;alert(1)&lt;/script&gt;"));
