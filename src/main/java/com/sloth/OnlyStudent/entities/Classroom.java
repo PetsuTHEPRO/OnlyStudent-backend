@@ -142,12 +142,16 @@ public class Classroom {
 	}
 
 	public boolean podeSerAcessadaPor(User user) {
-		if (user == null || user.getId() == null) {
+		return user != null && podeSerAcessadaPor(user.getId());
+	}
+
+	public boolean podeSerAcessadaPor(Long userId) {
+		if (userId == null) {
 			return false;
 		}
-		boolean isEducator = educator != null && Objects.equals(educator.getId(), user.getId());
+		boolean isEducator = educator != null && Objects.equals(educator.getId(), userId);
 		boolean isEnrolled = alunos != null && alunos.stream()
-				.anyMatch(student -> Objects.equals(student.getId(), user.getId()));
+				.anyMatch(student -> Objects.equals(student.getId(), userId));
 		return isEducator || isEnrolled;
 	}
 	
