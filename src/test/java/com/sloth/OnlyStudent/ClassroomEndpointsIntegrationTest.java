@@ -6,6 +6,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.List;
 
@@ -151,6 +152,36 @@ class ClassroomEndpointsIntegrationTest {
                 .andExpect(jsonPath("$.educator").value("Dona"))
                 .andExpect(jsonPath("$.nomeAlunos").isArray())
                 .andExpect(jsonPath("$.materiais").isArray());
+    }
+
+    @Test
+    void classroomDetailsAndMaterialsEndpointUseIdenticalMaterialJsonShapeAndOrder() throws Exception {
+        Classroom classroom = classroomRepository.save(classroom("Álgebra", owner));
+        Material material = materialRepository.save(new Material(null, "Apostila", MaterialType.PDF,
+                "https://example.com/a.pdf", classroom));
+        classroom.getMaterials().add(material);
+        classroomRepository.save(classroom);
+        String expectedMaterialJson = "\"id\":" + material.getId()
+                + ",\"tipo\":\"PDF\",\"name\":\"Apostila\",\"url\":\"https://example.com/a.pdf\"";
+
+        String detailsJson = mockMvc.perform(get("/turma/{id}", classroom.getCodigo()).with(as(owner)))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.materiais[0].id").value(material.getId()))
+                .andExpect(jsonPath("$.materiais[0].tipo").value("PDF"))
+                .andExpect(jsonPath("$.materiais[0].name").value("Apostila"))
+                .andExpect(jsonPath("$.materiais[0].url").value("https://example.com/a.pdf"))
+                .andReturn().getResponse().getContentAsString();
+
+        String materialsJson = mockMvc.perform(get("/turma/{codigo}/materials", classroom.getCodigo()).with(as(owner)))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$[0].id").value(material.getId()))
+                .andExpect(jsonPath("$[0].tipo").value("PDF"))
+                .andExpect(jsonPath("$[0].name").value("Apostila"))
+                .andExpect(jsonPath("$[0].url").value("https://example.com/a.pdf"))
+                .andReturn().getResponse().getContentAsString();
+
+        assertTrue(detailsJson.contains(expectedMaterialJson));
+        assertTrue(materialsJson.contains(expectedMaterialJson));
     }
 
     @Test

@@ -34,3 +34,13 @@ Mudanças que afetam o front são registradas aqui.
   - Antes: o parâmetro era ignorado e o endpoint usava a identidade autenticada
   - Agora: `403` com `"Acesso negado."` em texto puro
   - Impacto no front: nenhum (o front sempre usa o próprio perfil)
+
+## 2026-10-15 — Fase 5c (unificação de DTOs de material)
+
+### Alterado (cosmético)
+- **GET /turma/{codigo}** — ordem dos campos em `materiais[]`
+  passou de `id, name, tipo, url` para `id, tipo, name, url`
+  - Motivo: unificação com `GET /turma/{codigo}/materials`
+  - Impacto no front: nenhum (JSON é order-agnostic; `JSON.parse`
+    não depende de ordem)
+  - Preservados: nomes dos campos, tipos, valores, presença
