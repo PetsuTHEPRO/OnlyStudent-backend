@@ -24,6 +24,7 @@ import org.springframework.context.annotation.Import;
 import org.springframework.http.MediaType;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.test.web.servlet.request.RequestPostProcessor;
 import org.springframework.test.web.servlet.MockMvc;
 
 import com.sloth.OnlyStudent.application.administrator.CreateAdministratorUseCase;
@@ -153,6 +154,35 @@ class AdminSupportTokenEndpointsIntegrationTest {
                                 """))
                 .andExpect(status().isBadRequest())
                 .andExpect(content().string("Nome é obrigatório."));
+    }
+
+    @Test
+    void supportRateLimitAllowsFiveRequestsAndReturnsPlainText429OnTheSixth() throws Exception {
+        String body = """
+                {"name":"Ana","email":"ana@example.com","phone":"555","razao":"Dúvida","descricao":"Preciso de ajuda"}
+                """;
+        RequestPostProcessor clientAddress = request -> {
+            request.setRemoteAddr("198.51.100.25");
+            request.setServletPath("/support/send");
+            return request;
+        };
+
+        for (int requestNumber = 1; requestNumber <= 5; requestNumber++) {
+            mockMvc.perform(post("/support/send")
+                            .with(clientAddress)
+                            .contentType(MediaType.APPLICATION_JSON)
+                            .content(body))
+                    .andExpect(status().isOk())
+                    .andExpect(content().string("Email sent successfully"));
+        }
+
+        mockMvc.perform(post("/support/send")
+                        .with(clientAddress)
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(body))
+                .andExpect(status().isTooManyRequests())
+                .andExpect(content().contentTypeCompatibleWith(MediaType.TEXT_PLAIN))
+                .andExpect(content().string("Muitas tentativas. Tente novamente mais tarde."));
     }
 
     @Test

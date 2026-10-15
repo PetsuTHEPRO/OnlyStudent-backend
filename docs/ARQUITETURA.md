@@ -117,6 +117,12 @@ futuras:
 - Front: campo "buscar turma por código" (não existe na UI atual)
 - Front: "entrar em turma" falha — investigar status HTTP
 - Front: UI para excluir turma / adicionar aluno por ID
-- Support: avaliar rate limit por IP (`/support/send` público)
+- Support: rate limit por IP aplicado a `/support/send`; contadores
+  in-memory e identificação por `getRemoteAddr()` (ver
+  `DECISOES-ARQUITETURAIS.md`)
+- **`permitAll()` amplo em `/support/**`:** a regra de segurança libera
+  qualquer POST em `/support/**`, mas o rate limit cobre apenas
+  `/support/send`. Se novos endpoints forem criados, revisar a regra
+  e a cobertura de rate limit.
 - `/token/validate` e `/admin/**`: auditar uso em 30 dias
 - Refresh token: avaliar implementação (fora do escopo atual)

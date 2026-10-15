@@ -44,9 +44,16 @@ public class SecurityConfigurations {
     @Value("${app.auth.rate-limit.window-seconds:60}")
     private long authRateLimitWindowSeconds;
 
+    @Value("${app.support.rate-limit.requests:5}")
+    private int supportRateLimitRequests;
+
+    @Value("${app.support.rate-limit.window-seconds:3600}")
+    private long supportRateLimitWindowSeconds;
+
     @Bean
-    public AuthRateLimitFilter authRateLimitFilter() {
-        return new AuthRateLimitFilter(authRateLimitRequests, Duration.ofSeconds(authRateLimitWindowSeconds));
+    public RateLimitFilter rateLimitFilter() {
+        return new RateLimitFilter(authRateLimitRequests, Duration.ofSeconds(authRateLimitWindowSeconds),
+                supportRateLimitRequests, Duration.ofSeconds(supportRateLimitWindowSeconds));
     }
 
     @Bean
@@ -95,7 +102,7 @@ public class SecurityConfigurations {
                         .requestMatchers(HttpMethod.GET, "/token/**").permitAll()
                         .anyRequest().authenticated()
                 )
-                .addFilterBefore(authRateLimitFilter(), SecurityContextHolderFilter.class)
+                .addFilterBefore(rateLimitFilter(), SecurityContextHolderFilter.class)
                 .addFilterBefore(securityFilter, UsernamePasswordAuthenticationFilter.class);
 
         return http.build();

@@ -1,14 +1,33 @@
 # Decisões arquiteturais
 
-## Rate limiting é in-memory
+## Rate limiting de autenticação é in-memory
 
-- Implementado em `AuthRateLimitFilter` com contador por IP no processo.
+- Implementado em `RateLimitFilter` com contador por IP no processo.
 - **Limitação:** em deploy com múltiplas instâncias, o limite é por 
   instância, não global.
 - **Mitigação futura:** mover para Redis/Bucket4j compartilhado se 
   escalar horizontalmente.
 - **Escopo atual:** single-instance em dev; suficiente para o estágio 
   atual do projeto.
+
+## Rate limit em /support/send
+
+- Endpoint público protegido contra abuso.
+- Limite: 5 requisições por hora por IP, configurável via
+  `app.support.rate-limit.*`.
+- **Estratégia:** `RateLimitFilter` aplica limites separados por rota sem
+  alterar o limite existente de autenticação.
+- **Identificação de IP:** usa `getRemoteAddr()`, não `X-Forwarded-For`.
+  - Vantagem: não permite falsificação por header.
+  - Limitação: atrás de proxy reverso, todos os clientes compartilham o IP
+    do proxy.
+  - **Ação futura:** se implantar atrás de proxy, configurar
+    `server.forward-headers-strategy` e revisar.
+- **Armazenamento:** in-memory, por instância.
+  - Limitação: múltiplas instâncias mantêm contadores separados.
+  - **Ação futura:** Redis/Bucket4j se escalar horizontalmente.
+- **Resposta:** `429` + `"Muitas tentativas. Tente novamente mais tarde."`
+  (texto puro, consistente com `/auth/*`).
 
 ## Constraint unique em Classroom.name adiada
 
@@ -19,14 +38,13 @@
 - Adicionar constraint formal via migration (Flyway/Liquibase) na Fase 5
   após auditoria dos dados de produção.
 
-## Support /send — backlog de proteção
+## Support /send — acesso público
 
 - `/support/send` permanece público nesta fase, preservando seu uso em
   formulário público.
-- Antes de qualquer mudança de contrato, confirmar com o time do front
-  se a rota é usada pelo formulário público.
-- Se for necessário protegê-la, avaliar rate limit por IP em vez de
-  exigir autenticação.
+- A rota tem rate limit por IP; continua sem exigir autenticação.
+- O limite, estratégia de IP e limitações operacionais estão descritos na
+  seção "Rate limit em /support/send".
 
 ## TokenController /token/validate — legado preservado
 
