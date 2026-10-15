@@ -9,3 +9,12 @@
   escalar horizontalmente.
 - **Escopo atual:** single-instance em dev; suficiente para o estágio 
   atual do projeto.
+
+## Constraint unique em Classroom.name adiada
+
+- Motivo: banco `school` está vazio no momento da decisão, mas ambientes
+  de produção podem ter nomes duplicados históricos.
+- Validação de unicidade ocorre no use case (`existsByName`) dentro de
+  transação.
+- Adicionar constraint formal via migration (Flyway/Liquibase) na Fase 5
+  após auditoria dos dados de produção.

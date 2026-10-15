@@ -13,3 +13,17 @@ Mudanças que afetam o front são registradas aqui.
 ### Mantido
 - Paths, capitalização de role, formato de erro (string pura) e todos 
   os demais shapes permanecem inalterados.
+
+## 2026-10-15 — Fase 2 (refatoração de turmas)
+
+### Alterado
+- **POST /turma/{codigo}/entrar** com código de turma inexistente agora
+  retorna `404 Not Found` com `"Turma não encontrada."`
+  - Antes: `400 Bad Request`
+- **GET /turma/{id}** para uma turma sem vínculo de dono ou matrícula
+  agora retorna `403 Forbidden` com `"Acesso negado."`
+  - Antes: o detalhe da turma era acessível sem essa autorização
+
+### Mantido
+- Paths, campos JSON, `status`, `custo`, `price`, `codigo` nos detalhes,
+  respostas de sucesso e erros em texto puro permanecem inalterados.
