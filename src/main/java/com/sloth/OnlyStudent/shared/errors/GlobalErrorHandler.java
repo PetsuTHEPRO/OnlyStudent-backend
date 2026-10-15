@@ -3,6 +3,7 @@ package com.sloth.OnlyStudent.shared.errors;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.HttpMessageNotReadableException;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.MethodArgumentNotValidException;
@@ -47,6 +48,52 @@ public class GlobalErrorHandler {
     @ExceptionHandler(InvalidRegistrationException.class)
     public ResponseEntity<String> handleInvalidRegistration(InvalidRegistrationException exception) {
         return ResponseEntity.badRequest().body(exception.getMessage());
+    }
+
+    @ExceptionHandler(ClassroomNotFoundException.class)
+    public ResponseEntity<String> handleClassroomNotFound(ClassroomNotFoundException exception) {
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(exception.getMessage());
+    }
+
+    @ExceptionHandler(StudentNotFoundException.class)
+    public ResponseEntity<String> handleStudentNotFound(StudentNotFoundException exception) {
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(exception.getMessage());
+    }
+
+    @ExceptionHandler(EducatorNotFoundException.class)
+    public ResponseEntity<String> handleEducatorNotFound(EducatorNotFoundException exception) {
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(exception.getMessage());
+    }
+
+    @ExceptionHandler(ClassroomAccessDeniedException.class)
+    public ResponseEntity<String> handleClassroomAccessDenied(ClassroomAccessDeniedException exception) {
+        return ResponseEntity.status(HttpStatus.FORBIDDEN).body(exception.getMessage());
+    }
+
+    @ExceptionHandler(ClassroomNameAlreadyExistsException.class)
+    public ResponseEntity<String> handleClassroomNameAlreadyExists(ClassroomNameAlreadyExistsException exception) {
+        return ResponseEntity.status(HttpStatus.CONFLICT).body(exception.getMessage());
+    }
+
+    @ExceptionHandler(AlunoJaMatriculadoException.class)
+    public ResponseEntity<String> handleAlreadyEnrolled(AlunoJaMatriculadoException exception) {
+        return ResponseEntity.status(HttpStatus.CONFLICT).body(exception.getMessage());
+    }
+
+    @ExceptionHandler(InvalidClassroomException.class)
+    public ResponseEntity<String> handleInvalidClassroom(InvalidClassroomException exception) {
+        return ResponseEntity.badRequest().body(exception.getMessage());
+    }
+
+    @ExceptionHandler(DataIntegrityViolationException.class)
+    public ResponseEntity<String> handleDataIntegrityViolation(DataIntegrityViolationException exception) {
+        String message = exception.getMostSpecificCause().getMessage();
+        if (message != null && message.contains("uk_classroom_student")) {
+            return ResponseEntity.status(HttpStatus.CONFLICT)
+                    .body("Você já está matriculado nesta turma.");
+        }
+        logger.warn("Database constraint violation: {}", message);
+        return ResponseEntity.status(HttpStatus.CONFLICT).body("Conflito de dados.");
     }
 
     @ExceptionHandler(Exception.class)
