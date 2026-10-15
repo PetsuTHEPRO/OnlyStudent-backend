@@ -85,6 +85,26 @@ public class GlobalErrorHandler {
         return ResponseEntity.badRequest().body(exception.getMessage());
     }
 
+    @ExceptionHandler(InvalidMaterialException.class)
+    public ResponseEntity<String> handleInvalidMaterial(InvalidMaterialException exception) {
+        return ResponseEntity.badRequest().body(exception.getMessage());
+    }
+
+    @ExceptionHandler(MaterialNotFoundException.class)
+    public ResponseEntity<String> handleMaterialNotFound(MaterialNotFoundException exception) {
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(exception.getMessage());
+    }
+
+    @ExceptionHandler(MaterialAccessDeniedException.class)
+    public ResponseEntity<String> handleMaterialAccessDenied(MaterialAccessDeniedException exception) {
+        return ResponseEntity.status(HttpStatus.FORBIDDEN).body(exception.getMessage());
+    }
+
+    @ExceptionHandler(MaterialAlreadyExistsException.class)
+    public ResponseEntity<String> handleMaterialAlreadyExists(MaterialAlreadyExistsException exception) {
+        return ResponseEntity.status(HttpStatus.CONFLICT).body(exception.getMessage());
+    }
+
     @ExceptionHandler(DataIntegrityViolationException.class)
     public ResponseEntity<String> handleDataIntegrityViolation(DataIntegrityViolationException exception) {
         String message = exception.getMostSpecificCause().getMessage();

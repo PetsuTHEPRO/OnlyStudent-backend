@@ -26,6 +26,7 @@ import com.sloth.OnlyStudent.application.classroom.JoinClassroomUseCase;
 import com.sloth.OnlyStudent.application.classroom.ListEducatorClassroomsUseCase;
 import com.sloth.OnlyStudent.application.classroom.ListStudentClassroomsUseCase;
 import com.sloth.OnlyStudent.application.classroom.SearchClassroomsUseCase;
+import com.sloth.OnlyStudent.application.material.ListMaterialsUseCase;
 import com.sloth.OnlyStudent.entities.Classroom;
 import com.sloth.OnlyStudent.entities.Material;
 import com.sloth.OnlyStudent.entities.User;
@@ -34,6 +35,7 @@ import com.sloth.OnlyStudent.entities.DTO.ClassroomDetailsDTO;
 import com.sloth.OnlyStudent.entities.DTO.ClassroomDTO;
 import com.sloth.OnlyStudent.entities.DTO.ClassroomNameDTO;
 import com.sloth.OnlyStudent.entities.DTO.ClassroomsDTO;
+import com.sloth.OnlyStudent.entities.DTO.MaterialResponseDTO;
 import com.sloth.OnlyStudent.entities.DTO.StatusDTO;
 import com.sloth.OnlyStudent.entities.DTO.StudentIdDTO;
 import com.sloth.OnlyStudent.entities.DTO.StudentRequestDTO;
@@ -62,6 +64,7 @@ public class ClassroomController {
     private final ListEducatorClassroomsUseCase listEducatorClassroomsUseCase;
     private final GetClassroomDetailsUseCase getClassroomDetailsUseCase;
     private final SearchClassroomsUseCase searchClassroomsUseCase;
+    private final ListMaterialsUseCase listMaterialsUseCase;
 
     @GetMapping
     public List<ClassroomsDTO> getClassrooms(@RequestParam Long codigo) {
@@ -171,10 +174,9 @@ public class ClassroomController {
     }
 
     @GetMapping("/{codigo}/materials")
-    public List<Material> getMaterialsByClassroomCódigo(@PathVariable Long codigo,
+    public List<MaterialResponseDTO> getMaterialsByClassroomCódigo(@PathVariable Long codigo,
             @AuthenticationPrincipal User principal) {
-        findAccessibleClassroom(codigo, principal);
-        return materialRepository.findByTurmaCodigo(codigo);
+        return listMaterialsUseCase.execute(codigo, principal.getId(), Pageable.unpaged());
     }
 
     private Classroom findAccessibleClassroom(Long code, User principal) {
