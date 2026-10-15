@@ -27,3 +27,10 @@ Mudanças que afetam o front são registradas aqui.
 ### Mantido
 - Paths, campos JSON, `status`, `custo`, `price`, `codigo` nos detalhes,
   respostas de sucesso e erros em texto puro permanecem inalterados.
+# 2026-10-15 — Fase 4a (perfil)
+
+## Alterado
+- **GET/PUT /student/*, /educator/*** com `id`/`login` de outro usuário
+  - Antes: o parâmetro era ignorado e o endpoint usava a identidade autenticada
+  - Agora: `403` com `"Acesso negado."` em texto puro
+  - Impacto no front: nenhum (o front sempre usa o próprio perfil)

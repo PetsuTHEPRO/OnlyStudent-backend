@@ -65,6 +65,11 @@ public class GlobalErrorHandler {
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(exception.getMessage());
     }
 
+    @ExceptionHandler(ProfileAccessDeniedException.class)
+    public ResponseEntity<String> handleProfileAccessDenied(ProfileAccessDeniedException exception) {
+        return ResponseEntity.status(HttpStatus.FORBIDDEN).body(exception.getMessage());
+    }
+
     @ExceptionHandler(ClassroomAccessDeniedException.class)
     public ResponseEntity<String> handleClassroomAccessDenied(ClassroomAccessDeniedException exception) {
         return ResponseEntity.status(HttpStatus.FORBIDDEN).body(exception.getMessage());

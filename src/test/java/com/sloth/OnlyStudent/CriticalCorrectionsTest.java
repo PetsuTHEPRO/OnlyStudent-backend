@@ -19,6 +19,11 @@ import org.springframework.test.util.ReflectionTestUtils;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.sloth.OnlyStudent.application.material.CreateMaterialUseCase;
 import com.sloth.OnlyStudent.application.material.DeleteMaterialUseCase;
+import com.sloth.OnlyStudent.application.profile.EducatorProfileMapper;
+import com.sloth.OnlyStudent.application.profile.GetEducatorProfileUseCase;
+import com.sloth.OnlyStudent.application.profile.GetStudentProfileUseCase;
+import com.sloth.OnlyStudent.application.profile.StudentProfileMapper;
+import com.sloth.OnlyStudent.application.profile.UpdateEducatorProfileUseCase;
 import com.sloth.OnlyStudent.controller.AdministratorController;
 import com.sloth.OnlyStudent.controller.EducatorController;
 import com.sloth.OnlyStudent.controller.StudentController;
@@ -39,6 +44,7 @@ import com.sloth.OnlyStudent.repository.EducatorRepository;
 import com.sloth.OnlyStudent.repository.MaterialRepository;
 import com.sloth.OnlyStudent.repository.StudentRepository;
 import com.sloth.OnlyStudent.shared.errors.MaterialAccessDeniedException;
+import com.sloth.OnlyStudent.shared.errors.ProfileAccessDeniedException;
 
 class CriticalCorrectionsTest {
 
@@ -101,27 +107,29 @@ class CriticalCorrectionsTest {
     @Test
     void studentProfileUsesAuthenticatedIdInsteadOfQueryId() {
         StudentRepository students = mock(StudentRepository.class);
-        StudentController controller = new StudentController();
-        ReflectionTestUtils.setField(controller, "studentRepository", students);
+        GetStudentProfileUseCase useCase = new GetStudentProfileUseCase(students, new StudentProfileMapper());
         when(students.findById(14L)).thenReturn(Optional.of(
                 new Student(14L, "Ana", "123", "ana@example.com", "hash", UserRole.STUDENT)));
 
-        assertEquals("ana@example.com", controller.getUser(999L, user(14L, UserRole.STUDENT))
-                .getBody().login());
+        assertThrows(ProfileAccessDeniedException.class, () -> useCase.execute(14L, 999L));
+        assertEquals("ana@example.com", useCase.execute(14L, null).orElseThrow().login());
         verify(students).findById(14L);
     }
 
     @Test
     void educatorProfileUsesAuthenticatedIdAndEmailLookupReturnsPrincipalId() {
         EducatorRepository educators = mock(EducatorRepository.class);
-        EducatorController controller = new EducatorController();
-        ReflectionTestUtils.setField(controller, "educatorRepository", educators);
+        GetEducatorProfileUseCase getProfile = new GetEducatorProfileUseCase(educators,
+                new EducatorProfileMapper());
+        EducatorController controller = new EducatorController(getProfile,
+                mock(UpdateEducatorProfileUseCase.class));
         User principal = user(14L, UserRole.EDUCATOR);
         when(educators.findById(14L)).thenReturn(Optional.of(
                 new Educator(14L, "Edu", "123", "edu@example.com", "hash", UserRole.EDUCATOR, "Math")));
 
         assertEquals(14L, controller.getEducatorIdByEmail("someone-else@example.com", principal).getBody());
-        assertEquals("edu@example.com", controller.getUser(999L, principal).getBody().login());
+        assertThrows(ProfileAccessDeniedException.class, () -> getProfile.execute(14L, 999L));
+        assertEquals("edu@example.com", getProfile.execute(14L, null).orElseThrow().login());
         verify(educators).findById(14L);
     }
 
