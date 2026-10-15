@@ -30,7 +30,11 @@ public interface ClassroomRepository extends JpaRepository<Classroom, Long> {
 	
 	boolean existsByName(String name);
 
+	Optional<Classroom> findByName(String name);
+
 	List<Classroom> findByNameContainingIgnoreCase(String name);
 	
 	Page<Classroom> findByNameStartingWithIgnoreCase(String name, Pageable pageable);
+
+	Page<Classroom> findByNameContainingIgnoreCase(String name, Pageable pageable);
 }

@@ -1,10 +1,13 @@
 package com.sloth.OnlyStudent.entities;
 
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 import java.util.stream.Collectors;
 
 import com.sloth.OnlyStudent.entities.DTO.StudentIdDTO;
+import com.sloth.OnlyStudent.shared.errors.AlunoJaMatriculadoException;
+import com.sloth.OnlyStudent.shared.errors.InvalidClassroomException;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
@@ -22,6 +25,7 @@ import jakarta.persistence.OneToMany;
 import jakarta.persistence.PostLoad;
 import jakarta.persistence.Table;
 import jakarta.persistence.Transient;
+import jakarta.persistence.UniqueConstraint;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -51,9 +55,11 @@ public class Classroom {
 	
 	@ManyToMany
     @JoinTable(
-        name = "classroom_student",  // Nome da tabela de junção
-        joinColumns = @JoinColumn(name = "classroom_id"),  // Coluna que referencia Classroom
-        inverseJoinColumns = @JoinColumn(name = "student_id")  // Coluna que referencia Student
+        name = "classroom_student",
+        joinColumns = @JoinColumn(name = "classroom_id"),
+        inverseJoinColumns = @JoinColumn(name = "student_id"),
+        uniqueConstraints = @UniqueConstraint(name = "uk_classroom_student",
+                columnNames = {"classroom_id", "student_id"})
     )
     private Set<Student> alunos;
 	
@@ -88,6 +94,61 @@ public class Classroom {
 
 	public Long getCodigo() {
 		return codigo;
+	}
+
+	public static Classroom criar(String name, String description, Educator educator, double price) {
+		if (name == null || name.isBlank()) {
+			throw new InvalidClassroomException("O nome da turma é obrigatório.");
+		}
+		if (name.length() > 100) {
+			throw new InvalidClassroomException("O nome da turma deve ter no máximo 100 caracteres.");
+		}
+		if (!Double.isFinite(price) || price < 0) {
+			throw new InvalidClassroomException("O preço da turma não pode ser negativo.");
+		}
+		if (educator == null) {
+			throw new InvalidClassroomException("Educador não encontrado.");
+		}
+
+		Classroom classroom = new Classroom();
+		classroom.setName(name);
+		classroom.setDescription(description);
+		classroom.setEducator(educator);
+		classroom.setPrice(price);
+		classroom.setStatus(Status.ATIVA);
+		classroom.setCusto(price <= 0 ? Custo.GRATUITA : Custo.PAGA);
+		classroom.setAlunos(new HashSet<>());
+		classroom.setMaterials(new HashSet<>());
+		return classroom;
+	}
+
+	public void matricular(Student student) {
+		if (student == null) {
+			throw new InvalidClassroomException("Aluno não encontrado.");
+		}
+		if (alunos == null) {
+			alunos = new HashSet<>();
+		}
+		boolean alreadyEnrolled = alunos.stream()
+				.anyMatch(existing -> Objects.equals(existing.getId(), student.getId()));
+		if (alreadyEnrolled) {
+			throw new AlunoJaMatriculadoException();
+		}
+		alunos.add(student);
+		if (student.getClassrooms() == null) {
+			student.setClassrooms(new HashSet<>());
+		}
+		student.getClassrooms().add(this);
+	}
+
+	public boolean podeSerAcessadaPor(User user) {
+		if (user == null || user.getId() == null) {
+			return false;
+		}
+		boolean isEducator = educator != null && Objects.equals(educator.getId(), user.getId());
+		boolean isEnrolled = alunos != null && alunos.stream()
+				.anyMatch(student -> Objects.equals(student.getId(), user.getId()));
+		return isEducator || isEnrolled;
 	}
 	
     @PostLoad
