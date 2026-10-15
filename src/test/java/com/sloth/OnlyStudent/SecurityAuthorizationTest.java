@@ -23,6 +23,8 @@ import org.springframework.test.web.servlet.MockMvc;
 
 import com.sloth.OnlyStudent.controller.AdministratorController;
 import com.sloth.OnlyStudent.controller.MaterialController;
+import com.sloth.OnlyStudent.application.material.CreateMaterialUseCase;
+import com.sloth.OnlyStudent.application.material.DeleteMaterialUseCase;
 import com.sloth.OnlyStudent.entities.Classroom;
 import com.sloth.OnlyStudent.entities.Educator;
 import com.sloth.OnlyStudent.entities.User;
@@ -50,6 +52,12 @@ class SecurityAuthorizationTest {
 
     @MockBean
     private MaterialRepository materialRepository;
+
+    @MockBean
+    private CreateMaterialUseCase createMaterialUseCase;
+
+    @MockBean
+    private DeleteMaterialUseCase deleteMaterialUseCase;
 
     @MockBean
     private ClassroomRepository classroomRepository;

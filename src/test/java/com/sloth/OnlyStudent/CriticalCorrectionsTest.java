@@ -3,6 +3,7 @@ package com.sloth.OnlyStudent;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
@@ -16,9 +17,10 @@ import org.springframework.security.config.annotation.method.configuration.Enabl
 import org.springframework.test.util.ReflectionTestUtils;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.sloth.OnlyStudent.application.material.CreateMaterialUseCase;
+import com.sloth.OnlyStudent.application.material.DeleteMaterialUseCase;
 import com.sloth.OnlyStudent.controller.AdministratorController;
 import com.sloth.OnlyStudent.controller.EducatorController;
-import com.sloth.OnlyStudent.controller.MaterialController;
 import com.sloth.OnlyStudent.controller.StudentController;
 import com.sloth.OnlyStudent.controller.SupportController;
 import com.sloth.OnlyStudent.entities.Administrator;
@@ -36,6 +38,7 @@ import com.sloth.OnlyStudent.repository.ClassroomRepository;
 import com.sloth.OnlyStudent.repository.EducatorRepository;
 import com.sloth.OnlyStudent.repository.MaterialRepository;
 import com.sloth.OnlyStudent.repository.StudentRepository;
+import com.sloth.OnlyStudent.shared.errors.MaterialAccessDeniedException;
 
 class CriticalCorrectionsTest {
 
@@ -43,9 +46,7 @@ class CriticalCorrectionsTest {
     void materialRegistrationRequiresClassroomOwner() {
         MaterialRepository materials = mock(MaterialRepository.class);
         ClassroomRepository classrooms = mock(ClassroomRepository.class);
-        MaterialController controller = new MaterialController();
-        ReflectionTestUtils.setField(controller, "materialRepository", materials);
-        ReflectionTestUtils.setField(controller, "classroomRepository", classrooms);
+        CreateMaterialUseCase useCase = new CreateMaterialUseCase(classrooms, materials);
 
         Educator educator = new Educator(14L, "Edu", "123", "edu@example.com", "hash",
                 UserRole.EDUCATOR, "Math");
@@ -54,21 +55,19 @@ class CriticalCorrectionsTest {
         when(classrooms.findByCodigo(22L)).thenReturn(Optional.of(classroom));
         when(materials.existsByNameAndTurmaCodigo("Apostila", 22L)).thenReturn(false);
 
-        assertEquals(200, controller.registerMaterial(
-                new MaterialDTO("Apostila", "pdf", "https://example.com/a.pdf", 22L),
-                user(14L, UserRole.EDUCATOR)).getStatusCode().value());
+        useCase.execute(new MaterialDTO("Apostila", "pdf", "https://example.com/a.pdf", 22L),
+                14L, UserRole.EDUCATOR);
         verify(materials).save(org.mockito.ArgumentMatchers.any(Material.class));
 
-        assertEquals(403, controller.registerMaterial(
+        assertThrows(MaterialAccessDeniedException.class, () -> useCase.execute(
                 new MaterialDTO("Apostila", "pdf", "https://example.com/a.pdf", 22L),
-                user(15L, UserRole.EDUCATOR)).getStatusCode().value());
+                15L, UserRole.EDUCATOR));
     }
 
     @Test
     void materialDeleteUsesRequestedIdAndRequiresItsOwner() {
         MaterialRepository materials = mock(MaterialRepository.class);
-        MaterialController controller = new MaterialController();
-        ReflectionTestUtils.setField(controller, "materialRepository", materials);
+        DeleteMaterialUseCase useCase = new DeleteMaterialUseCase(materials);
 
         User owner = user(14L, UserRole.EDUCATOR);
         Educator educator = new Educator(14L, "Edu", "123", "edu@example.com", "hash",
@@ -79,16 +78,14 @@ class CriticalCorrectionsTest {
                 classroom);
         when(materials.findById(91L)).thenReturn(Optional.of(material));
 
-        assertEquals("Material deleted successfully.",
-                controller.deleteMaterial(91L, owner).getBody());
-        verify(materials).deleteById(91L);
+        useCase.execute(91L, owner.getId(), owner.getRoles());
+        verify(materials).delete(material);
     }
 
     @Test
     void materialDeleteRejectsNonOwner() {
         MaterialRepository materials = mock(MaterialRepository.class);
-        MaterialController controller = new MaterialController();
-        ReflectionTestUtils.setField(controller, "materialRepository", materials);
+        DeleteMaterialUseCase useCase = new DeleteMaterialUseCase(materials);
 
         Educator educator = new Educator(14L, "Edu", "123", "edu@example.com", "hash",
                 UserRole.EDUCATOR, "Math");
@@ -97,8 +94,8 @@ class CriticalCorrectionsTest {
         when(materials.findById(91L)).thenReturn(Optional.of(
                 new Material(91L, "Apostila", MaterialType.PDF, "https://example.com/a.pdf", classroom)));
 
-        assertEquals(403, controller.deleteMaterial(91L, user(15L, UserRole.EDUCATOR))
-                .getStatusCode().value());
+        assertThrows(MaterialAccessDeniedException.class,
+                () -> useCase.execute(91L, 15L, UserRole.EDUCATOR));
     }
 
     @Test

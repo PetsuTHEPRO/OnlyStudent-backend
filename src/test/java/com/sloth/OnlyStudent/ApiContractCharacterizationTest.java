@@ -38,6 +38,7 @@ import com.sloth.OnlyStudent.application.classroom.JoinClassroomUseCase;
 import com.sloth.OnlyStudent.application.classroom.ListEducatorClassroomsUseCase;
 import com.sloth.OnlyStudent.application.classroom.ListStudentClassroomsUseCase;
 import com.sloth.OnlyStudent.application.classroom.SearchClassroomsUseCase;
+import com.sloth.OnlyStudent.application.material.ListMaterialsUseCase;
 import com.sloth.OnlyStudent.controller.AuthenticationController;
 import com.sloth.OnlyStudent.controller.ClassroomController;
 import com.sloth.OnlyStudent.entities.Classroom;
@@ -78,6 +79,8 @@ class ApiContractCharacterizationTest {
             org.mockito.Mockito.mock(GetClassroomDetailsUseCase.class);
     private final SearchClassroomsUseCase searchClassroomsUseCase =
             org.mockito.Mockito.mock(SearchClassroomsUseCase.class);
+    private final ListMaterialsUseCase listMaterialsUseCase =
+            org.mockito.Mockito.mock(ListMaterialsUseCase.class);
 
     @BeforeEach
     void setUp() {
@@ -85,7 +88,8 @@ class ApiContractCharacterizationTest {
         AuthenticationController authenticationController = new AuthenticationController(authenticationService);
         ClassroomController classroomController = new ClassroomController(classroomRepository, materialRepository,
                 classroomService, createClassroomUseCase, joinClassroomUseCase, listStudentClassroomsUseCase,
-                listEducatorClassroomsUseCase, getClassroomDetailsUseCase, searchClassroomsUseCase);
+                listEducatorClassroomsUseCase, getClassroomDetailsUseCase, searchClassroomsUseCase,
+                listMaterialsUseCase);
         HandlerMethodArgumentResolver principalResolver = new HandlerMethodArgumentResolver() {
             @Override
             public boolean supportsParameter(MethodParameter parameter) {
@@ -217,7 +221,9 @@ class ApiContractCharacterizationTest {
                 .andExpect(jsonPath("$.content[0].educator").value("Edu"))
                 .andExpect(jsonPath("$.content[0].status").value("ATIVA"))
                 .andExpect(jsonPath("$.content[0].custo").value("GRATUITA"))
-                .andExpect(jsonPath("$.content[0].price").value(0));
+                .andExpect(jsonPath("$.content[0].price").value(0))
+                .andExpect(jsonPath("$.content[0].totalAlunos").value(4))
+                .andExpect(jsonPath("$.content[0].totalMateriais").value(2));
         verify(searchClassroomsUseCase).execute(eq(""), eq(PageRequest.of(0, 50)));
     }
 
