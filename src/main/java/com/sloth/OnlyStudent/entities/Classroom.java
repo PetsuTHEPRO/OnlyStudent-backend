@@ -26,15 +26,9 @@ import jakarta.persistence.PostLoad;
 import jakarta.persistence.Table;
 import jakarta.persistence.Transient;
 import jakarta.persistence.UniqueConstraint;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 @Entity
 @Table(name = "classroom")
-@Getter
-@Setter
-@NoArgsConstructor
 public class Classroom {
 
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -78,8 +72,11 @@ public class Classroom {
 	@OneToMany(mappedBy = "turma", cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<Material> materials;
 	
-	public Classroom(Long codigo, String name, String description, Status status, Custo custo, double price, HashSet alunos,
-			Educator educator, HashSet material) {
+    public Classroom() {
+    }
+
+    public Classroom(Long codigo, String name, String description, Status status, Custo custo, double price, HashSet alunos,
+            Educator educator, HashSet material) {
 		super();
 		this.codigo = codigo;
 		this.name = name;
@@ -94,6 +91,90 @@ public class Classroom {
 
 	public Long getCodigo() {
 		return codigo;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public Status getStatus() {
+		return status;
+	}
+
+	public Custo getCusto() {
+		return custo;
+	}
+
+	public double getPrice() {
+		return price;
+	}
+
+	public Set<Student> getAlunos() {
+		return alunos;
+	}
+
+	public int getTotalAlunos() {
+		return totalAlunos;
+	}
+
+	public int getTotalMateriais() {
+		return totalMateriais;
+	}
+
+	public Educator getEducator() {
+		return educator;
+	}
+
+	public Set<Material> getMaterials() {
+		return materials;
+	}
+
+	public void setCodigo(Long codigo) {
+		this.codigo = codigo;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public void setStatus(Status status) {
+		this.status = status;
+	}
+
+	public void setCusto(Custo custo) {
+		this.custo = custo;
+	}
+
+	public void setPrice(double price) {
+		this.price = price;
+	}
+
+	public void setAlunos(Set<Student> alunos) {
+		this.alunos = alunos;
+	}
+
+	public void setTotalAlunos(int totalAlunos) {
+		this.totalAlunos = totalAlunos;
+	}
+
+	public void setTotalMateriais(int totalMateriais) {
+		this.totalMateriais = totalMateriais;
+	}
+
+	public void setEducator(Educator educator) {
+		this.educator = educator;
+	}
+
+	public void setMaterials(Set<Material> materials) {
+		this.materials = materials;
 	}
 
 	public static Classroom criar(String name, String description, Educator educator, double price) {

@@ -13,14 +13,8 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 @Entity
-@Getter
-@Setter
-@NoArgsConstructor
 public class Material {
 
     @Id
@@ -36,12 +30,55 @@ public class Material {
     @ManyToOne
     @JoinColumn(name = "turma_id")
     private Classroom turma;
+
+    protected Material() {
+    }
     
     public Material(Long id, String name, MaterialType tipo, String url, Classroom turma) {
         this.id = id;
         this.name = name;
         this.tipo = tipo;
         this.url = url;
+        this.turma = turma;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public MaterialType getTipo() {
+        return tipo;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public Classroom getTurma() {
+        return turma;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setTipo(MaterialType tipo) {
+        this.tipo = tipo;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    public void setTurma(Classroom turma) {
         this.turma = turma;
     }
 
