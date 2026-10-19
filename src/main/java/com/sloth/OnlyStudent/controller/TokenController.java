@@ -11,15 +11,16 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.sloth.OnlyStudent.infra.security.TokenService;
 
-import lombok.RequiredArgsConstructor;
-
 @RestController
 @RequestMapping("token")
-@RequiredArgsConstructor
 public class TokenController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(TokenController.class);
 	private final TokenService tokenService;
+
+	public TokenController(TokenService tokenService) {
+		this.tokenService = tokenService;
+	}
 	
 	@GetMapping("/validate")
     public ResponseEntity<String> validateToken(@RequestHeader("Authorization") String authHeader) {

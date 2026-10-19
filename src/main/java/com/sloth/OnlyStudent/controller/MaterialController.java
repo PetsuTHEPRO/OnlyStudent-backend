@@ -16,16 +16,20 @@ import com.sloth.OnlyStudent.entities.User;
 import com.sloth.OnlyStudent.entities.DTO.MaterialDTO;
 
 import jakarta.validation.Valid;
-import lombok.RequiredArgsConstructor;
 
 @RestController
 @RequestMapping("material")
-@RequiredArgsConstructor
 @Validated
 public class MaterialController {
 
     private final CreateMaterialUseCase createMaterialUseCase;
     private final DeleteMaterialUseCase deleteMaterialUseCase;
+
+    public MaterialController(CreateMaterialUseCase createMaterialUseCase,
+            DeleteMaterialUseCase deleteMaterialUseCase) {
+        this.createMaterialUseCase = createMaterialUseCase;
+        this.deleteMaterialUseCase = deleteMaterialUseCase;
+    }
 
     @PostMapping("/register")
     public ResponseEntity<String> registerMaterial(@Valid @RequestBody MaterialDTO body,

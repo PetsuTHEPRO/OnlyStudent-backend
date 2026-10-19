@@ -47,11 +47,9 @@ import com.sloth.OnlyStudent.shared.errors.ClassroomNotFoundException;
 
 import jakarta.persistence.EntityNotFoundException;
 import jakarta.validation.Valid;
-import lombok.RequiredArgsConstructor;
 
 @RestController
 @RequestMapping("turma")
-@RequiredArgsConstructor
 @Validated
 public class ClassroomController {
 
@@ -65,6 +63,28 @@ public class ClassroomController {
     private final GetClassroomDetailsUseCase getClassroomDetailsUseCase;
     private final SearchClassroomsUseCase searchClassroomsUseCase;
     private final ListMaterialsUseCase listMaterialsUseCase;
+
+    public ClassroomController(ClassroomRepository classroomRepository,
+            MaterialRepository materialRepository,
+            ClassroomService classroomService,
+            CreateClassroomUseCase createClassroomUseCase,
+            JoinClassroomUseCase joinClassroomUseCase,
+            ListStudentClassroomsUseCase listStudentClassroomsUseCase,
+            ListEducatorClassroomsUseCase listEducatorClassroomsUseCase,
+            GetClassroomDetailsUseCase getClassroomDetailsUseCase,
+            SearchClassroomsUseCase searchClassroomsUseCase,
+            ListMaterialsUseCase listMaterialsUseCase) {
+        this.classroomRepository = classroomRepository;
+        this.materialRepository = materialRepository;
+        this.classroomService = classroomService;
+        this.createClassroomUseCase = createClassroomUseCase;
+        this.joinClassroomUseCase = joinClassroomUseCase;
+        this.listStudentClassroomsUseCase = listStudentClassroomsUseCase;
+        this.listEducatorClassroomsUseCase = listEducatorClassroomsUseCase;
+        this.getClassroomDetailsUseCase = getClassroomDetailsUseCase;
+        this.searchClassroomsUseCase = searchClassroomsUseCase;
+        this.listMaterialsUseCase = listMaterialsUseCase;
+    }
 
     @GetMapping
     public List<ClassroomsDTO> getClassrooms(@RequestParam Long codigo) {

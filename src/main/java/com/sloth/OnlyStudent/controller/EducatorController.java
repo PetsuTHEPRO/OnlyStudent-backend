@@ -15,15 +15,18 @@ import com.sloth.OnlyStudent.entities.User;
 import com.sloth.OnlyStudent.entities.DTO.EducatorDTO;
 import com.sloth.OnlyStudent.entities.DTO.EducatorResponseDTO;
 
-import lombok.RequiredArgsConstructor;
-
 @RestController
 @RequestMapping("educator")
-@RequiredArgsConstructor
 public class EducatorController {
 
     private final GetEducatorProfileUseCase getEducatorProfileUseCase;
     private final UpdateEducatorProfileUseCase updateEducatorProfileUseCase;
+
+    public EducatorController(GetEducatorProfileUseCase getEducatorProfileUseCase,
+            UpdateEducatorProfileUseCase updateEducatorProfileUseCase) {
+        this.getEducatorProfileUseCase = getEducatorProfileUseCase;
+        this.updateEducatorProfileUseCase = updateEducatorProfileUseCase;
+    }
 
     @GetMapping("/idByEmail")
     public ResponseEntity<Long> getEducatorIdByEmail(@RequestParam(required = false) String email,

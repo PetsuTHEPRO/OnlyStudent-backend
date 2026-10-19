@@ -15,15 +15,18 @@ import com.sloth.OnlyStudent.entities.User;
 import com.sloth.OnlyStudent.entities.DTO.EducatorDTO;
 import com.sloth.OnlyStudent.entities.DTO.StudentResponseDTO;
 
-import lombok.RequiredArgsConstructor;
-
 @RestController
 @RequestMapping("student")
-@RequiredArgsConstructor
 public class StudentController {
 
     private final GetStudentProfileUseCase getStudentProfileUseCase;
     private final UpdateStudentProfileUseCase updateStudentProfileUseCase;
+
+    public StudentController(GetStudentProfileUseCase getStudentProfileUseCase,
+            UpdateStudentProfileUseCase updateStudentProfileUseCase) {
+        this.getStudentProfileUseCase = getStudentProfileUseCase;
+        this.updateStudentProfileUseCase = updateStudentProfileUseCase;
+    }
 
     @GetMapping("/atualUser")
     public ResponseEntity<StudentResponseDTO> getUser(@RequestParam(required = false) Long id,

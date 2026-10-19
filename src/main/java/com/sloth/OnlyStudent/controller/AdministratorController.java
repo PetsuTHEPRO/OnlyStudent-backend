@@ -23,12 +23,10 @@ import com.sloth.OnlyStudent.entities.DTO.AdministratorResponseDTO;
 import com.sloth.OnlyStudent.entities.DTO.RegisterDTO;
 
 import jakarta.validation.Valid;
-import lombok.RequiredArgsConstructor;
 
 @RestController
 @RequestMapping("admin")
 @PreAuthorize("hasRole('ADMIN')")
-@RequiredArgsConstructor
 @Validated
 public class AdministratorController {
 
@@ -37,6 +35,18 @@ public class AdministratorController {
     private final CreateAdministratorUseCase createAdministratorUseCase;
     private final UpdateAdministratorUseCase updateAdministratorUseCase;
     private final DeleteAdministratorUseCase deleteAdministratorUseCase;
+
+    public AdministratorController(ListAdministratorsUseCase listAdministratorsUseCase,
+            GetAdministratorUseCase getAdministratorUseCase,
+            CreateAdministratorUseCase createAdministratorUseCase,
+            UpdateAdministratorUseCase updateAdministratorUseCase,
+            DeleteAdministratorUseCase deleteAdministratorUseCase) {
+        this.listAdministratorsUseCase = listAdministratorsUseCase;
+        this.getAdministratorUseCase = getAdministratorUseCase;
+        this.createAdministratorUseCase = createAdministratorUseCase;
+        this.updateAdministratorUseCase = updateAdministratorUseCase;
+        this.deleteAdministratorUseCase = deleteAdministratorUseCase;
+    }
 
     @GetMapping
     public List<AdministratorResponseDTO> getAll() {

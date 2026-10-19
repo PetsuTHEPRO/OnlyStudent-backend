@@ -10,15 +10,17 @@ import com.sloth.OnlyStudent.application.support.SendSupportEmailUseCase;
 import com.sloth.OnlyStudent.entities.DTO.SupportDTO;
 
 import jakarta.validation.Valid;
-import lombok.RequiredArgsConstructor;
 
 @RestController
 @RequestMapping("/support")
-@RequiredArgsConstructor
 @Validated
 public class SupportController {
 
     private final SendSupportEmailUseCase sendSupportEmailUseCase;
+
+    public SupportController(SendSupportEmailUseCase sendSupportEmailUseCase) {
+        this.sendSupportEmailUseCase = sendSupportEmailUseCase;
+    }
 
     @PostMapping("/send")
     public String sendSupportEmail(@Valid @RequestBody SupportDTO supportDTO) {
