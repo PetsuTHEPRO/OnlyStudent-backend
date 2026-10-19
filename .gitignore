@@ -35,4 +35,4 @@ build/
 
 # Logs
 *.log
-logs/
+logs/run-dev.sh
