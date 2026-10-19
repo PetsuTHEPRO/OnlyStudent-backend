@@ -11,16 +11,10 @@ import jakarta.persistence.Inheritance;
 import jakarta.persistence.InheritanceType;
 import jakarta.persistence.Table;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
 	
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
-@Setter
-@Getter
 @Table(name = "users")
-@NoArgsConstructor
 public class User{
 	
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -49,9 +43,21 @@ public class User{
 	public void setRoles(UserRole role) {
 		this.role = role;
 	}
+
+	public UserRole getRole() {
+		return role;
+	}
+
+	public void setRole(UserRole role) {
+		this.role = role;
+	}
 	
 	public Long getId() {
 		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
 	}
 	
 	public String getName() {
@@ -85,6 +91,10 @@ public class User{
 	
 	public void setPassword(String password) {
 		this.password = password;
+	}
+
+	protected User() {
+		// JPA precisa
 	}
 	
 }

@@ -6,20 +6,18 @@ import java.util.Set;
 import jakarta.persistence.Entity;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.Table;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 
 @Entity
 @Table(name = "student")
-@Getter
-@Setter
-@NoArgsConstructor
 public class Student extends User{
 	
     @ManyToMany(mappedBy = "alunos")
     private Set<Classroom> classrooms = new HashSet<>();
+
+	protected Student() {
+		super();
+	}
 	
 	public Student(Long id, String name, String telephone, String login, String password, UserRole roles) {
 		super(id, name, telephone, login, password, roles);
