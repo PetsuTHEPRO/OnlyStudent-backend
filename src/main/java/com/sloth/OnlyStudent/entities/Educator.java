@@ -2,19 +2,17 @@ package com.sloth.OnlyStudent.entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 
 @Entity
 @Table(name = "educator")
-@Getter
-@Setter
-@NoArgsConstructor
 public class Educator extends User{
 	
 	private String especialidade;
+
+	protected Educator() {
+		super();
+	}
 	
 	public Educator(Long id, String name, String telephone, String login, String password, UserRole role, String especialidade) {
 		super(id, name, telephone, login, password, role);
