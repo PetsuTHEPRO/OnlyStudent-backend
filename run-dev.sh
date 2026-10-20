@@ -3,17 +3,16 @@ set -e
 
 cd "$(dirname "$0")"
 
-# 1. Configura envs (gera JWT novo se não existir)
-if [ -z "$JWT_SECRET" ]; then
-    export JWT_SECRET=$(openssl rand -base64 32)
-    echo "→ JWT_SECRET gerado"
+if [ -z "$jwt_secret" ]; then
+    export jwt_secret=$(openssl rand -base64 32)
+    echo "→ jwt_secret gerado"
 fi
 
-export DB_URL="jdbc:postgresql://localhost:55432/school"
-export DB_USERNAME=root
-export DB_PASSWORD=123
+export db_url="jdbc:postgresql://localhost:55432/school"
+export db_username=root
+export db_password=123
+export cors_allowed_origins="http://localhost:5173"
 
-# 2. Sobe Postgres na 55432 (override)
 docker compose -f compose.yaml -f - up -d db <<'OVERRIDE'
 services:
   db:
@@ -21,7 +20,7 @@ services:
       - "55432:5432"
 OVERRIDE
 
-# 3. Aguarda o banco
+
 echo "→ Aguardando Postgres..."
 for i in 1 2 3 4 5 6 7 8 9 10; do
     docker compose exec -T db pg_isready -U root -d school >/dev/null 2>&1 && break
