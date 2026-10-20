@@ -36,3 +36,5 @@ build/
 # Logs
 *.log
 logs/run-dev.sh
+.vercel
+.env*
