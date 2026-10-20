@@ -8,6 +8,7 @@ import static org.mockito.Mockito.when;
 import java.util.Properties;
 
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.mail.javamail.JavaMailSender;
 
 import com.sloth.OnlyStudent.entities.DTO.SupportDTO;
@@ -22,11 +23,19 @@ class SendSupportEmailUseCaseTest {
     private final JavaMailSender sender = mock(JavaMailSender.class);
     private final SupportEmailContentMapper mapper = new SupportEmailContentMapper();
 
+    @SuppressWarnings("unchecked")
+    private ObjectProvider<JavaMailSender> providerReturning(JavaMailSender value) {
+        ObjectProvider<JavaMailSender> provider = mock(ObjectProvider.class);
+        when(provider.getIfAvailable()).thenReturn(value);
+        return provider;
+    }
+
     @Test
     void sendsAnHtmlEmailToTheConfiguredSupportAddress() throws Exception {
         MimeMessage message = new MimeMessage(Session.getInstance(new Properties()));
         when(sender.createMimeMessage()).thenReturn(message);
-        SendSupportEmailUseCase useCase = new SendSupportEmailUseCase(sender, mapper, "support@example.com");
+        SendSupportEmailUseCase useCase =
+                new SendSupportEmailUseCase(providerReturning(sender), mapper, "support@example.com");
 
         useCase.execute(validRequest());
 
@@ -40,9 +49,22 @@ class SendSupportEmailUseCaseTest {
         when(message.getSession()).thenReturn(Session.getInstance(new Properties()));
         org.mockito.Mockito.doThrow(new MessagingException("bad mime message"))
                 .when(message).setFrom(org.mockito.ArgumentMatchers.any(jakarta.mail.internet.InternetAddress.class));
-        SendSupportEmailUseCase useCase = new SendSupportEmailUseCase(sender, mapper, "support@example.com");
+        SendSupportEmailUseCase useCase =
+                new SendSupportEmailUseCase(providerReturning(sender), mapper, "support@example.com");
 
         assertThrows(SupportDeliveryException.class, () -> useCase.execute(validRequest()));
+    }
+
+    @Test
+    void failsWithClearMessageWhenMailSenderIsNotConfigured() {
+        SendSupportEmailUseCase useCase =
+                new SendSupportEmailUseCase(providerReturning(null), mapper, "support@example.com");
+
+        SupportDeliveryException exception =
+                assertThrows(SupportDeliveryException.class, () -> useCase.execute(validRequest()));
+
+        org.junit.jupiter.api.Assertions.assertEquals(
+                "Serviço de e-mail não configurado.", exception.getMessage());
     }
 
     private SupportDTO validRequest() {

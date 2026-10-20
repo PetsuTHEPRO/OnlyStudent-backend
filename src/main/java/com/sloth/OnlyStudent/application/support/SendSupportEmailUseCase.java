@@ -2,6 +2,7 @@ package com.sloth.OnlyStudent.application.support;
 
 import java.util.Objects;
 
+import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
@@ -20,14 +21,19 @@ public class SendSupportEmailUseCase {
     private final SupportEmailContentMapper contentMapper;
     private final String senderAddress;
 
-    public SendSupportEmailUseCase(JavaMailSender emailSender, SupportEmailContentMapper contentMapper,
-            @Value("${spring.mail.username}") String senderAddress) {
-        this.emailSender = emailSender;
+    public SendSupportEmailUseCase(
+            ObjectProvider<JavaMailSender> emailSenderProvider,
+            SupportEmailContentMapper contentMapper,
+            @Value("${spring.mail.username:no-reply@onlystudent.local}") String senderAddress) {
+        this.emailSender = emailSenderProvider.getIfAvailable();
         this.contentMapper = contentMapper;
         this.senderAddress = senderAddress;
     }
 
     public void execute(SupportDTO request) {
+        if (this.emailSender == null) {
+            throw new SupportDeliveryException("Serviço de e-mail não configurado.");
+        }
         try {
             MimeMessage message = emailSender.createMimeMessage();
             MimeMessageHelper helper = new MimeMessageHelper(message, true);
