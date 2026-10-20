@@ -1,0 +1,52 @@
+name: Backend CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Build & Test
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    # Aqui está o segredo: o GitHub sobe um Postgres temporário para os testes
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: root
+          POSTGRES_PASSWORD: 123
+          POSTGRES_DB: school-test
+        ports:
+          - 5432:5432
+        # Garante que o GitHub só comece os testes quando o banco estiver pronto
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: 'maven'
+
+      - name: Run Tests
+        env:
+          # Variáveis que o application-test.properties exige
+          JWT_SECRET: "chave-de-teste-super-segura-para-ci-123456"
+          DB_USERNAME: root
+          DB_PASSWORD: 123
+          DB_URL: jdbc:postgresql://localhost:5432/school-test
+        run: ./mvnw clean test
