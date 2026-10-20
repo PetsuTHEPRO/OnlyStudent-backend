@@ -1,9 +1,12 @@
 package com.sloth.OnlyStudent.entities;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 import java.util.stream.Collectors;
+import java.util.ArrayList;
+import java.util.List;
 
 import com.sloth.OnlyStudent.entities.DTO.StudentIdDTO;
 import com.sloth.OnlyStudent.shared.errors.AlunoJaMatriculadoException;
@@ -71,6 +74,10 @@ public class Classroom {
 	
 	@OneToMany(mappedBy = "turma", cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<Material> materials;
+
+	@OneToMany(mappedBy = "classroom", cascade = CascadeType.ALL, orphanRemoval = true)
+	private List<Aviso> avisos = new ArrayList<>();
+
 	
     public Classroom() {
     }
@@ -176,6 +183,9 @@ public class Classroom {
 	public void setMaterials(Set<Material> materials) {
 		this.materials = materials;
 	}
+
+	public List<Aviso> getAvisos() { return avisos; }
+	public void setAvisos(List<Aviso> avisos) { this.avisos = avisos; }
 
 	public static Classroom criar(String name, String description, Educator educator, double price) {
 		if (name == null || name.isBlank()) {

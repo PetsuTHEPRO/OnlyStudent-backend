@@ -1,6 +1,7 @@
 package com.sloth.OnlyStudent.controller;
 
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 import org.springframework.data.domain.Page;
@@ -20,6 +21,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.sloth.OnlyStudent.application.classroom.CreateAvisoUseCase;
 import com.sloth.OnlyStudent.application.classroom.CreateClassroomUseCase;
 import com.sloth.OnlyStudent.application.classroom.GetClassroomDetailsUseCase;
 import com.sloth.OnlyStudent.application.classroom.JoinClassroomUseCase;
@@ -63,7 +65,9 @@ public class ClassroomController {
     private final GetClassroomDetailsUseCase getClassroomDetailsUseCase;
     private final SearchClassroomsUseCase searchClassroomsUseCase;
     private final ListMaterialsUseCase listMaterialsUseCase;
+    private final CreateAvisoUseCase createAvisoUseCase;
 
+    // CORREÇÃO AQUI: Adicionado o CreateAvisoUseCase no construtor
     public ClassroomController(ClassroomRepository classroomRepository,
             MaterialRepository materialRepository,
             ClassroomService classroomService,
@@ -73,7 +77,8 @@ public class ClassroomController {
             ListEducatorClassroomsUseCase listEducatorClassroomsUseCase,
             GetClassroomDetailsUseCase getClassroomDetailsUseCase,
             SearchClassroomsUseCase searchClassroomsUseCase,
-            ListMaterialsUseCase listMaterialsUseCase) {
+            ListMaterialsUseCase listMaterialsUseCase,
+            CreateAvisoUseCase createAvisoUseCase) {
         this.classroomRepository = classroomRepository;
         this.materialRepository = materialRepository;
         this.classroomService = classroomService;
@@ -84,6 +89,7 @@ public class ClassroomController {
         this.getClassroomDetailsUseCase = getClassroomDetailsUseCase;
         this.searchClassroomsUseCase = searchClassroomsUseCase;
         this.listMaterialsUseCase = listMaterialsUseCase;
+        this.createAvisoUseCase = createAvisoUseCase;
     }
 
     @GetMapping
@@ -197,6 +203,19 @@ public class ClassroomController {
     public List<MaterialResponseDTO> getMaterialsByClassroomCódigo(@PathVariable Long codigo,
             @AuthenticationPrincipal User principal) {
         return listMaterialsUseCase.execute(codigo, principal.getId(), Pageable.unpaged());
+    }
+
+    // CORREÇÃO AQUI: Adicionado o Endpoint de criar Aviso
+    @PostMapping("/{id}/avisos")
+    public ResponseEntity<String> criarAviso(@PathVariable Long id,
+            @RequestBody Map<String, String> body,
+            @AuthenticationPrincipal User principal) {
+        String mensagem = body.get("mensagem");
+        if (mensagem == null || mensagem.isBlank()) {
+            return ResponseEntity.badRequest().body("A mensagem não pode estar vazia.");
+        }
+        createAvisoUseCase.execute(id, mensagem, principal);
+        return ResponseEntity.status(201).body("Aviso publicado com sucesso.");
     }
 
     private Classroom findAccessibleClassroom(Long code, User principal) {

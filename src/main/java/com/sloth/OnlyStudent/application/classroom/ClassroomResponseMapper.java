@@ -6,9 +6,11 @@ import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Component;
 
+import com.sloth.OnlyStudent.entities.Aviso;
 import com.sloth.OnlyStudent.entities.Classroom;
 import com.sloth.OnlyStudent.entities.Material;
 import com.sloth.OnlyStudent.entities.Student;
+import com.sloth.OnlyStudent.entities.DTO.AvisoResponseDTO;
 import com.sloth.OnlyStudent.entities.DTO.ClassroomDetailsDTO;
 import com.sloth.OnlyStudent.entities.DTO.ClassroomsDTO;
 import com.sloth.OnlyStudent.entities.DTO.MaterialResponseDTO;
@@ -30,11 +32,19 @@ public class ClassroomResponseMapper {
         List<String> studentNames = classroom.getAlunos().stream()
                 .map(Student::getName)
                 .toList();
+        List<AvisoResponseDTO> avisos = classroom.getAvisos().stream()
+                .map(this::toAvisoResponse)
+                .collect(Collectors.toList());
+                
         return new ClassroomDetailsDTO(classroom.getCodigo(), classroom.getName(), classroom.getDescription(),
-                classroom.getEducator().getName(), materials, studentNames);
+                classroom.getEducator().getName(), materials, studentNames, avisos);
     }
 
     private MaterialResponseDTO toMaterialResponse(Material material) {
         return new MaterialResponseDTO(material.getId(), material.getTipo(), material.getName(), material.getUrl());
+    }
+
+    private AvisoResponseDTO toAvisoResponse(Aviso aviso) {
+        return new AvisoResponseDTO(aviso.getId(), aviso.getMensagem(), aviso.getDataCriacao());
     }
 }
