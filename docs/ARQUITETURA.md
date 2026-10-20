@@ -15,6 +15,7 @@ src/main/java/com/sloth/OnlyStudent/
 ├── entities/
 │   └── DTO/
 ├── infra/
+│   ├── config/
 │   └── security/
 ├── repository/
 ├── services/
@@ -75,6 +76,19 @@ padrão. Algumas rotas legadas ainda delegam a `services/`.
 - DTOs de resposta evitam expor campos internos e ciclos de serialização.
 - Identidade e autorização são obtidas do principal autenticado; parâmetros
   de cliente não devem substituir o ID autenticado.
+
+## Documentação OpenAPI e CORS
+
+- O Swagger UI fica disponível em `/swagger-ui.html` e a especificação OpenAPI
+  em `/v3/api-docs`. As rotas do Swagger e da especificação são públicas para
+  facilitar a exploração da API; as rotas funcionais continuam sujeitas às
+  regras de autorização existentes.
+- O esquema `bearerAuth` documenta a autenticação HTTP Bearer com JWT e habilita
+  o botão **Authorize** na interface.
+- As origens CORS são configuradas por `app.cors.allowed-origins`. A variável
+  de ambiente `CORS_ALLOWED_ORIGINS`, quando definida, substitui o valor padrão:
+  localhost:5173 e localhost:3000 no perfil geral/dev e o domínio de produção
+  configurado no perfil prod.
 
 ## Auditorias da consolidação
 

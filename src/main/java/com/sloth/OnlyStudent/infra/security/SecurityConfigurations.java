@@ -1,5 +1,6 @@
 package com.sloth.OnlyStudent.infra.security;
 
+import java.util.Arrays;
 import java.util.List;
 
 import java.time.Duration;
@@ -35,7 +36,7 @@ public class SecurityConfigurations {
     @Autowired
     SecurityFilter securityFilter;
 
-    @Value("${app.cors.allowed-origins}")
+    @Value("${app.cors.allowed-origins:http://localhost:5173}")
     private String allowedOrigins;
 
     @Value("${app.auth.rate-limit.requests:10}")
@@ -77,6 +78,7 @@ public class SecurityConfigurations {
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(authorize -> authorize
                         .dispatcherTypeMatchers(DispatcherType.ERROR).permitAll()
+                        .requestMatchers("/swagger-ui.html", "/swagger-ui/**", "/v3/api-docs/**").permitAll()
                 		// Rotas Públicassss
                         .requestMatchers(HttpMethod.POST, "/auth/login", "/auth/register").permitAll()
                         // Rotas do Estudante
@@ -111,7 +113,9 @@ public class SecurityConfigurations {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(List.of(allowedOrigins.split(",")));
+        configuration.setAllowedOrigins(Arrays.stream(allowedOrigins.split(","))
+                .map(String::trim)
+                .toList());
         configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS")); // Métodos permitidos
         configuration.setAllowedHeaders(List.of("*")); // Cabeçalhos permitidos
         configuration.setAllowCredentials(true); // Permite envio de cookies e credenciais
