@@ -14,7 +14,6 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
 
-    # Aqui está o segredo: o GitHub sobe um Postgres temporário para os testes
     services:
       postgres:
         image: postgres:16
@@ -24,7 +23,6 @@ jobs:
           POSTGRES_DB: school-test
         ports:
           - 5432:5432
-        # Garante que o GitHub só comece os testes quando o banco estiver pronto
         options: >-
           --health-cmd pg_isready
           --health-interval 10s
@@ -44,9 +42,9 @@ jobs:
 
       - name: Run Tests
         env:
-          # Variáveis que o application-test.properties exige
-          JWT_SECRET: "chave-de-teste-super-segura-para-ci-123456"
-          DB_USERNAME: root
-          DB_PASSWORD: 123
-          DB_URL: jdbc:postgresql://localhost:5432/school-test
+          # Variáveis em MINÚSCULO para bater com o application.properties principal
+          jwt_secret: "chave-de-teste-super-segura-para-ci-123456"
+          db_username: root
+          db_password: 123
+          db_url: jdbc:postgresql://localhost:5432/school-test
         run: ./mvnw clean test
