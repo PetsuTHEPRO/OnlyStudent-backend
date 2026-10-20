@@ -81,15 +81,19 @@ class ApiContractCharacterizationTest {
             org.mockito.Mockito.mock(SearchClassroomsUseCase.class);
     private final ListMaterialsUseCase listMaterialsUseCase =
             org.mockito.Mockito.mock(ListMaterialsUseCase.class);
+    private final com.sloth.OnlyStudent.application.classroom.CreateAvisoUseCase createAvisoUseCase = 
+            org.mockito.Mockito.mock(com.sloth.OnlyStudent.application.classroom.CreateAvisoUseCase.class);
 
     @BeforeEach
     void setUp() {
         principal = user(7L, UserRole.STUDENT);
         AuthenticationController authenticationController = new AuthenticationController(authenticationService);
-        ClassroomController classroomController = new ClassroomController(classroomRepository, materialRepository,
+
+       ClassroomController classroomController = new ClassroomController(classroomRepository, materialRepository,
                 classroomService, createClassroomUseCase, joinClassroomUseCase, listStudentClassroomsUseCase,
                 listEducatorClassroomsUseCase, getClassroomDetailsUseCase, searchClassroomsUseCase,
-                listMaterialsUseCase);
+                listMaterialsUseCase, createAvisoUseCase);
+
         HandlerMethodArgumentResolver principalResolver = new HandlerMethodArgumentResolver() {
             @Override
             public boolean supportsParameter(MethodParameter parameter) {
@@ -229,7 +233,7 @@ class ApiContractCharacterizationTest {
 
     @Test
     void classroomDetailsKeepsDirectJsonShapeIncludingCodigo() throws Exception {
-        ClassroomDetailsDTO details = new ClassroomDetailsDTO(12L, "Algebra", "Aula", "Edu", Set.of(), List.of("Ana"));
+        ClassroomDetailsDTO details = new ClassroomDetailsDTO(12L, "Algebra", "Aula", "Edu", Set.of(), List.of("Ana"), List.of());
         when(getClassroomDetailsUseCase.execute(eq(12L), any())).thenReturn(details);
         mockMvc.perform(get("/turma/12"))
                 .andExpect(status().isOk())
