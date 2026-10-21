@@ -1,0 +1,7 @@
+# Copie para application-local.properties e ajuste com suas credenciais
+spring.datasource.url=jdbc:postgresql://localhost:5432/onlystudent
+spring.datasource.username=onlystudent
+spring.datasource.password=onlystudent
+spring.jpa.show-sql=true
+logging.level.org.hibernate.SQL=DEBUG
+api.security.token.security=chave-local-de-teste-123
