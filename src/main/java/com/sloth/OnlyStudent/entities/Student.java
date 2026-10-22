@@ -21,7 +21,7 @@ public class Student extends User{
 	
 	public Student(Long id, String name, String telephone, String login, String password, UserRole roles) {
 		super(id, name, telephone, login, password, roles);
-		// TODO Auto-generated constructor stub
+	
 	}
 
 	public Set<Classroom> getClassrooms() {

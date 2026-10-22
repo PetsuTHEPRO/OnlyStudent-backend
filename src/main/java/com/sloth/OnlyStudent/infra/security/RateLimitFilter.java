@@ -9,6 +9,7 @@ import java.util.Iterator;
 import java.util.Map;
 
 import org.springframework.http.HttpMethod;
+import org.springframework.lang.NonNull;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import jakarta.servlet.FilterChain;
@@ -45,8 +46,8 @@ public class RateLimitFilter extends OncePerRequestFilter {
     }
 
     @Override
-    protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response,
-            FilterChain filterChain) throws ServletException, IOException {
+    protected void doFilterInternal(@NonNull HttpServletRequest request, @NonNull HttpServletResponse response,
+            @NonNull FilterChain filterChain) throws ServletException, IOException {
         RateLimit rateLimit = rateLimitFor(request);
         if (rateLimit == null || allowRequest(request.getRemoteAddr() + request.getServletPath(), rateLimit)) {
             filterChain.doFilter(request, response);

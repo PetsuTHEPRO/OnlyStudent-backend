@@ -108,7 +108,6 @@ public class ClassroomService {
 
     @Transactional
 	public Classroom updateStatus(Long id, Status status) {
-		// TODO Auto-generated method stub
 		
 		Classroom classroom = classroomRepository.findById(id)
 	            .orElseThrow();
@@ -117,7 +116,6 @@ public class ClassroomService {
 	}
 
 	public List<ClassroomsDTO> getClassroomsTop3Destaque() {
-		// TODO Auto-generated method stub
 		List<Classroom> classrooms = classroomRepository.findAll();
 		
 		List<Classroom> topClassrooms = classrooms.stream()

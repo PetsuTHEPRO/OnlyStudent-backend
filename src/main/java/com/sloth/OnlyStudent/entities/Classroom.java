@@ -5,7 +5,6 @@ import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 import java.util.stream.Collectors;
-import java.util.ArrayList;
 import java.util.List;
 
 import com.sloth.OnlyStudent.entities.DTO.StudentIdDTO;
@@ -82,8 +81,8 @@ public class Classroom {
     public Classroom() {
     }
 
-    public Classroom(Long codigo, String name, String description, Status status, Custo custo, double price, HashSet alunos,
-            Educator educator, HashSet material) {
+    public Classroom(Long codigo, String name, String description, Status status, Custo custo, double price, HashSet<Student> alunos,
+            Educator educator, HashSet<Material> material) {
 		super();
 		this.codigo = codigo;
 		this.name = name;
