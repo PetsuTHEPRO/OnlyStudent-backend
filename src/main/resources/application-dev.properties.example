@@ -1,0 +1,15 @@
+# Exemplo de configuração para desenvolvimento local.
+# Copie este arquivo para application-dev.properties e ajuste os valores.
+# application-dev.properties JÁ está commitado com valores padrão de dev
+# (onlystudent/onlystudent@localhost:5432/onlystudent); este .example
+# existe como referência para quem quiser customizar.
+
+spring.datasource.url=jdbc:postgresql://localhost:5432/onlystudent
+spring.datasource.username=onlystudent
+spring.datasource.password=onlystudent
+
+spring.jpa.show-sql=true
+logging.level.org.hibernate.SQL=DEBUG
+
+api.security.token.security=troque-esta-chave-em-dev
+app.cors.allowed-origins=http://localhost:5173,http://localhost:3000
