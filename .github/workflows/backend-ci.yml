@@ -42,9 +42,7 @@ jobs:
 
       - name: Run Tests
         env:
-          # Variáveis em MINÚSCULO para bater com o application.properties principal
-          jwt_secret: "chave-de-teste-super-segura-para-ci-123456"
-          db_username: onlystudent
-          db_password: onlystudent
-          db_url: jdbc:postgresql://localhost:5432/onlystudent-test
+          TEST_DB_URL: jdbc:postgresql://localhost:5432/onlystudent-test
+          TEST_DB_USERNAME: onlystudent
+          TEST_DB_PASSWORD: onlystudent
         run: ./mvnw clean test
